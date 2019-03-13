@@ -8,13 +8,27 @@
     <view id="Training_Setup">
       <page>/WEB-INF/Fragments/Modules/Training/Training_Setup.jsff</page>
     </view>
-    <view id="Module_Setup"></view>
-    <view id="Topic_Setup"></view>
-    <view id="Team_Setup"></view>
-    <view id="Trainer"></view>
-    <view id="Team_Foundation"></view>
-    <view id="Training_Sched"></view>
-    <view id="ATT_Detail"></view>
+    <view id="Module_Setup">
+      <page>/WEB-INF/Fragments/Modules/Training/Module_Setup.jsff</page>
+    </view>
+    <view id="Topic_Setup">
+      <page>/WEB-INF/Fragments/Modules/Training/Topic_Setup.jsff</page>
+    </view>
+    <view id="Team_Setup">
+      <page>/WEB-INF/Fragments/Modules/Training/Team_Setup.jsff</page>
+    </view>
+    <view id="Trainer">
+      <page>/WEB-INF/Fragments/Modules/Training/Trainer.jsff</page>
+    </view>
+    <view id="Team_Foundation">
+      <page>/WEB-INF/Fragments/Modules/Training/Team_Foundation.jsff</page>
+    </view>
+    <view id="Training_Sched">
+      <page>/WEB-INF/Fragments/Modules/Training/Training_Sched.jsff</page>
+    </view>
+    <view id="ATT_Detail">
+      <page>/WEB-INF/Fragments/Modules/Training/ATT_Detail.jsff</page>
+    </view>
     <use-page-fragments/>
   </task-flow-definition>
 </adfc-config>
