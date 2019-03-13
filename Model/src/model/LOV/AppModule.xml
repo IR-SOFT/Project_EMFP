@@ -100,4 +100,22 @@
   <ViewUsage
     Name="Month_LOV1"
     ViewObjectName="model.LOV.Month_LOV"/>
+  <ViewUsage
+    Name="Tehsil_Name_LOV1"
+    ViewObjectName="model.LOV.Tehsil_Name_LOV"/>
+  <ViewUsage
+    Name="City_Name_LOV1"
+    ViewObjectName="model.LOV.City_Name_LOV"/>
+  <ViewUsage
+    Name="District_Name_LOV1"
+    ViewObjectName="model.LOV.District_Name_LOV"/>
+  <ViewUsage
+    Name="MAUZA_Name_LOV1"
+    ViewObjectName="model.LOV.MAUZA_Name_LOV"/>
+  <ViewUsage
+    Name="Village_Name_LOV1"
+    ViewObjectName="model.LOV.Village_Name_LOV"/>
+  <ViewUsage
+    Name="Vendor_Type_LOV1"
+    ViewObjectName="model.LOV.Vendor_Type_LOV"/>
 </AppModule>
