@@ -97,4 +97,7 @@
   <ViewUsage
     Name="Type_VendorLOV1"
     ViewObjectName="model.LOV.Type_VendorLOV"/>
+  <ViewUsage
+    Name="Month_LOV1"
+    ViewObjectName="model.LOV.Month_LOV"/>
 </AppModule>
