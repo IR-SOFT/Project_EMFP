@@ -9,11 +9,13 @@
   <pageMap>
     <page path="/WEB-INF/Fragments/Modules/Setup/Program.jsff" usageId="view_ProgramPageDef"/>
     <page path="/Main_Pages/Modules/Setup/Setup.jsf" usageId="view_SetupPageDef1"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Crops.jsff" usageId="view_CropsPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_ProgramPageDef" path="Fragments.Modules.Setup.ProgramPageDef"/>
     <page id="view_SetupPageDef" path="Main_Pages.Modules.Setup.SetupPageDef"/>
     <page id="view_SetupPageDef1" path="Main_Pages.Modules.Setup.SetupPageDef1"/>
+    <page id="view_CropsPageDef" path="Fragments.Modules.Setup.CropsPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"
