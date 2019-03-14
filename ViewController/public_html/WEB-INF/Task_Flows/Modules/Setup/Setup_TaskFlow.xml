@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1252" ?>
 <adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
   <task-flow-definition id="Setup_TaskFlow">
-    <default-activity>Program</default-activity>
+    <default-activity>Setup</default-activity>
     <data-control-scope>
       <shared/>
     </data-control-scope>
@@ -31,6 +31,9 @@
     </view>
     <view id="Library">
       <page>/WEB-INF/Fragments/Modules/Setup/Library.jsff</page>
+    </view>
+    <view id="Setup">
+      <page>/WEB-INF/Fragments/Modules/Setup/Main_Setup.jsff</page>
     </view>
     <use-page-fragments/>
   </task-flow-definition>

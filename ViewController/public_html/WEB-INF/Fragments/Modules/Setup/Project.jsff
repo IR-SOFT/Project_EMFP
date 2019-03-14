@@ -47,6 +47,9 @@
                                                                         <f:validator binding="#{row.bindings.ProgId.validator}"/>
                                                                     </af:selectOneChoice>
                                                                 </af:column>
+                                                                
+                                                                
+                                                                
                                                                 <af:column sortProperty="#{bindings.TblProjView1.hints.ProjId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Project ID" align="center"

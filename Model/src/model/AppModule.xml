@@ -1084,7 +1084,7 @@
   <ViewLinkUsage
     Name="FkTblItemL3FkLink1"
     ViewLinkObjectName="model.VO.FkTblItemL3FkLink"
-    SrcViewUsageName="model.AppModule.TblItemL2View1"
+    SrcViewUsageName="model.AppModule.TblItemL2View3"
     DstViewUsageName="model.AppModule.TblItemL3View4"
     Reversed="false"/>
   <ViewLinkUsage
@@ -1108,7 +1108,7 @@
   <ViewLinkUsage
     Name="FkTblItemL4FkLink1"
     ViewLinkObjectName="model.VO.FkTblItemL4FkLink"
-    SrcViewUsageName="model.AppModule.TblItemL3View1"
+    SrcViewUsageName="model.AppModule.TblItemL3View4"
     DstViewUsageName="model.AppModule.TblItemL4View5"
     Reversed="false"/>
   <ViewLinkUsage
