@@ -11,6 +11,9 @@
     <page path="/Main_Pages/Modules/Setup/Setup.jsf" usageId="view_SetupPageDef1"/>
     <page path="/WEB-INF/Fragments/Modules/Setup/Crops.jsff" usageId="view_CropsPageDef"/>
     <page path="/WEB-INF/Fragments/Modules/Setup/Project.jsff" usageId="view_ProjectPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Target_Crops.jsff" usageId="view_Target_CropsPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Farm_Machinery.jsff" usageId="view_Farm_MachineryPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Phase.jsff" usageId="view_PhasePageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_ProgramPageDef" path="Fragments.Modules.Setup.ProgramPageDef"/>
@@ -18,6 +21,9 @@
     <page id="view_SetupPageDef1" path="Main_Pages.Modules.Setup.SetupPageDef1"/>
     <page id="view_CropsPageDef" path="Fragments.Modules.Setup.CropsPageDef"/>
     <page id="view_ProjectPageDef" path="Fragments.Modules.Setup.ProjectPageDef"/>
+    <page id="view_Target_CropsPageDef" path="Fragments.Modules.Setup.Target_CropsPageDef"/>
+    <page id="view_Farm_MachineryPageDef" path="Fragments.Modules.Setup.Farm_MachineryPageDef"/>
+    <page id="view_PhasePageDef" path="Fragments.Modules.Setup.PhasePageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"
