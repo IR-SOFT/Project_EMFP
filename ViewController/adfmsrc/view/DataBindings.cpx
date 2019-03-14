@@ -53,6 +53,19 @@
                      xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
   </dataControlUsages>
 >>>>>>> 759133c591732b1e7f2137cabe078d26c75f906c
+
+    <page path="/WEB-INF/Fragments/Modules/Monitoring/Project_Comp.jsff" usageId="view_Project_CompPageDef"/>
+  
+  <pageDefinitionUsages>
+    <page id="view_Project_CompPageDef" path="Fragments.Modules.Monitoring.Project_CompPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
 </pageMap>
   <pageDefinitionUsages>
     <page id="view_ProgramPageDef" path="Fragments.Modules.Setup.ProgramPageDef"/>
