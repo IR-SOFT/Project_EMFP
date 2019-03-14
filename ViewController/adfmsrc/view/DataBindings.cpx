@@ -40,7 +40,24 @@
 <<<<<<< HEAD
 =======
 
-    </pageMap>
+    
+    <page path="/WEB-INF/Fragments/Modules/Monitoring/Output_Ind.jsff" usageId="view_Output_IndPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Monitoring/Monitoring_Param.jsff" usageId="view_Monitoring_ParamPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/Training_Setup.jsff" usageId="view_Training_SetupPageDef"/>
+  
+  <pageDefinitionUsages>
+    <page id="view_Output_IndPageDef" path="Fragments.Modules.Monitoring.Output_IndPageDef"/>
+    <page id="view_Monitoring_ParamPageDef" path="Fragments.Modules.Monitoring.Monitoring_ParamPageDef"/>
+    <page id="view_Training_SetupPageDef" path="Fragments.Modules.Training.Training_SetupPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</pageMap>
     
     
     
