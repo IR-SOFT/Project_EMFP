@@ -11,13 +11,37 @@
     <page path="/Main_Pages/Modules/Setup/Setup.jsf" usageId="view_SetupPageDef1"/>
     <page path="/WEB-INF/Fragments/Modules/Setup/Crops.jsff" usageId="view_CropsPageDef"/>
     <page path="/WEB-INF/Fragments/Modules/Setup/Project.jsff" usageId="view_ProjectPageDef"/>
-  </pageMap>
+<<<<<<< HEAD
+    <page path="/WEB-INF/Fragments/Modules/Setup/Library.jsff" usageId="view_LibraryPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Supplier_Rate.jsff" usageId="view_Supplier_RatePageDef"/>
+=======
+    <page path="/WEB-INF/Fragments/Modules/Setup/Target_Crops.jsff" usageId="view_Target_CropsPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Farm_Machinery.jsff" usageId="view_Farm_MachineryPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Phase.jsff" usageId="view_PhasePageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Supplier.jsff" usageId="view_SupplierPageDef"/>
+>>>>>>> bd9a909d501cd7b4617037f85e2e4c53bda844bd
+  
+    <page path="/Main_Pages/Modules/Monitoring/Monitoring.jsf" usageId="view_MonitoringPageDef"/>
+  
+  <pageDefinitionUsages>
+    <page id="view_MonitoringPageDef" path="Main_Pages.Modules.Monitoring.MonitoringPageDef"/>
+  </pageDefinitionUsages>
+</pageMap>
   <pageDefinitionUsages>
     <page id="view_ProgramPageDef" path="Fragments.Modules.Setup.ProgramPageDef"/>
     <page id="view_SetupPageDef" path="Main_Pages.Modules.Setup.SetupPageDef"/>
     <page id="view_SetupPageDef1" path="Main_Pages.Modules.Setup.SetupPageDef1"/>
     <page id="view_CropsPageDef" path="Fragments.Modules.Setup.CropsPageDef"/>
     <page id="view_ProjectPageDef" path="Fragments.Modules.Setup.ProjectPageDef"/>
+<<<<<<< HEAD
+    <page id="view_LibraryPageDef" path="Fragments.Modules.Setup.LibraryPageDef"/>
+    <page id="view_Supplier_RatePageDef" path="Fragments.Modules.Setup.Supplier_RatePageDef"/>
+=======
+    <page id="view_Target_CropsPageDef" path="Fragments.Modules.Setup.Target_CropsPageDef"/>
+    <page id="view_Farm_MachineryPageDef" path="Fragments.Modules.Setup.Farm_MachineryPageDef"/>
+    <page id="view_PhasePageDef" path="Fragments.Modules.Setup.PhasePageDef"/>
+    <page id="view_SupplierPageDef" path="Fragments.Modules.Setup.SupplierPageDef"/>
+>>>>>>> bd9a909d501cd7b4617037f85e2e4c53bda844bd
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"
