@@ -20,7 +20,13 @@
     <page path="/WEB-INF/Fragments/Modules/Setup/Phase.jsff" usageId="view_PhasePageDef"/>
     <page path="/WEB-INF/Fragments/Modules/Setup/Supplier.jsff" usageId="view_SupplierPageDef"/>
 >>>>>>> bd9a909d501cd7b4617037f85e2e4c53bda844bd
-  </pageMap>
+  
+    <page path="/Main_Pages/Modules/Monitoring/Monitoring.jsf" usageId="view_MonitoringPageDef"/>
+  
+  <pageDefinitionUsages>
+    <page id="view_MonitoringPageDef" path="Main_Pages.Modules.Monitoring.MonitoringPageDef"/>
+  </pageDefinitionUsages>
+</pageMap>
   <pageDefinitionUsages>
     <page id="view_ProgramPageDef" path="Fragments.Modules.Setup.ProgramPageDef"/>
     <page id="view_SetupPageDef" path="Main_Pages.Modules.Setup.SetupPageDef"/>
