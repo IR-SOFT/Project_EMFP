@@ -13,7 +13,6 @@
   CustomQuery="false"
   SelectAllAttributes="false"
   PageIterMode="Full">
-<<<<<<< HEAD
   <ViewAccessor
     Name="Active_Status1"
     ViewObjectName="model.LOV.Active_Status"
@@ -36,8 +35,6 @@
     </AttrArray>
     <DisplayCriteria/>
   </ListBinding>
-=======
->>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <EntityUsage
     Name="TblCertification"
     Entity="model.EO.TblCertification"/>
@@ -62,7 +59,6 @@
     PrecisionRule="true"
     EntityAttrName="Ast"
     EntityUsage="TblCertification"
-<<<<<<< HEAD
     AliasName="AST"
     LOVName="LOV_Ast">
     <Properties>
@@ -72,9 +68,6 @@
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
-=======
-    AliasName="AST"/>
->>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <ViewLinkAccessor
     Name="TblFarmerRegCertView"
     ViewLink="model.VO.Fk2TblFarmerRegCertFkLink"
