@@ -13,7 +13,6 @@
   CustomQuery="false"
   SelectAllAttributes="false"
   PageIterMode="Full">
-<<<<<<< HEAD
   <ViewAccessor
     Name="Active_Status1"
     ViewObjectName="model.LOV.Active_Status"
@@ -80,8 +79,6 @@
     </AttrArray>
     <DisplayCriteria/>
   </ListBinding>
-=======
->>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <EntityUsage
     Name="TblProjComp"
     Entity="model.EO.TblProjComp"/>
@@ -98,7 +95,6 @@
     PrecisionRule="true"
     EntityAttrName="ProjId"
     EntityUsage="TblProjComp"
-<<<<<<< HEAD
     AliasName="PROJ_ID"
     LOVName="LOV_ProjId">
     <Properties>
@@ -108,9 +104,6 @@
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
-=======
-    AliasName="PROJ_ID"/>
->>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <ViewAttribute
     Name="Name"
     IsUnique="true"
@@ -125,7 +118,6 @@
     PrecisionRule="true"
     EntityAttrName="Ast"
     EntityUsage="TblProjComp"
-<<<<<<< HEAD
     AliasName="AST"
     LOVName="LOV_Ast">
     <Properties>
@@ -135,16 +127,12 @@
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
-=======
-    AliasName="AST"/>
->>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <ViewAttribute
     Name="Io"
     IsNotNull="true"
     PrecisionRule="true"
     EntityAttrName="Io"
     EntityUsage="TblProjComp"
-<<<<<<< HEAD
     AliasName="IO"
     LOVName="LOV_Io">
     <Properties>
@@ -154,9 +142,6 @@
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
-=======
-    AliasName="IO"/>
->>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <ViewLinkAccessor
     Name="TblTrainingSchMasterView"
     ViewLink="model.VO.FkTblTrainingSchMasterFkLink"
