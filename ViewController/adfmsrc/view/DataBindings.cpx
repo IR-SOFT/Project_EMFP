@@ -11,6 +11,8 @@
     <page path="/Main_Pages/Modules/Setup/Setup.jsf" usageId="view_SetupPageDef1"/>
     <page path="/WEB-INF/Fragments/Modules/Setup/Crops.jsff" usageId="view_CropsPageDef"/>
     <page path="/WEB-INF/Fragments/Modules/Setup/Project.jsff" usageId="view_ProjectPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Library.jsff" usageId="view_LibraryPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Setup/Supplier_Rate.jsff" usageId="view_Supplier_RatePageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_ProgramPageDef" path="Fragments.Modules.Setup.ProgramPageDef"/>
@@ -18,6 +20,8 @@
     <page id="view_SetupPageDef1" path="Main_Pages.Modules.Setup.SetupPageDef1"/>
     <page id="view_CropsPageDef" path="Fragments.Modules.Setup.CropsPageDef"/>
     <page id="view_ProjectPageDef" path="Fragments.Modules.Setup.ProjectPageDef"/>
+    <page id="view_LibraryPageDef" path="Fragments.Modules.Setup.LibraryPageDef"/>
+    <page id="view_Supplier_RatePageDef" path="Fragments.Modules.Setup.Supplier_RatePageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"
