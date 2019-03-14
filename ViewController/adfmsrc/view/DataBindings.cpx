@@ -57,6 +57,27 @@
                      SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
                      xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
   </dataControlUsages>
+
+    <page path="/WEB-INF/Fragments/Modules/Training/Module_Setup.jsff" usageId="view_Module_SetupPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/Topic_Setup.jsff" usageId="view_Topic_SetupPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/Team_Setup.jsff" usageId="view_Team_SetupPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/Team_Foundation.jsff" usageId="view_Team_FoundationPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/ATT_Detail.jsff" usageId="view_ATT_DetailPageDef"/>
+  
+  <pageDefinitionUsages>
+    <page id="view_Module_SetupPageDef" path="Fragments.Modules.Training.Module_SetupPageDef"/>
+    <page id="view_Topic_SetupPageDef" path="Fragments.Modules.Training.Topic_SetupPageDef"/>
+    <page id="view_Team_SetupPageDef" path="Fragments.Modules.Training.Team_SetupPageDef"/>
+    <page id="view_Team_FoundationPageDef" path="Fragments.Modules.Training.Team_FoundationPageDef"/>
+    <page id="view_ATT_DetailPageDef" path="Fragments.Modules.Training.ATT_DetailPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
 </pageMap>
     
     
