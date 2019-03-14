@@ -21,6 +21,21 @@
     <page path="/WEB-INF/Fragments/Modules/Setup/Supplier.jsff" usageId="view_SupplierPageDef"/>
 >>>>>>> bd9a909d501cd7b4617037f85e2e4c53bda844bd
   
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <page path="/WEB-INF/Fragments/Modules/Clusters_Farmers/Farmer_Registration.jsff"
+          usageId="view_Farmer_RegistrationPageDef"/>
+  
+  <pageDefinitionUsages>
+    <page id="view_Farmer_RegistrationPageDef" path="Fragments.Modules.Clusters_Farmers.Farmer_RegistrationPageDef"/>
+=======
+    <page path="/Main_Pages/Modules/Monitoring/Monitoring.jsf" usageId="view_MonitoringPageDef"/>
+  
+  <pageDefinitionUsages>
+    <page id="view_MonitoringPageDef" path="Main_Pages.Modules.Monitoring.MonitoringPageDef"/>
+  </pageDefinitionUsages>
+>>>>>>> ab03bbce87165e3a8e9821448d7fa9ac93d4ed73
+=======
     <page path="/WEB-INF/Fragments/Modules/Clusters_Farmers/Cluster_Setup.jsff" usageId="view_Cluster_SetupPageDef"/>
     <page path="/WEB-INF/Fragments/Modules/Certification/Certification_Setup.jsff"
           usageId="view_Certification_SetupPageDef"/>
@@ -28,6 +43,7 @@
   <pageDefinitionUsages>
     <page id="view_Cluster_SetupPageDef" path="Fragments.Modules.Clusters_Farmers.Cluster_SetupPageDef"/>
     <page id="view_Certification_SetupPageDef" path="Fragments.Modules.Certification.Certification_SetupPageDef"/>
+>>>>>>> 759133c591732b1e7f2137cabe078d26c75f906c
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"
@@ -36,6 +52,7 @@
                      SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
                      xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
   </dataControlUsages>
+>>>>>>> 759133c591732b1e7f2137cabe078d26c75f906c
 </pageMap>
   <pageDefinitionUsages>
     <page id="view_ProgramPageDef" path="Fragments.Modules.Setup.ProgramPageDef"/>
