@@ -13,6 +13,75 @@
   CustomQuery="false"
   SelectAllAttributes="false"
   PageIterMode="Full">
+<<<<<<< HEAD
+  <ViewAccessor
+    Name="Active_Status1"
+    ViewObjectName="model.LOV.Active_Status"
+    RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="Proj_Comp_IO_LOV1"
+    ViewObjectName="model.LOV.Proj_Comp_IO_LOV"
+    RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="Project_Name_LOV1"
+    ViewObjectName="model.LOV.Project_Name_LOV"
+    RowLevelBinds="true"/>
+  <ListBinding
+    Name="LOV_Ast"
+    ListVOName="Active_Status1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="Ast"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="astDB"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="astView"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+  <ListBinding
+    Name="LOV_Io"
+    ListVOName="Proj_Comp_IO_LOV1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="Io"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="Proj_Comp_IO_DB"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="Proj_Comp_IO_View"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+  <ListBinding
+    Name="LOV_ProjId"
+    ListVOName="Project_Name_LOV1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="ProjId"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="ProjId"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="Name"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+=======
+>>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <EntityUsage
     Name="TblProjComp"
     Entity="model.EO.TblProjComp"/>
@@ -29,7 +98,19 @@
     PrecisionRule="true"
     EntityAttrName="ProjId"
     EntityUsage="TblProjComp"
+<<<<<<< HEAD
+    AliasName="PROJ_ID"
+    LOVName="LOV_ProjId">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
+=======
     AliasName="PROJ_ID"/>
+>>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <ViewAttribute
     Name="Name"
     IsUnique="true"
@@ -44,14 +125,38 @@
     PrecisionRule="true"
     EntityAttrName="Ast"
     EntityUsage="TblProjComp"
+<<<<<<< HEAD
+    AliasName="AST"
+    LOVName="LOV_Ast">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
+=======
     AliasName="AST"/>
+>>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <ViewAttribute
     Name="Io"
     IsNotNull="true"
     PrecisionRule="true"
     EntityAttrName="Io"
     EntityUsage="TblProjComp"
+<<<<<<< HEAD
+    AliasName="IO"
+    LOVName="LOV_Io">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
+=======
     AliasName="IO"/>
+>>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <ViewLinkAccessor
     Name="TblTrainingSchMasterView"
     ViewLink="model.VO.FkTblTrainingSchMasterFkLink"

@@ -13,6 +13,31 @@
   CustomQuery="false"
   SelectAllAttributes="false"
   PageIterMode="Full">
+<<<<<<< HEAD
+  <ViewAccessor
+    Name="Active_Status1"
+    ViewObjectName="model.LOV.Active_Status"
+    RowLevelBinds="true"/>
+  <ListBinding
+    Name="LOV_Ast"
+    ListVOName="Active_Status1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="Ast"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="astDB"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="astView"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+=======
+>>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <EntityUsage
     Name="TblCertification"
     Entity="model.EO.TblCertification"/>
@@ -37,7 +62,19 @@
     PrecisionRule="true"
     EntityAttrName="Ast"
     EntityUsage="TblCertification"
+<<<<<<< HEAD
+    AliasName="AST"
+    LOVName="LOV_Ast">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
+=======
     AliasName="AST"/>
+>>>>>>> 3a34f6acb55b776691ba1f3593166e5c6892b930
   <ViewLinkAccessor
     Name="TblFarmerRegCertView"
     ViewLink="model.VO.Fk2TblFarmerRegCertFkLink"
