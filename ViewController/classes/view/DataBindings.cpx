@@ -19,6 +19,33 @@
     <page path="/WEB-INF/Fragments/Modules/Setup/Farm_Machinery.jsff" usageId="view_Farm_MachineryPageDef"/>
     <page path="/WEB-INF/Fragments/Modules/Setup/Phase.jsff" usageId="view_PhasePageDef"/>
     <page path="/WEB-INF/Fragments/Modules/Setup/Supplier.jsff" usageId="view_SupplierPageDef"/>
+<<<<<<< HEAD
+>>>>>>> bd9a909d501cd7b4617037f85e2e4c53bda844bd
+  
+<<<<<<< HEAD
+<<<<<<
+    <page path="/Main_Pages/Modules/Monitoring/Monitoring.jsf" usageId="view_MonitoringPageDef"/>
+  <pageDefinitionUsages>
+    <page id="view_MonitoringPageDef" path="Main_Pages.Modules.Monitoring.MonitoringPageDef"/>
+  </pageDefinitionUsages>
+=======
+    <page path="/WEB-INF/Fragments/Modules/Clusters_Farmers/Cluster_Setup.jsff" usageId="view_Cluster_SetupPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Certification/Certification_Setup.jsff"
+          usageId="view_Certification_SetupPageDef"/>
+  <pageDefinitionUsages>
+    <page id="view_Cluster_SetupPageDef" path="Fragments.Modules.Clusters_Farmers.Cluster_SetupPageDef"/>
+    <page id="view_Certification_SetupPageDef" path="Fragments.Modules.Certification.Certification_SetupPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+>>>>>>> 759133c591732b1e7f2137cabe078d26c75f906c</pageMap>
+  <pageDefinitionUsages>
+=======
 <page path="/Main_Pages/Modules/Monitoring/Monitoring.jsf" usageId="view_MonitoringPageDef"/>
 
  <page path="/WEB-INF/Fragments/Modules/Clusters_Farmers/Cluster_Setup.jsff" usageId="view_Cluster_SetupPageDef"/>
@@ -38,6 +65,7 @@
     <page id="view_Cluster_SetupPageDef" path="Fragments.Modules.Clusters_Farmers.Cluster_SetupPageDef"/>
     <page id="view_Certification_SetupPageDef" path="Fragments.Modules.Certification.Certification_SetupPageDef"/>
 
+>>>>>>> 6c1b6382f9a5b5e5e065a608a65e416ed8135a4b
     <page id="view_ProgramPageDef" path="Fragments.Modules.Setup.ProgramPageDef"/>
     <page id="view_SetupPageDef" path="Main_Pages.Modules.Setup.SetupPageDef"/>
     <page id="view_SetupPageDef1" path="Main_Pages.Modules.Setup.SetupPageDef1"/>

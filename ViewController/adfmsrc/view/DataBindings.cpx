@@ -27,41 +27,28 @@
 >>>>>>> bd9a909d501cd7b4617037f85e2e4c53bda844bd
   
 <<<<<<< HEAD
-<<<<<<< HEAD
-    <page path="/WEB-INF/Fragments/Modules/Clusters_Farmers/Farmer_Registration.jsff"
-          usageId="view_Farmer_RegistrationPageDef"/>
-  
-  <pageDefinitionUsages>
-    <page id="view_Farmer_RegistrationPageDef" path="Fragments.Modules.Clusters_Farmers.Farmer_RegistrationPageDef"/>
-=======
+<<<<<<
     <page path="/Main_Pages/Modules/Monitoring/Monitoring.jsf" usageId="view_MonitoringPageDef"/>
-  
   <pageDefinitionUsages>
     <page id="view_MonitoringPageDef" path="Main_Pages.Modules.Monitoring.MonitoringPageDef"/>
   </pageDefinitionUsages>
->>>>>>> ab03bbce87165e3a8e9821448d7fa9ac93d4ed73
 =======
     <page path="/WEB-INF/Fragments/Modules/Clusters_Farmers/Cluster_Setup.jsff" usageId="view_Cluster_SetupPageDef"/>
 >>>>>>> eae153d9a7f1dcd11843654d04deb1543b5ba3a0
     <page path="/WEB-INF/Fragments/Modules/Certification/Certification_Setup.jsff"
           usageId="view_Certification_SetupPageDef"/>
-
-    </pageMap>
-    
-    
-    
+<<<<<<< HEAD
+=======
 
     
+    <page path="/WEB-INF/Fragments/Modules/Monitoring/Output_Ind.jsff" usageId="view_Output_IndPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Monitoring/Monitoring_Param.jsff" usageId="view_Monitoring_ParamPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/Training_Setup.jsff" usageId="view_Training_SetupPageDef"/>
   
   <pageDefinitionUsages>
-    <page id="view_MonitoringPageDef" path="Main_Pages.Modules.Monitoring.MonitoringPageDef"/>
-  
-    <page id="view_Cluster_SetupPageDef" path="Fragments.Modules.Clusters_Farmers.Cluster_SetupPageDef"/>
-    <page id="view_Certification_SetupPageDef" path="Fragments.Modules.Certification.Certification_SetupPageDef"/>
-<<<<<<< HEAD
-
-=======
->>>>>>> 759133c591732b1e7f2137cabe078d26c75f906c
+    <page id="view_Output_IndPageDef" path="Fragments.Modules.Monitoring.Output_IndPageDef"/>
+    <page id="view_Monitoring_ParamPageDef" path="Fragments.Modules.Monitoring.Monitoring_ParamPageDef"/>
+    <page id="view_Training_SetupPageDef" path="Fragments.Modules.Training.Training_SetupPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model"
@@ -70,8 +57,74 @@
                      SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
                      xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
   </dataControlUsages>
->>>>>>> 759133c591732b1e7f2137cabe078d26c75f906c
+
+    <page path="/WEB-INF/Fragments/Modules/Training/Module_Setup.jsff" usageId="view_Module_SetupPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/Topic_Setup.jsff" usageId="view_Topic_SetupPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/Team_Setup.jsff" usageId="view_Team_SetupPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/Team_Foundation.jsff" usageId="view_Team_FoundationPageDef"/>
+    <page path="/WEB-INF/Fragments/Modules/Training/ATT_Detail.jsff" usageId="view_ATT_DetailPageDef"/>
+  
+  <pageDefinitionUsages>
+    <page id="view_Module_SetupPageDef" path="Fragments.Modules.Training.Module_SetupPageDef"/>
+    <page id="view_Topic_SetupPageDef" path="Fragments.Modules.Training.Topic_SetupPageDef"/>
+    <page id="view_Team_SetupPageDef" path="Fragments.Modules.Training.Team_SetupPageDef"/>
+    <page id="view_Team_FoundationPageDef" path="Fragments.Modules.Training.Team_FoundationPageDef"/>
+    <page id="view_ATT_DetailPageDef" path="Fragments.Modules.Training.ATT_DetailPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
 </pageMap>
+    
+    
+    
+
+    
+  
+>>>>>>> 6c1b6382f9a5b5e5e065a608a65e416ed8135a4b
+  <pageDefinitionUsages>
+    <page id="view_MonitoringPageDef" path="Main_Pages.Modules.Monitoring.MonitoringPageDef"/>
+  
+    <page id="view_Cluster_SetupPageDef" path="Fragments.Modules.Clusters_Farmers.Cluster_SetupPageDef"/>
+    <page id="view_Certification_SetupPageDef" path="Fragments.Modules.Certification.Certification_SetupPageDef"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 759133c591732b1e7f2137cabe078d26c75f906c
+>>>>>>> 6c1b6382f9a5b5e5e065a608a65e416ed8135a4b
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+<<<<<<< HEAD
+>>>>>>> 759133c591732b1e7f2137cabe078d26c75f906c</pageMap>
+=======
+>>>>>>> 759133c591732b1e7f2137cabe078d26c75f906c
+
+    <page path="/WEB-INF/Fragments/Modules/Monitoring/Project_Comp.jsff" usageId="view_Project_CompPageDef"/>
+  
+  <pageDefinitionUsages>
+    <page id="view_Project_CompPageDef" path="Fragments.Modules.Monitoring.Project_CompPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</pageMap>
+>>>>>>> 6c1b6382f9a5b5e5e065a608a65e416ed8135a4b
   <pageDefinitionUsages>
 >>>>>>> eae153d9a7f1dcd11843654d04deb1543b5ba3a0
     <page id="view_ProgramPageDef" path="Fragments.Modules.Setup.ProgramPageDef"/>
