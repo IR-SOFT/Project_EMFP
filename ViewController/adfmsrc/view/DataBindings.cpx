@@ -30,13 +30,19 @@
         <page path="/WEB-INF/Fragments/Modules/Training/Module_Setup.jsff" usageId="view_Module_SetupPageDef"/>
         <page path="/WEB-INF/Fragments/Modules/Training/Topic_Setup.jsff" usageId="view_Topic_SetupPageDef"/>
         <page path="/WEB-INF/Fragments/Modules/Training/Team_Setup.jsff" usageId="view_Team_SetupPageDef"/>
-        <page path="/WEB-INF/Fragments/Modules/Training/Team_Foundation.jsff" usageId="view_Team_FoundationPageDef"/>
+        <page path="/WEB-INF/Fragments/Modules/Training/Team_Formation.jsff" usageId="view_Team_FoundationPageDef"/>
         <page path="/WEB-INF/Fragments/Modules/Training/ATT_Detail.jsff" usageId="view_ATT_DetailPageDef"/>
         <page path="/WEB-INF/Fragments/Modules/Monitoring/Output_Ind.jsff" usageId="view_Output_IndPageDef"/>
         <page path="/WEB-INF/Fragments/Modules/Monitoring/Monitoring_Param.jsff"
               usageId="view_Monitoring_ParamPageDef"/>
         <page path="/WEB-INF/Fragments/Modules/Training/Training_Setup.jsff" usageId="view_Training_SetupPageDef"/>
         <page path="/WEB-INF/Fragments/Modules/Monitoring/Project_Comp.jsff" usageId="view_Project_CompPageDef"/>
+        <page path="/Main_Pages/Modules/Grants/Grants.jsf" usageId="view_GrantsPageDef"/>
+        <page path="/Main_Pages/Dashboard.jsf" usageId="view_DashboardPageDef"/>
+        <page path="/Main_Pages/Modules/Training/Training.jsf" usageId="view_TrainingPageDef"/>
+        <page path="/Main_Pages/Modules/Certification/Certification.jsf" usageId="view_CertificationPageDef"/>
+        <page path="/Main_Pages/Modules/Clusters_Farmers/Cluster_Farmer.jsf" usageId="view_Cluster_FarmerPageDef"/>
+	<page path="/WEB-INF/Fragments/Modules/Training/Trainer.jsff" usageId="view_TrainerPageDef"/>
     </pageMap>
     <pageDefinitionUsages>
         <page id="view_Farmer_RegistrationPageDef"
@@ -64,6 +70,12 @@
         <page id="view_Monitoring_ParamPageDef" path="Fragments.Modules.Monitoring.Monitoring_ParamPageDef"/>
         <page id="view_Training_SetupPageDef" path="Fragments.Modules.Training.Training_SetupPageDef"/>
         <page id="view_Project_CompPageDef" path="Fragments.Modules.Monitoring.Project_CompPageDef"/>
+        <page id="view_GrantsPageDef" path="Main_Pages.Modules.Grants.GrantsPageDef"/>
+        <page id="view_DashboardPageDef" path="Main_Pages.DashboardPageDef"/>
+        <page id="view_TrainingPageDef" path="Main_Pages.Modules.Training.TrainingPageDef"/>
+        <page id="view_CertificationPageDef" path="Main_Pages.Modules.Certification.CertificationPageDef"/>
+        <page id="view_Cluster_FarmerPageDef" path="Main_Pages.Modules.Clusters_Farmers.Cluster_FarmerPageDef"/>
+	<page id="view_TrainerPageDef" path="Fragments.Modules.Training.TrainerPageDef"/>
     </pageDefinitionUsages>
     <dataControlUsages>
         <BC4JDataControl id="AppModuleDataControl" Package="model"
