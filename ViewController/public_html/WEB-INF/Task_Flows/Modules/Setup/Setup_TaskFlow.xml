@@ -5,6 +5,7 @@
     <data-control-scope>
       <shared/>
     </data-control-scope>
+    
     <view id="Program">
       <page>/WEB-INF/Fragments/Modules/Setup/Program.jsff</page>
     </view>
@@ -34,7 +35,6 @@
     </view>
     <view id="Setup">
       <page>/WEB-INF/Fragments/Modules/Setup/Main_Setup.jsff</page>
-    </view>
-    <use-page-fragments/>
+    </view><use-page-fragments/>
   </task-flow-definition>
 </adfc-config>

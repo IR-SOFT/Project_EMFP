@@ -9,17 +9,17 @@
       <property
          name="page">/WEB-INF/Fragments/Modules/Training/Training_Setup.jsff</property>
       <property
-         name="start">true</property>
+         name="start">false</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>Training_Setup&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>Training_Setup&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
          name="exceptionHandler">false</property>
       <property
          name="y">102.24707</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">76.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View3">
@@ -32,11 +32,11 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">153.89648</property>
+         name="y">268.1953</property>
+      <property
+         name="x">106.0</property>
       <property
          name="pageFragment">true</property>
-      <property
-         name="x">176.0</property>
    </View>
    <View
       id="View4">
@@ -49,11 +49,11 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">214.19531</property>
+         name="y">274.49414</property>
+      <property
+         name="x">228.0</property>
       <property
          name="pageFragment">true</property>
-      <property
-         name="x">256.0</property>
    </View>
    <View
       id="View5">
@@ -68,9 +68,9 @@
       <property
          name="y">274.59766</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">339.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View6">
@@ -85,9 +85,9 @@
       <property
          name="y">322.1953</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">414.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View7">
@@ -102,9 +102,9 @@
       <property
          name="y">381.59766</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">490.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View8">
@@ -119,9 +119,9 @@
       <property
          name="y">457.84473</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">391.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View9">
@@ -136,8 +136,27 @@
       <property
          name="y">514.5459</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">270.0</property>
+      <property
+         name="pageFragment">true</property>
+   </View>
+   <View
+      id="View10">
+      <property
+         name="activityId">Training</property>
+      <property
+         name="page">/WEB-INF/Fragments/Modules/Training/Training.jsff</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>Training&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">94.59766</property>
+      <property
+         name="x">340.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
 </SDM>
