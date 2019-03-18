@@ -5,20 +5,20 @@
    <View
       id="View2">
       <property
-         name="activityId">Certification_Setup</property>
+         name="activityId">Certification</property>
       <property
-         name="page">/WEB-INF/Fragments/Modules/Certification/Certification_Setup.jsff</property>
+         name="page">/WEB-INF/Fragments/Modules/Certification/Certification.jsff</property>
       <property
          name="start">true</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>Certification_Setup&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>Certification&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">184.24707</property>
-      <property
-         name="x">182.0</property>
+         name="y">284.5459</property>
       <property
          name="pageFragment">true</property>
+      <property
+         name="x">313.0</property>
    </View>
 </SDM>

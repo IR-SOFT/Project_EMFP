@@ -17,9 +17,9 @@
       <property
          name="y">119.24707</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">134.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View3">
@@ -34,9 +34,9 @@
       <property
          name="y">182.59766</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">240.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View4">
@@ -51,9 +51,9 @@
       <property
          name="y">246.59766</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">332.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View5">
@@ -68,9 +68,9 @@
       <property
          name="y">313.24707</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">423.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View6">
@@ -85,9 +85,9 @@
       <property
          name="y">375.1953</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">506.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View7">
@@ -104,9 +104,9 @@
       <property
          name="y">477.59766</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">417.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View8">
@@ -121,9 +121,9 @@
       <property
          name="y">560.2471</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">331.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View9">
@@ -138,9 +138,9 @@
       <property
          name="y">609.59766</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">241.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View10">
@@ -155,9 +155,9 @@
       <property
          name="y">668.2988</property>
       <property
-         name="pageFragment">true</property>
-      <property
          name="x">136.0</property>
+      <property
+         name="pageFragment">true</property>
    </View>
    <View
       id="View11">
@@ -172,10 +172,10 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">2.2988281</property>
-      <property
-         name="x">-17.0</property>
+         name="y">-137.10352</property>
       <property
          name="pageFragment">true</property>
+      <property
+         name="x">-79.0</property>
    </View>
 </SDM>
