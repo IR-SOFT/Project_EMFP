@@ -2,13 +2,13 @@
 <ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
     <af:panelAccordion discloseMany="false" id="pa1">
         <af:showDetailItem id="pane1">
-            
-            <af:panelGridLayout id="pgl1" inlineStyle="margin-top: 5%">
-                <!--<af:gridRow marginTop="5px" height="auto" id="gr1">
+            <af:button text="wo aya dashboard" id="b1"/>
+            <!--<af:panelGridLayout id="pgl1" inlineStyle="margin-top: 5%">
+                --><!--<af:gridRow marginTop="5px" height="auto" id="gr1">
                     <af:gridCell marginStart="5px" width="34%" id="gc1"/>
                     <af:gridCell marginStart="5px" width="33%" id="gc2"/>
                     <af:gridCell marginStart="5px" width="33%" marginEnd="5px" id="gc3"/>
-                </af:gridRow>-->
+                </af:gridRow>--><!--
                 <af:gridRow marginTop="5px" height="auto" id="gr2">
                     <af:gridCell marginStart="5px" width="34%" id="gc4"/>
                     <af:gridCell marginStart="5px" width="33%" id="gc5">
@@ -32,16 +32,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr41">
                                 <af:gridCell marginStart="5px" width="34%" id="gc91" halign="center" valign="middle">
-                                    <af:link id="l6" icon="#{resource['images:dash_management.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Management_Click}"/>
+                                    <af:link id="l6" icon="#{resource['images:dash_management.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc92">
                                     <af:panelGridLayout id="pgl13" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr42">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc93">
                                                 <af:link text="Management" id="l17"
-                                                         inlineStyle="font-size:x-large; color: #008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Management_Click}"/>
+                                                         inlineStyle="font-size:x-large; color: #008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr43">
@@ -73,16 +71,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr29">
                                 <af:gridCell marginStart="5px" width="34%" id="gc67" halign="center" valign="middle">
-                                    <af:link id="l7" icon="#{resource['images:dash_infrastructure.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Infrastructure_Click}"/>
+                                    <af:link id="l7" icon="#{resource['images:dash_infrastructure.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc68">
                                     <af:panelGridLayout id="pgl9" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr30">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc69">
                                                 <af:link text="Infrastructure" id="l18"
-                                                         inlineStyle="font-size:x-large; color: #008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Infrastructure_Click}"/>
+                                                         inlineStyle="font-size:x-large; color: #008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr31">
@@ -161,16 +157,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr53">
                                 <af:gridCell marginStart="5px" width="34%" id="gc115" halign="center" valign="middle">
-                                    <af:link id="l9" icon="#{resource['images:main_farmer.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Cluster_Click}"/>
+                                    <af:link id="l9" icon="#{resource['images:main_farmer.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc116">
                                     <af:panelGridLayout id="pgl17" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr54">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc117">
                                                 <af:link text="Clusters" id="l4"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Cluster_Click}"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr55">
@@ -202,16 +196,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr17">
                                 <af:gridCell marginStart="5px" width="34%" id="gc42" halign="center" valign="middle">
-                                    <af:link id="l10" icon="#{resource['images:dash_training.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Training_Click}"/>
+                                    <af:link id="l10" icon="#{resource['images:dash_training.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc43">
                                     <af:panelGridLayout id="pgl5" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr18">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc45">
                                                 <af:link text="Training" id="l2"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Training_Click}"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr19">
@@ -243,16 +235,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr59">
                                 <af:gridCell marginStart="5px" width="34%" id="gc127" halign="center" valign="middle">
-                                    <af:link id="l11" icon="#{resource['images:main_monitoring.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Monitoring_Click}"/>
+                                    <af:link id="l11" icon="#{resource['images:main_monitoring.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc128">
                                     <af:panelGridLayout id="pgl19" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr60">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc129">
                                                 <af:link text="Monitoring" id="l19"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Monitoring_Click}"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr61">
@@ -291,16 +281,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr71">
                                 <af:gridCell marginStart="5px" width="34%" id="gc154" halign="center" valign="middle">
-                                    <af:link id="l12" icon="#{resource['images:main_grants.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Grant_Click}"/>
+                                    <af:link id="l12" icon="#{resource['images:main_grants.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc155">
                                     <af:panelGridLayout id="pgl23" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr72">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc156">
                                                 <af:link text="Grants" id="l20"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Grant_Click}"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr73">
@@ -332,16 +320,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr23">
                                 <af:gridCell marginStart="5px" width="34%" id="gc55" halign="center" valign="middle">
-                                    <af:link id="l13" icon="#{resource['images:dash_certificate.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Certification_Click}"/>
+                                    <af:link id="l13" icon="#{resource['images:dash_certificate.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc56">
                                     <af:panelGridLayout id="pgl7" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr24">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc57">
                                                 <af:link text="Certification" id="l3"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Certification_Click}"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr25">
@@ -373,16 +359,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr35">
                                 <af:gridCell marginStart="5px" width="34%" id="gc79" halign="center" valign="middle">
-                                    <af:link id="l14" icon="#{resource['images:dash_marketing.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Marketing_Click}"/>
+                                    <af:link id="l14" icon="#{resource['images:dash_marketing.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc80">
                                     <af:panelGridLayout id="pgl11" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr36">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc81">
                                                 <af:link text="Marketing" id="l5"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Marketing_Click}"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr37">
@@ -421,16 +405,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr68">
                                 <af:gridCell marginStart="5px" width="34%" id="gc147" halign="center" valign="middle">
-                                    <af:link id="l15" icon="#{resource['images:main_financial.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Financial_Click}"/>
+                                    <af:link id="l15" icon="#{resource['images:main_financial.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc146">
                                     <af:panelGridLayout id="pgl20" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr67">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc145">
                                                 <af:link text="Financial" id="l21"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Financial_Click}"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr83">
@@ -462,16 +444,14 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr47">
                                 <af:gridCell marginStart="5px" width="34%" id="gc103" halign="center" valign="middle">
-                                    <af:link id="l16" icon="#{resource['images:dash_reports.png']}"
-                                             actionListener="#{viewScope.DashboardBean.Report_Click}"/>
+                                    <af:link id="l16" icon="#{resource['images:dash_reports.png']}"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc104">
                                     <af:panelGridLayout id="pgl15" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr48">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc105">
                                                 <af:link text="Reports" id="l22"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
-                                                         actionListener="#{viewScope.DashboardBean.Report_Click}"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr49">
@@ -506,7 +486,7 @@
                     <af:gridCell marginStart="5px" width="33%" id="gc143"/>
                     <af:gridCell marginStart="5px" width="33%" marginEnd="5px" id="gc144"/>
                 </af:gridRow>
-            </af:panelGridLayout>
+            </af:panelGridLayout>-->
      
         </af:showDetailItem>
     </af:panelAccordion>

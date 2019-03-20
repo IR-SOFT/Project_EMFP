@@ -52,29 +52,51 @@
     EntityAttrName="Ast"
     EntityUsage="TblPhase"
     AliasName="AST"/>
+  <ViewAttribute
+    Name="IntlCert"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="IntlCert"
+    EntityUsage="TblPhase"
+    AliasName="INTL_CERT"/>
+  <ViewAttribute
+    Name="GlobalGapCert"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="GlobalGapCert"
+    EntityUsage="TblPhase"
+    AliasName="GLOBAL_GAP_CERT"/>
+  <ViewAttribute
+    Name="DomExpo"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="DomExpo"
+    EntityUsage="TblPhase"
+    AliasName="DOM_EXPO"/>
+  <ViewAttribute
+    Name="DomMarIntv"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="DomMarIntv"
+    EntityUsage="TblPhase"
+    AliasName="DOM_MAR_INTV"/>
+  <ViewAttribute
+    Name="IntlExpo"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="IntlExpo"
+    EntityUsage="TblPhase"
+    AliasName="INTL_EXPO"/>
+  <ViewAttribute
+    Name="IntlPromCamp"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="IntlPromCamp"
+    EntityUsage="TblPhase"
+    AliasName="INTL_PROM_CAMP"/>
   <ViewLinkAccessor
-    Name="TblGrantRateView"
-    ViewLink="model.VO.FkTblGrantRateFkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblCourseView"
-    ViewLink="model.VO.Fk3TblCourseFkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblOutputIndView"
-    ViewLink="model.VO.Fk3TblOutputIndFkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblClusterView"
-    ViewLink="model.VO.Fk9TblClusterFkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblTeamView"
-    ViewLink="model.VO.Fk3TblTeamFkLink"
+    Name="TblPhasePlanView"
+    ViewLink="model.VO.FkTblPhasePlanFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

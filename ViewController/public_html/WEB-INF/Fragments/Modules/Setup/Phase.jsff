@@ -172,6 +172,17 @@
                                             <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5"/>
                                             </af:gridRow>
+                                            <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr1">
+                                                <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc1">
+                        <af:panelTabbed position="above" id="pt1" inlineStyle="width:1007px;">
+                            <af:showDetailItem id="tab2" text="Tab Label 2"/>
+                            <af:showDetailItem text="showDetailItem 3" id="sdi1"/>
+                        </af:panelTabbed>
+                    </af:gridCell>
+                                            </af:gridRow>
+                                            <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr5">
+                                                <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc3"/>
+                                            </af:gridRow>
                                         </af:panelGridLayout>
                                     </af:showDetailItem>
                                 </af:panelAccordion>

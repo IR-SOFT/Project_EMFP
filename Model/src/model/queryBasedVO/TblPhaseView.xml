@@ -16,7 +16,13 @@
        TblPhase.NAME,
        TblPhase.START_DATE,
        TblPhase.END_DATE,
-       TblPhase.AST
+       TblPhase.AST,
+       TblPhase.INTL_CERT,
+       TblPhase.GLOBAL_GAP_CERT,
+       TblPhase.DOM_EXPO,
+       TblPhase.DOM_MAR_INTV,
+       TblPhase.INTL_EXPO,
+       TblPhase.INTL_PROM_CAMP
 FROM TBL_PHASE TblPhase]]></SQLQuery>
   <ViewAttribute
     Name="PhaseId"
@@ -83,32 +89,78 @@ FROM TBL_PHASE TblPhase]]></SQLQuery>
       <Attr Name="_DisplaySize" Value="1"/>
     </DesignTime>
   </ViewAttribute>
+  <ViewAttribute
+    Name="IntlCert"
+    IsUpdateable="false"
+    IsPersistent="false"
+    IsNotNull="true"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="INTL_CERT"
+    Expression="INTL_CERT"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="GlobalGapCert"
+    IsUpdateable="false"
+    IsPersistent="false"
+    IsNotNull="true"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="GLOBAL_GAP_CERT"
+    Expression="GLOBAL_GAP_CERT"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="DomExpo"
+    IsUpdateable="false"
+    IsPersistent="false"
+    IsNotNull="true"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="DOM_EXPO"
+    Expression="DOM_EXPO"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="DomMarIntv"
+    IsUpdateable="false"
+    IsPersistent="false"
+    IsNotNull="true"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="DOM_MAR_INTV"
+    Expression="DOM_MAR_INTV"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="IntlExpo"
+    IsUpdateable="false"
+    IsPersistent="false"
+    IsNotNull="true"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="INTL_EXPO"
+    Expression="INTL_EXPO"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="IntlPromCamp"
+    IsUpdateable="false"
+    IsPersistent="false"
+    IsNotNull="true"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="INTL_PROM_CAMP"
+    Expression="INTL_PROM_CAMP"
+    SQLType="NUMERIC"/>
   <AttrArray Name="KeyAttributes">
     <Item Value="PhaseId"/>
   </AttrArray>
   <ViewLinkAccessor
-    Name="TblClusterView"
-    ViewLink="model.queryBasedVO.Fk9TblClusterFkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblCourseView"
-    ViewLink="model.queryBasedVO.Fk3TblCourseFkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblGrantRateView"
-    ViewLink="model.queryBasedVO.FkTblGrantRateFkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblOutputIndView"
-    ViewLink="model.queryBasedVO.Fk3TblOutputIndFkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblTeamView"
-    ViewLink="model.queryBasedVO.Fk3TblTeamFkLink"
+    Name="TblPhasePlanView"
+    ViewLink="model.queryBasedVO.FkTblPhasePlanFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>
