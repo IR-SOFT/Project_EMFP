@@ -50,7 +50,7 @@
       </AttrNames>
     </attributeValues>
     <list IterBinding="TblFarmerRegView1Iterator" StaticList="false" Uses="LOV_MarStatus" id="MarStatus"
-          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+          DTSupportsMRU="true" SelectItemValueMode="ListObject"/>
     <attributeValues IterBinding="TblFarmerRegView1Iterator" id="Dob">
       <AttrNames>
         <Item Value="Dob"/>
@@ -218,5 +218,10 @@
             Action="iteratorExecute"/>
     <action IterBinding="TblFarmerRegOwnershipView3Iterator" id="Delete5" RequiresUpdateModel="false"
             Action="removeCurrentRow"/>
+    <attributeValues IterBinding="TblFarmerRegView1Iterator" id="Image">
+      <AttrNames>
+        <Item Value="Image"/>
+      </AttrNames>
+    </attributeValues>
   </bindings>
 </pageDefinition>

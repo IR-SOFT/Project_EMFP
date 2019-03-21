@@ -275,7 +275,18 @@
                                                                               id="it15" contentStyle="width:250px">
                                                                     <f:validator binding="#{bindings.PerAddress.validator}"/>
                                                                 </af:inputText>
-                                                                <f:facet name="footer">
+                                    <af:inputText value="#{bindings.Image.inputValue}"
+                                                  label="Image"
+                                                  required="#{bindings.Image.hints.mandatory}"
+                                                  columns="#{bindings.Image.hints.displayWidth}"
+                                                  maximumLength="#{bindings.Image.hints.precision}"
+                                                  shortDesc="#{bindings.Image.hints.tooltip}" id="it66">
+                                        <f:validator binding="#{bindings.Image.validator}"/>
+                                    </af:inputText>
+                                    <af:inputFile label="Upload Image" id="if1" value="#{FileManagementBean.file}"/>
+                                    <af:button text="button 1" id="b2"
+                                               actionListener="#{FileManagementBean.FileUpload}"/>
+                                    <f:facet name="footer">
                                                                     <af:panelGroupLayout id="pgl3">
                                                                         <af:panelGroupLayout layout="horizontal"
                                                                                              id="pgl4">
@@ -1305,4 +1316,5 @@
                                         </af:panelGridLayout>
                                     </af:showDetailItem>
                                 </af:panelAccordion>
+    <!--oracle-jdev-comment:preferred-managed-bean-name:Upld_Dwnd_File_Bean-->
 </ui:composition>

@@ -5,6 +5,12 @@
     <data-control-scope>
       <shared/>
     </data-control-scope>
+   
+    <managed-bean id="__1">
+      <managed-bean-name>FileManagementBean</managed-bean-name>
+      <managed-bean-class>view.FileManagement</managed-bean-class>
+      <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
     <view id="Cluster_Setup">
       <page>/WEB-INF/Fragments/Modules/Clusters_Farmers/Cluster_Setup.jsff</page>
     </view>
