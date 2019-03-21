@@ -13,6 +13,72 @@
   CustomQuery="false"
   SelectAllAttributes="false"
   PageIterMode="Full">
+  <ViewAccessor
+    Name="Crops_Name_LOV1"
+    ViewObjectName="model.LOV.Crops_Name_LOV"
+    RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="City_Name_LOV1"
+    ViewObjectName="model.LOV.City_Name_LOV"
+    RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="District_Name_LOV1"
+    ViewObjectName="model.LOV.District_Name_LOV"
+    RowLevelBinds="true"/>
+  <ListBinding
+    Name="LOV_CropId"
+    ListVOName="Crops_Name_LOV1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="CropId"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="CropId"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="Name"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+  <ListBinding
+    Name="LOV_CityLibrDetail"
+    ListVOName="City_Name_LOV1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="CityLibrDetail"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="LibrDetailId"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="Name"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+  <ListBinding
+    Name="LOV_DistrictLibrDetail"
+    ListVOName="District_Name_LOV1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="DistrictLibrDetail"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="LibrDetailId"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="Name"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
   <EntityUsage
     Name="TblPhasePlan"
     Entity="model.EO.TblPhasePlan"/>
@@ -36,21 +102,45 @@
     PrecisionRule="true"
     EntityAttrName="CropId"
     EntityUsage="TblPhasePlan"
-    AliasName="CROP_ID"/>
+    AliasName="CROP_ID"
+    LOVName="LOV_CropId">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="CityLibrDetail"
     IsNotNull="true"
     PrecisionRule="true"
     EntityAttrName="CityLibrDetail"
     EntityUsage="TblPhasePlan"
-    AliasName="CITY_LIBR_DETAIL"/>
+    AliasName="CITY_LIBR_DETAIL"
+    LOVName="LOV_CityLibrDetail">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="DistrictLibrDetail"
     IsNotNull="true"
     PrecisionRule="true"
     EntityAttrName="DistrictLibrDetail"
     EntityUsage="TblPhasePlan"
-    AliasName="DISTRICT_LIBR_DETAIL"/>
+    AliasName="DISTRICT_LIBR_DETAIL"
+    LOVName="LOV_DistrictLibrDetail">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="TargetArea"
     IsNotNull="true"

@@ -12,13 +12,14 @@
   BindingStyle="OracleName">
   <Attribute
     Name="RoleDetailModulesId"
-    IsNotNull="true"
     ColumnName="ROLE_DETAIL_MODULES_ID"
     SQLType="NUMERIC"
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
     TableName="TBL_ROLE_DETAIL_MODULES"
-    PrimaryKey="true"/>
+    PrimaryKey="true"
+    RetrievedOnInsert="true"
+    RetrievedOnUpdate="true"/>
   <Attribute
     Name="RoleMasterId"
     IsNotNull="true"

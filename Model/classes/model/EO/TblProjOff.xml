@@ -12,13 +12,14 @@
   BindingStyle="OracleName">
   <Attribute
     Name="ProjOffId"
-    IsNotNull="true"
     ColumnName="PROJ_OFF_ID"
     SQLType="NUMERIC"
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
     TableName="TBL_PROJ_OFF"
-    PrimaryKey="true"/>
+    PrimaryKey="true"
+    RetrievedOnInsert="true"
+    RetrievedOnUpdate="true"/>
   <Attribute
     Name="ProjId"
     IsNotNull="true"
