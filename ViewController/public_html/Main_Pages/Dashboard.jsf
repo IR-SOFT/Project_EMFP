@@ -16,7 +16,7 @@
                     <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
                         <af:panelGroupLayout layout="scroll" id="pgl2">
                             <!-- Content -->
-                            <af:region value="#{bindings.dynamicRegion1.regionModel}" id="r1"/>
+                            <af:region value="#{bindings.Dashboard_TaskFlow1.regionModel}" id="r1"/>
                         </af:panelGroupLayout>
                     </af:gridCell>
                 </af:gridRow>

@@ -36,9 +36,4 @@
     <managed-bean-scope>backingBean</managed-bean-scope>
     <!--oracle-jdev-comment:managed-bean-jsp-link:1Main_Pages/Login.jsf-->
   </managed-bean>
-  <managed-bean id="__4">
-    <managed-bean-name>DashboardBean</managed-bean-name>
-    <managed-bean-class>view.Dashboard</managed-bean-class>
-    <managed-bean-scope>view</managed-bean-scope>
-  </managed-bean>
 </adfc-config>
