@@ -164,17 +164,18 @@
                                                                     <f:validator binding="#{bindings.Gender.validator}"/>
                                                                 </af:selectOneChoice>
                                                                 
-                                                                <af:selectOneChoice value="#{bindings.MarStatus1.inputValue}"
+                                                                <af:selectOneChoice value="#{bindings.MarStatus.inputValue}"
                                                                                     label="Marital Status"
-                                                                                    required="#{bindings.MarStatus1.hints.mandatory}"
-                                                                                    shortDesc="#{bindings.MarStatus1.hints.tooltip}"
+                                                                                    required="#{bindings.MarStatus.hints.mandatory}"
+                                                                                    shortDesc="#{bindings.MarStatus.hints.tooltip}"
                                                                                     id="soc5"
                                                                                     contentStyle="width:200px">
-                                                                    <f:selectItems value="#{bindings.MarStatus1.items}"
+                                                                    <f:selectItems value="#{bindings.MarStatus.items}"
                                                                                    id="si5"/>
-                                                                    <f:validator binding="#{bindings.MarStatus1.validator}"/>
+                                                                    <f:validator binding="#{bindings.MarStatus.validator}"/>
                                                                 </af:selectOneChoice>
-                                                                <af:inputDate value="#{bindings.Dob.inputValue}"
+                                    
+                                    <af:inputDate value="#{bindings.Dob.inputValue}"
                                                                               label="DOB"
                                                                               required="#{bindings.Dob.hints.mandatory}"
                                                                               columns="#{bindings.Dob.hints.displayWidth}"

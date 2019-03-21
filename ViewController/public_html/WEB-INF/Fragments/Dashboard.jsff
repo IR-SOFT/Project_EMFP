@@ -2,13 +2,12 @@
 <ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
     <af:panelAccordion discloseMany="false" id="pa1">
         <af:showDetailItem id="pane1">
-            <af:button text="wo aya dashboard" id="b1"/>
-            <!--<af:panelGridLayout id="pgl1" inlineStyle="margin-top: 5%">
-                --><!--<af:gridRow marginTop="5px" height="auto" id="gr1">
+             <af:panelGridLayout id="pgl1">
+                <!--<af:gridRow marginTop="5px" height="auto" id="gr1">
                     <af:gridCell marginStart="5px" width="34%" id="gc1"/>
                     <af:gridCell marginStart="5px" width="33%" id="gc2"/>
                     <af:gridCell marginStart="5px" width="33%" marginEnd="5px" id="gc3"/>
-                </af:gridRow>--><!--
+                </af:gridRow>-->
                 <af:gridRow marginTop="5px" height="auto" id="gr2">
                     <af:gridCell marginStart="5px" width="34%" id="gc4"/>
                     <af:gridCell marginStart="5px" width="33%" id="gc5">
@@ -110,7 +109,8 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr11">
                                 <af:gridCell marginStart="5px" width="34%" id="gc31" halign="center" valign="middle">
-                                    <af:link id="l8" icon="#{resource['images:dash_setup.png']}"/>
+                                    <af:link id="l8" icon="#{resource['images:dash_setup.png']}"
+                                             destination="/faces/Main_Pages/Modules/Setup/Setup.jsf"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc32">
                                     <af:panelGridLayout id="pgl3" inlineStyle="width:175px;">
@@ -118,7 +118,7 @@
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc36">
                                                 <af:link text="Setup" id="l1"
                                                          inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
-                                                         action=""/>
+                                                         destination="/faces/Main_Pages/Modules/Setup/Setup.jsf"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr14">
@@ -157,14 +157,16 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr53">
                                 <af:gridCell marginStart="5px" width="34%" id="gc115" halign="center" valign="middle">
-                                    <af:link id="l9" icon="#{resource['images:main_farmer.png']}"/>
+                                    <af:link id="l9" icon="#{resource['images:main_farmer.png']}"
+                                             destination="/faces/Main_Pages/Modules/Clusters_Farmers/Cluster_Farmer.jsf"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc116">
                                     <af:panelGridLayout id="pgl17" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr54">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc117">
                                                 <af:link text="Clusters" id="l4"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
+                                                         destination="/faces/Main_Pages/Modules/Clusters_Farmers/Cluster_Farmer.jsf"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr55">
@@ -196,14 +198,16 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr17">
                                 <af:gridCell marginStart="5px" width="34%" id="gc42" halign="center" valign="middle">
-                                    <af:link id="l10" icon="#{resource['images:dash_training.png']}"/>
+                                    <af:link id="l10" icon="#{resource['images:dash_training.png']}"
+                                             destination="/faces/Main_Pages/Modules/Training/Training.jsf"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc43">
                                     <af:panelGridLayout id="pgl5" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr18">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc45">
                                                 <af:link text="Training" id="l2"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
+                                                         destination="/faces/Main_Pages/Modules/Training/Training.jsf"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr19">
@@ -235,14 +239,16 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr59">
                                 <af:gridCell marginStart="5px" width="34%" id="gc127" halign="center" valign="middle">
-                                    <af:link id="l11" icon="#{resource['images:main_monitoring.png']}"/>
+                                    <af:link id="l11" icon="#{resource['images:main_monitoring.png']}"
+                                             destination="/faces/Main_Pages/Modules/Monitoring/Monitoring.jsf"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc128">
                                     <af:panelGridLayout id="pgl19" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr60">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc129">
                                                 <af:link text="Monitoring" id="l19"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
+                                                         destination="/faces/Main_Pages/Modules/Monitoring/Monitoring.jsf"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr61">
@@ -281,14 +287,16 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr71">
                                 <af:gridCell marginStart="5px" width="34%" id="gc154" halign="center" valign="middle">
-                                    <af:link id="l12" icon="#{resource['images:main_grants.png']}"/>
+                                    <af:link id="l12" icon="#{resource['images:main_grants.png']}"
+                                             destination="/faces/Main_Pages/Modules/Grants/Grants.jsf"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc155">
                                     <af:panelGridLayout id="pgl23" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr72">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc156">
                                                 <af:link text="Grants" id="l20"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
+                                                         destination="/faces/Main_Pages/Modules/Grants/Grants.jsf"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr73">
@@ -320,14 +328,16 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr23">
                                 <af:gridCell marginStart="5px" width="34%" id="gc55" halign="center" valign="middle">
-                                    <af:link id="l13" icon="#{resource['images:dash_certificate.png']}"/>
+                                    <af:link id="l13" icon="#{resource['images:dash_certificate.png']}"
+                                             destination="/faces/Main_Pages/Modules/Certification/Certification.jsf"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc56">
                                     <af:panelGridLayout id="pgl7" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr24">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc57">
                                                 <af:link text="Certification" id="l3"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
+                                                         destination="/faces/Main_Pages/Modules/Certification/Certification.jsf"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr25">
@@ -359,14 +369,16 @@
                             </af:gridRow>
                             <af:gridRow marginTop="5px" height="auto" id="gr35">
                                 <af:gridCell marginStart="5px" width="34%" id="gc79" halign="center" valign="middle">
-                                    <af:link id="l14" icon="#{resource['images:dash_marketing.png']}"/>
+                                    <af:link id="l14" icon="#{resource['images:dash_marketing.png']}"
+                                             destination="/faces/Main_Pages/Modules/Marketing/Marketing.jsf"/>
                                 </af:gridCell>
                                 <af:gridCell marginStart="5px" width="46%" id="gc80">
                                     <af:panelGridLayout id="pgl11" inlineStyle="width:175px;">
                                         <af:gridRow marginTop="5px" height="auto" id="gr36">
                                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc81">
                                                 <af:link text="Marketing" id="l5"
-                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"/>
+                                                         inlineStyle="font-size:x-large; color:#008442;font-weight: bold;"
+                                                         destination="/faces/Main_Pages/Modules/Marketing/Marketing.jsf"/>
                                             </af:gridCell>
                                         </af:gridRow>
                                         <af:gridRow marginTop="5px" height="auto" id="gr37">
@@ -486,8 +498,8 @@
                     <af:gridCell marginStart="5px" width="33%" id="gc143"/>
                     <af:gridCell marginStart="5px" width="33%" marginEnd="5px" id="gc144"/>
                 </af:gridRow>
-            </af:panelGridLayout>-->
-     
+            </af:panelGridLayout>
+          
         </af:showDetailItem>
     </af:panelAccordion>
     <!--oracle-jdev-comment:preferred-managed-bean-name:DashboardBean-->

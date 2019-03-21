@@ -23,7 +23,7 @@ public class ClusterFarmerSidebar implements Serializable {
 
     public void Clusters_Setup_Click(ActionEvent actionEvent) {
         // Add event code here...
-        setDynamicTaskFlowId("/WEB-INF/Task_Flows/Modules/Clusters_Farmers/Clusters_Setup_TaskFlow.xml#Clusters_Setup_TaskFlow");
+        setDynamicTaskFlowId("/WEB-INF/Task_Flows/Modules/Clusters_Farmers/Cluster_Setup_TaskFlow.xml#Cluster_Setup_TaskFlow");
     }
 
     public void Farmer_Registration_Click(ActionEvent actionEvent) {

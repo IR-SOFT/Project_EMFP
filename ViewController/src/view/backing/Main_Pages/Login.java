@@ -534,6 +534,9 @@ public class Login {
             System.out.println("Entered username is : " + username + "....and password is : " + password );
             System.out.println(".......................................................................");
             System.out.println(".......................................................................");
+            
+        
+            
 //            Connection conn;
 //    
 //            try {
@@ -570,8 +573,8 @@ public class Login {
 //            }
     
 //            return role_master_id;
-//        return "/faces/Dashboard.jsf?faces-redirect=true";
-        return "good";
+        return "/faces/Main_Pages/Dashboard.jsf?faces-redirect=true";
+//        return "good";
     }
 
 
