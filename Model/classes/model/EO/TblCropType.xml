@@ -12,13 +12,14 @@
   BindingStyle="OracleName">
   <Attribute
     Name="CropTypeId"
-    IsNotNull="true"
     ColumnName="CROP_TYPE_ID"
     SQLType="NUMERIC"
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
     TableName="TBL_CROP_TYPE"
-    PrimaryKey="true"/>
+    PrimaryKey="true"
+    RetrievedOnInsert="true"
+    RetrievedOnUpdate="true"/>
   <Attribute
     Name="CropId"
     IsNotNull="true"
