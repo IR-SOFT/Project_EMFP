@@ -26,7 +26,7 @@
                                                                       varStatus="vs" id="t1"
                                                                       partialTriggers="::b7 ::b8 ::b9 ::b10 ::b12 ::b13 ::b24 ::b25 ::b26"
                                                                       width="761"
-                                                                      scrollPolicy="page" autoHeightRows="0" >
+                                                                      scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblTrainerView1.hints.TrainerId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Trainer ID" align="center"
@@ -149,15 +149,15 @@
                                                                                    id="si4"/>
                                                                     <f:validator binding="#{bindings.Gender.validator}"/>
                                                                 </af:selectOneChoice>
-                                                                <af:selectOneChoice value="#{bindings.MarStatus2.inputValue}"
+                                                                <af:selectOneChoice value="#{bindings.MarStatus.inputValue}"
                                                                                     label="Marital Status"
-                                                                                    required="#{bindings.MarStatus2.hints.mandatory}"
-                                                                                    shortDesc="#{bindings.MarStatus2.hints.tooltip}"
+                                                                                    required="#{bindings.MarStatus.hints.mandatory}"
+                                                                                    shortDesc="#{bindings.MarStatus.hints.tooltip}"
                                                                                     id="soc3"
                                                                                     contentStyle="width:200px">
-                                                                    <f:selectItems value="#{bindings.MarStatus2.items}"
+                                                                    <f:selectItems value="#{bindings.MarStatus.items}"
                                                                                    id="si3"/>
-                                                                    <f:validator binding="#{bindings.MarStatus2.validator}"/>
+                                                                    <f:validator binding="#{bindings.MarStatus.validator}"/>
                                                                 </af:selectOneChoice>
                                                                 <af:inputDate value="#{bindings.Dob.inputValue}"
                                                                               label="DOB"
@@ -298,7 +298,7 @@
                                                                                            id="s21"/>
                                                                                 <af:button text="Edit" id="b23"
                                                                                            icon="#{resource['images:edit.png']}"
-                                                                                          
+                                                                                          actionListener="#{bindings.Execute2.execute}"/>
                                                                                 <af:spacer width="5" height="10"
                                                                                            id="s22"/>
                                                                                 <af:button actionListener="#{bindings.Delete.execute}"

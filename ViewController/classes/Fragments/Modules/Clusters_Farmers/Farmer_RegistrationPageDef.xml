@@ -50,7 +50,7 @@
       </AttrNames>
     </attributeValues>
     <list IterBinding="TblFarmerRegView1Iterator" StaticList="false" Uses="LOV_MarStatus" id="MarStatus"
-          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+          DTSupportsMRU="true" SelectItemValueMode="ListObject"/>
     <attributeValues IterBinding="TblFarmerRegView1Iterator" id="Dob">
       <AttrNames>
         <Item Value="Dob"/>

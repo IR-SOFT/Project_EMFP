@@ -48,7 +48,7 @@
                                                                     </af:inputText>
                                                                 </af:column>
                                                                 <af:column  sortProperty="#{bindings.TblTeamFormationView1.hints.TeamId.name}"
-                                                                           filterable="true" sortable="true"
+                                                                            filterable="true" sortable="true"
                                                                             headerText="Team"
                                                                            id="c2" width="300">
                                                                             <f:facet name="filter">
@@ -108,10 +108,10 @@
                                                                     </af:selectOneChoice>
                                                                 </af:column>
                                                             </af:table>
-                                                            <af:button actionListener="#{bindings.Execute1.execute}"
+                                                            <af:button actionListener="#{bindings.Execute.execute}"
                                                                        text="Refresh"
                                                                        icon="#{resource['images:refresh.png']}"
-                                                                       disabled="#{!bindings.Execute1.enabled}"
+                                                                       disabled="#{!bindings.Execute.enabled}"
                                                                        id="b13"/>
                                                         </af:showDetailItem>
                                                     </af:panelTabbed>
@@ -121,21 +121,21 @@
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc4">
                                                     <af:spacer width="260" height="20" id="s12"/>
                                                     <h:panelGroup id="pg1">
-                                                        <af:button actionListener="#{bindings.CreateInsert1.execute}"
+                                                        <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"
                                                                    icon="#{resource['images:add.png']}"
-                                                                   disabled="#{!bindings.CreateInsert1.enabled}"
+                                                                   disabled="#{!bindings.CreateInsert.enabled}"
                                                                    id="b7"/>
                                                                     <af:spacer width="5" height="10" id="s9"/>
-                                                        <af:button actionListener="#{bindings.Execute1.execute}"
+                                                        <af:button actionListener="#{bindings.Execute.execute}"
                                                                    text="Edit"
                                                                    icon="#{resource['images:edit.png']}"
-                                                                   disabled="#{!bindings.Execute1.enabled}" id="b8"/>
+                                                                   disabled="#{!bindings.Execute.enabled}" id="b8"/>
                                                                     <af:spacer width="5" height="10" id="s10"/>
-                                                        <af:button actionListener="#{bindings.Delete1.execute}"
+                                                        <af:button actionListener="#{bindings.Delete.execute}"
                                                                    text="Delete"
                                                                    icon="#{resource['images:delete.png']}"
-                                                                   disabled="#{!bindings.Delete1.enabled}" id="b9"
+                                                                   disabled="#{!bindings.Delete.enabled}" id="b9"
                                                                    immediate="true" action="Team_Formation.jsf"/>
                                                                    <af:spacer width="5" height="10" id="s11"/>
                                                         <af:button actionListener="#{bindings.Commit.execute}"
