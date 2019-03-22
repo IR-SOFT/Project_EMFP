@@ -247,6 +247,18 @@
       <Attr Name="_DisplaySize" Value="300"/>
     </DesignTime>
   </Attribute>
+  <Attribute
+    Name="Image"
+    Precision="100"
+    ColumnName="IMAGE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TBL_FARMER_REG">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="100"/>
+    </DesignTime>
+  </Attribute>
   <AccessorAttribute
     Name="TblClusterAttDetail"
     Association="model.EO.Fk2TblClusterAttDetailFkAssoc"
