@@ -242,8 +242,7 @@
                                                           value="#{pageFlowScope.FileManagingBean.file}"/>
                                             <af:button text="button 1" id="b2" partialSubmit="true"
                                                        actionListener="#{pageFlowScope.FileManagingBean.UploadFarmerImage}"/>
-                                    <af:image source="#{resource['images:add.png']}" id="i1"/>
-                                    <af:image id="i2" source="#{bindings.Image.inputValue}"/>
+                                    <af:image id="i1" source="/ViewController/faces/javax.faces.resource/#{bindings.Image.inputValue}?ln=user_data/farmerImages" />
                                     <f:facet name="footer">
                                                 <af:panelGroupLayout id="pgl3">
                                                     <af:panelGroupLayout layout="horizontal" id="pgl4">

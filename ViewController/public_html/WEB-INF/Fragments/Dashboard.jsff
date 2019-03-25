@@ -1,8 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
-    <af:panelAccordion discloseMany="false" id="pa1">
-        <af:showDetailItem id="pane1">
-             <af:panelGridLayout id="pgl1">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:h="http://java.sun.com/jsf/html">
+    
+    <af:panelGroupLayout id="pgl24">
+        
+   
+    <af:panelGridLayout id="pgl1" inlineStyle="margin-top: 5%;">
                 <!--<af:gridRow marginTop="5px" height="auto" id="gr1">
                     <af:gridCell marginStart="5px" width="34%" id="gc1"/>
                     <af:gridCell marginStart="5px" width="33%" id="gc2"/>
@@ -499,8 +502,7 @@
                     <af:gridCell marginStart="5px" width="33%" marginEnd="5px" id="gc144"/>
                 </af:gridRow>
             </af:panelGridLayout>
-          
-        </af:showDetailItem>
-    </af:panelAccordion>
+           </af:panelGroupLayout>
+        
     <!--oracle-jdev-comment:preferred-managed-bean-name:DashboardBean-->
 </ui:composition>

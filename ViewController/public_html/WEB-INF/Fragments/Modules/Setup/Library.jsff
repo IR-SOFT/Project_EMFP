@@ -75,7 +75,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr3">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc4">
                                                     <af:spacer width="75" height="20" id="s9"/>
-                                                    <h:panelGroup id="pg2">
+                                                    <!--<h:panelGroup id="pg2">
                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"
                                                                    icon="#{resource['images:add.png']}"
@@ -97,7 +97,7 @@
                                                                    disabled="#{!bindings.Commit.enabled}" id="b17"/>
                                                         <af:link text="link 1" id="l1" targetFrame="_blank"
                                                                  destination="http://192.168.1.236:8888/reports/rwservlet?userid=mfp/mfp@orcl&amp;domain=classicdomain&amp;report=d:\\\\\\\\programe.jsp&amp;destype=CACHE&amp;desformat=pdf&amp;paramform=no"/>
-                                                    </h:panelGroup>
+                                                    </h:panelGroup>-->
                                                 </af:gridCell>
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
