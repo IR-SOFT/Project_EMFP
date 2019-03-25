@@ -10,22 +10,22 @@
                                                     <af:panelTabbed position="above" id="pt2"
                                                                     inlineStyle="width:786px;">
                                                         <af:showDetailItem id="tab1" text="Team Setup">
-                                                            <af:table value="#{bindings.Tbl_TeamView1.collectionModel}"
+                                                            <af:table value="#{bindings.TblTeamView1.collectionModel}"
                                                                       var="row"
-                                                                      rows="#{bindings.Tbl_TeamView1.rangeSize}"
-                                                                      emptyText="#{bindings.Tbl_TeamView1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                                                                      rows="#{bindings.TblTeamView1.rangeSize}"
+                                                                      emptyText="#{bindings.TblTeamView1.viewable ? 'No data to display.' : 'Access Denied.'}"
                                                                       rowBandingInterval="0"
-                                                                      selectedRowKeys="#{bindings.Tbl_TeamView1.collectionModel.selectedRow}"
-                                                                      selectionListener="#{bindings.Tbl_TeamView1.collectionModel.makeCurrent}"
+                                                                      selectedRowKeys="#{bindings.TblTeamView1.collectionModel.selectedRow}"
+                                                                      selectionListener="#{bindings.TblTeamView1.collectionModel.makeCurrent}"
                                                                       rowSelection="single"
-                                                                      fetchSize="#{bindings.Tbl_TeamView1.rangeSize}"
-                                                                      filterModel="#{bindings.Tbl_TeamView1Query.queryDescriptor}"
+                                                                      fetchSize="#{bindings.TblTeamView1.rangeSize}"
+                                                                      filterModel="#{bindings.TblTeamView1Query.queryDescriptor}"
                                                                       filterVisible="true"
-                                                                      queryListener="#{bindings.Tbl_TeamView1Query.processQuery}"
+                                                                      queryListener="#{bindings.TblTeamView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
                                                                       partialTriggers="::b6 ::b7 ::b8 ::b13" width="777"
                                                                       scrollPolicy="page" autoHeightRows="0" >
-                                                                <af:column sortProperty="#{bindings.Tbl_TeamView1.hints.TeamId.name}"
+                                                                <af:column sortProperty="#{bindings.TblTeamView1.hints.TeamId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Team ID" align="center"
                                                                            id="c1" width="60">
@@ -37,17 +37,17 @@
                                                                             </f:facet>
                                                                            
                                                                     <af:inputText value="#{row.bindings.TeamId.inputValue}"
-                                                                                  label="#{bindings.Tbl_TeamView1.hints.TeamId.label}"
-                                                                                  required="#{bindings.Tbl_TeamView1.hints.TeamId.mandatory}"
-                                                                                  columns="#{bindings.Tbl_TeamView1.hints.TeamId.displayWidth}"
-                                                                                  maximumLength="#{bindings.Tbl_TeamView1.hints.TeamId.precision}"
-                                                                                  shortDesc="#{bindings.Tbl_TeamView1.hints.TeamId.tooltip}"
+                                                                                  label="#{bindings.TblTeamView1.hints.TeamId.label}"
+                                                                                  required="#{bindings.TblTeamView1.hints.TeamId.mandatory}"
+                                                                                  columns="#{bindings.TblTeamView1.hints.TeamId.displayWidth}"
+                                                                                  maximumLength="#{bindings.TblTeamView1.hints.TeamId.precision}"
+                                                                                  shortDesc="#{bindings.TblTeamView1.hints.TeamId.tooltip}"
                                                                                   id="it1" readOnly="true"
                                                                                   contentStyle='text-align:center'>
                                                                         <f:validator binding="#{row.bindings.TeamId.validator}"/>
                                                                     </af:inputText>
                                                                 </af:column>
-                                                                <af:column sortProperty="#{bindings.Tbl_TeamView1.hints.PhaseId.name}"
+                                                                <af:column sortProperty="#{bindings.TblTeamView1.hints.PhaseId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Phase"
                                                                            id="c2"  width="300">
@@ -58,15 +58,15 @@
                                                                             </f:facet>
                                                                     <af:selectOneChoice value="#{row.bindings.PhaseId.inputValue}"
                                                                                         label="#{row.bindings.PhaseId.label}"
-                                                                                        required="#{bindings.Tbl_TeamView1.hints.PhaseId.mandatory}"
-                                                                                        shortDesc="#{bindings.Tbl_TeamView1.hints.PhaseId.tooltip}"
+                                                                                        required="#{bindings.TblTeamView1.hints.PhaseId.mandatory}"
+                                                                                        shortDesc="#{bindings.TblTeamView1.hints.PhaseId.tooltip}"
                                                                                         id="soc2">
                                                                         <f:selectItems value="#{row.bindings.PhaseId.items}"
                                                                                        id="si2"/>
                                                                         <f:validator binding="#{row.bindings.PhaseId.validator}"/>
                                                                     </af:selectOneChoice>
                                                                 </af:column>
-                                                                <af:column sortProperty="#{bindings.Tbl_TeamView1.hints.Name.name}"
+                                                                <af:column sortProperty="#{bindings.TblTeamView1.hints.Name.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Team"
                                                                            id="c3" width="300">
@@ -78,16 +78,16 @@
                                                                             </f:facet>
                                                                            
                                                                     <af:inputText value="#{row.bindings.Name.inputValue}"
-                                                                                  label="#{bindings.Tbl_TeamView1.hints.Name.label}"
-                                                                                  required="#{bindings.Tbl_TeamView1.hints.Name.mandatory}"
-                                                                                  columns="#{bindings.Tbl_TeamView1.hints.Name.displayWidth}"
-                                                                                  maximumLength="#{bindings.Tbl_TeamView1.hints.Name.precision}"
-                                                                                  shortDesc="#{bindings.Tbl_TeamView1.hints.Name.tooltip}"
+                                                                                  label="#{bindings.TblTeamView1.hints.Name.label}"
+                                                                                  required="#{bindings.TblTeamView1.hints.Name.mandatory}"
+                                                                                  columns="#{bindings.TblTeamView1.hints.Name.displayWidth}"
+                                                                                  maximumLength="#{bindings.TblTeamView1.hints.Name.precision}"
+                                                                                  shortDesc="#{bindings.TblTeamView1.hints.Name.tooltip}"
                                                                                   id="it3">
                                                                         <f:validator binding="#{row.bindings.Name.validator}"/>
                                                                     </af:inputText>
                                                                 </af:column>
-                                                                <af:column sortProperty="#{bindings.Tbl_TeamView1.hints.Ast.name}"
+                                                                <af:column sortProperty="#{bindings.TblTeamView1.hints.Ast.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Active"
                                                                            id="c4" width="60">
@@ -100,8 +100,8 @@
                                                                            
                                                                     <af:selectOneChoice value="#{row.bindings.Ast.inputValue}"
                                                                                         label="#{row.bindings.Ast.label}"
-                                                                                        required="#{bindings.Tbl_TeamView1.hints.Ast.mandatory}"
-                                                                                        shortDesc="#{bindings.Tbl_TeamView1.hints.Ast.tooltip}"
+                                                                                        required="#{bindings.TblTeamView1.hints.Ast.mandatory}"
+                                                                                        shortDesc="#{bindings.TblTeamView1.hints.Ast.tooltip}"
                                                                                         id="soc1">
                                                                         <f:selectItems value="#{row.bindings.Ast.items}"
                                                                                        id="si1"/>
