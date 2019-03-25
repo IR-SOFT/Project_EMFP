@@ -7,7 +7,7 @@
       <property
          name="activityId">Farm_Machinery</property>
       <property
-         name="page">/WEB-INF/Fragments/Modules/Setup/Crops.jsff</property>
+         name="page">/WEB-INF/Fragments/Modules/Setup/Farm_Machinery.jsff</property>
       <property
          name="start">true</property>
       <property
@@ -17,8 +17,8 @@
       <property
          name="y">213.94824</property>
       <property
-         name="x">351.0</property>
-      <property
          name="pageFragment">true</property>
+      <property
+         name="x">351.0</property>
    </View>
 </SDM>

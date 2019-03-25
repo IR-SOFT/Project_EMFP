@@ -6,7 +6,7 @@
       <shared/>
     </data-control-scope>
     <view id="Target_Crops">
-      <page>/WEB-INF/Fragments/Modules/Setup/Crops.jsff</page>
+      <page>/WEB-INF/Fragments/Modules/Setup/Target_Crops.jsff</page>
     </view>
     <use-page-fragments/>
   </task-flow-definition>

@@ -6,7 +6,7 @@
       <shared/>
     </data-control-scope>
     <view id="Supplier_Rate">
-      <page>/WEB-INF/Fragments/Modules/Setup/Supplier.jsff</page>
+      <page>/WEB-INF/Fragments/Modules/Setup/Supplier_Rate.jsff</page>
     </view>
     <use-page-fragments/>
   </task-flow-definition>

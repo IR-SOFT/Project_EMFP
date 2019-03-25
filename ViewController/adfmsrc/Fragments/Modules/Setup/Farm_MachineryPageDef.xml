@@ -30,6 +30,9 @@
           <Item Value="ItemL1Id"/>
           <Item Value="Name"/>
           <Item Value="Ast"/>
+          <Item Value="L1_Name"/>
+          <Item Value="L2_Name"/>
+          <Item Value="L3_Name"/>
         </AttrNames>
       </nodeDefinition>
     </tree>

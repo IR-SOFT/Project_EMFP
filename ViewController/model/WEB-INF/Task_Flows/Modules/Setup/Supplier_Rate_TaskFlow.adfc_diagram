@@ -7,7 +7,7 @@
       <property
          name="activityId">Supplier_Rate</property>
       <property
-         name="page">/WEB-INF/Fragments/Modules/Setup/Supplier.jsff</property>
+         name="page">/WEB-INF/Fragments/Modules/Setup/Supplier_Rate.jsff</property>
       <property
          name="start">true</property>
       <property
@@ -17,8 +17,8 @@
       <property
          name="y">251.94824</property>
       <property
-         name="x">360.0</property>
-      <property
          name="pageFragment">true</property>
+      <property
+         name="x">360.0</property>
    </View>
 </SDM>

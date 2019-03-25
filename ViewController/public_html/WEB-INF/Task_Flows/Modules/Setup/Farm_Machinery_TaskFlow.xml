@@ -6,7 +6,7 @@
       <shared/>
     </data-control-scope>
     <view id="Farm_Machinery">
-      <page>/WEB-INF/Fragments/Modules/Setup/Crops.jsff</page>
+      <page>/WEB-INF/Fragments/Modules/Setup/Farm_Machinery.jsff</page>
     </view>
     <use-page-fragments/>
   </task-flow-definition>

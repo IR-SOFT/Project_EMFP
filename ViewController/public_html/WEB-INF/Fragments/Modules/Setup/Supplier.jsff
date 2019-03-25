@@ -24,7 +24,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblSupplierView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
-                                                                      partialTriggers="::b7 ::b8 ::b9 ::b10 ::b13 ::b14 ::b16"
+                                                                      partialTriggers="::b7 ::b8 ::b9 ::b10 ::b13 ::b14 ::b16 ::b1"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblSupplierView1.hints.SupplierId.name}"
                                                                            filterable="true" sortable="true"
@@ -272,16 +272,14 @@
                                                                               id="it13" contentStyle="width:250px;">
                                                                     <f:validator binding="#{bindings.Address.validator}"/>
                                                                 </af:inputText>
-                                                                <af:selectOneChoice value="#{bindings.LibrDetailId1.inputValue}"
-                                                                                    label="City"
-                                                                                    required="#{bindings.LibrDetailId1.hints.mandatory}"
-                                                                                    shortDesc="#{bindings.LibrDetailId1.hints.tooltip}"
-                                                                                    id="soc4"
-                                                                                    contentStyle="width:250px;">
-                                                                    <f:selectItems value="#{bindings.LibrDetailId1.items}"
-                                                                                   id="si4"/>
-                                                                    <f:validator binding="#{bindings.LibrDetailId1.validator}"/>
-                                                                </af:selectOneChoice>
+                                    <af:selectOneChoice value="#{bindings.CityLibrDetail.inputValue}"
+                                                        label="City"
+                                                        required="#{bindings.CityLibrDetail.hints.mandatory}"
+                                                        shortDesc="#{bindings.CityLibrDetail.hints.tooltip}" id="soc7">
+                                        <f:selectItems value="#{bindings.CityLibrDetail.items}" id="si7"/>
+                                        <f:validator binding="#{bindings.CityLibrDetail.validator}"/>
+                                    </af:selectOneChoice>
+                                                        
                                                                 <f:facet name="footer">
                                                                     <af:spacer width="50" height="20" id="s9"/>
                                                                     <af:panelGroupLayout id="pgl3"
@@ -322,10 +320,14 @@
                                                                                        disabled="#{!bindings.CreateInsert.enabled}"
                                                                                        id="b13"/>
                                                                             <af:spacer width="5" height="10" id="s13"/>
-                                                                            <af:button text="Edit" id="b11"
-                                                                                       icon="#{resource['images:edit.png']}"
-                                                                                      
-                                                                            <af:spacer width="5" height="10" id="s14"/>
+                                                                            
+                                                                            
+                                                                                       
+                                                    <af:button actionListener="#{bindings.Execute.execute}" icon="#{resource['images:edit.png']}"
+                                                               text="Edit" disabled="#{!bindings.Execute.enabled}"
+                                                               id="b1"/>
+                                                    <af:spacer width="5" height="10" id="s14"/>
+                                                    
                                                                             <af:button actionListener="#{bindings.Delete.execute}"
                                                                                        text="Delete"
                                                                                        
