@@ -232,17 +232,20 @@
                                             </af:inputText>
                                             <af:inputText value="#{bindings.Image.inputValue}" label="Image"
                                                           required="#{bindings.Image.hints.mandatory}"
-                                                          columns="#{bindings.Image.hints.displayWidth}"
+                                                          columns="#{bindings.Image.hints.displayWidth}" partialTriggers="b2"
                                                           maximumLength="#{bindings.Image.hints.precision}"
                                                           shortDesc="#{bindings.Image.hints.tooltip}" id="it66"
                                                           binding="#{pageFlowScope.FileManagingBean.db_Image_Value}">
                                                 <f:validator binding="#{bindings.Image.validator}"/>
                                             </af:inputText>
-                                            <af:inputFile label="Upload Image" id="if1" partialTriggers="b2"
+                                            <af:inputFile label="Upload Image" id="if1"
                                                           value="#{pageFlowScope.FileManagingBean.file}"/>
                                             <af:button text="button 1" id="b2" partialSubmit="true"
                                                        actionListener="#{pageFlowScope.FileManagingBean.UploadFarmerImage}"/>
-                                    
+                                   
+                                    <af:iterator id="i2" value="#{bindings.Image.inputValue}" var="getVV">
+                                        <af:image id="i3" source="#{getVV}"/>
+                                    </af:iterator>
                                     <f:facet name="footer">
                                                 <af:panelGroupLayout id="pgl3">
                                                     <af:panelGroupLayout layout="horizontal" id="pgl4">

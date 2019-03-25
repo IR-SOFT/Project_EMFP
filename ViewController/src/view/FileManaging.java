@@ -32,7 +32,6 @@ public class FileManaging {
     public void UploadFarmerImage(ActionEvent actionEvent) {
         // Add event code here...
         UploadedFile myfile = this.getFile();
-        db_Image_Value.setValue("bla bla bla");
         String path = null;
 
         if (myfile == null) {
@@ -42,6 +41,8 @@ public class FileManaging {
             UniFileName = (getRandomInteger(100000, 1000000)) + myfile.getFilename();
             path = "E://ghg//" + UniFileName;
 
+            db_Image_Value.setValue(UniFileName);
+            
             System.out.println("oooooooooooooooo");
             System.out.println(UniFileName);
             System.out.println("oooooooooooooooo");
