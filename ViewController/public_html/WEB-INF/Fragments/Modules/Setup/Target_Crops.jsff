@@ -40,8 +40,8 @@
                                                                                    shortDesc="#{bindings.TblProjOffView1.hints.Project_Name.tooltip}"
                                                                                    id="ot11"/>
                                                                 </af:column>
-                                                                
-                                                                <af:column sortProperty="#{bindings.TblProjOffView1.hints.Name.name}"
+                                    
+                                    <af:column sortProperty="#{bindings.TblProjOffView1.hints.Name.name}"
                                                                            filterable="true"
                                                                            headerText="Project Office"
                                                                            id="c3" width="150">

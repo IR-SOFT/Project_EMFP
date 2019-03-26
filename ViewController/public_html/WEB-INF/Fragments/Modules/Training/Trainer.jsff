@@ -24,7 +24,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblTrainerView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
-                                                                      partialTriggers="::b7 ::b8 ::b9 ::b10 ::b12 ::b13 ::b24 ::b25 ::b26"
+                                                                      partialTriggers="::b7 ::b8 ::b9 ::b12 ::b13 ::b24 ::b25 ::b26"
                                                                       width="761"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblTrainerView1.hints.TrainerId.name}"
@@ -285,7 +285,7 @@
                                                                                        icon="#{resource['images:last.png']}"
                                                                                        disabled="#{!bindings.Last.enabled}"
                                                                                        partialSubmit="true" id="b24"/>
-                                                                            <h:panelGroup id="pg1">
+                                                                            <af:panelGroupLayout id="pg1">
                                                                                 <af:spacer width="40" height="20"
                                                                                            id="s14"/>
                                                                                 <af:button actionListener="#{bindings.CreateInsert.execute}"
@@ -316,7 +316,7 @@
                                                                                            icon="#{resource['images:save.png']}"
                                                                                            disabled="#{!bindings.Commit.enabled}"
                                                                                            id="b14"/>
-                                                                            </h:panelGroup>
+                                                                            </af:panelGroupLayout>
                                                                         </af:panelGroupLayout>
                                                                     </af:panelGroupLayout>
                                                                 </f:facet>
@@ -519,7 +519,7 @@
                                                                        id="b26"
                                                                        icon="#{resource['images:refresh.png']}"/>
                                                             <af:spacer width="40" height="20" id="s9"/>
-                                                            <h:panelGroup id="pg2">
+                                                            <af:panelGroupLayout id="pg2">
                                                                 <af:spacer width="346" height="20" id="s10"/>
                                                                 <af:button actionListener="#{bindings.CreateInsert1.execute}"
                                                                            text="Add"
@@ -549,7 +549,7 @@
                                                                            icon="#{resource['images:save.png']}"
                                                                            disabled="#{!bindings.Commit.enabled}"
                                                                            id="b18"/>
-                                                            </h:panelGroup>
+                                                            </af:panelGroupLayout>
                                                         </af:showDetailItem>
                                                         <af:showDetailItem text="Trainer Perquisites" id="sdi3">
                                                             <af:table value="#{bindings.TblTrainerPercView3.collectionModel}"
@@ -704,7 +704,7 @@
                                                                        id="b27"
                                                                        icon="#{resource['images:refresh.png']}"/>
                                                             <af:spacer width="30" height="20" id="s11"/>
-                                                            <h:panelGroup id="pg3">
+                                                            <af:panelGroupLayout id="pg3">
                                                                 <af:spacer width="346" height="20" id="s12"/>
                                                                 <af:button actionListener="#{bindings.CreateInsert2.execute}"
                                                                            text="Add"
@@ -734,7 +734,7 @@
                                                                            icon="#{resource['images:save.png']}"
                                                                            disabled="#{!bindings.Commit.enabled}"
                                                                            id="b22"/>
-                                                            </h:panelGroup>
+                                                            </af:panelGroupLayout>
                                                         </af:showDetailItem>
                                                     </af:panelTabbed>
                                                 </af:gridCell>

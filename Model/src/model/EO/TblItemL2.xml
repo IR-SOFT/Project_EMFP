@@ -72,13 +72,6 @@
     AssociationOtherEnd="model.EO.FkTblItemL3FkAssoc.TblItemL2"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
-  <AccessorAttribute
-    Name="TblItemL4"
-    Association="model.EO.Fk2TblItemL3FkAssoc"
-    AssociationEnd="model.EO.Fk2TblItemL3FkAssoc.TblItemL4"
-    AssociationOtherEnd="model.EO.Fk2TblItemL3FkAssoc.TblItemL2"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
   <Key
     Name="PkTblItemL2Pk"
     PrimaryKey="true">

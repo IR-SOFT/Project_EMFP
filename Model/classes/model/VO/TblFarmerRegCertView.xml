@@ -17,9 +17,13 @@
     Name="Active_Status1"
     ViewObjectName="model.LOV.Active_Status"
     RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="Certification_Name_LOV1"
+    ViewObjectName="model.LOV.Certification_Name_LOV"
+    RowLevelBinds="true"/>
   <ListBinding
     Name="LOV_CertificationId"
-    ListVOName="Active_Status1"
+    ListVOName="Certification_Name_LOV1"
     ListRangeSize="-1"
     NullValueFlag="none"
     MRUCount="0">
@@ -28,10 +32,10 @@
     </AttrArray>
     <AttrArray Name="AttrExpressions"/>
     <AttrArray Name="ListAttrNames">
-      <Item Value="astDB"/>
+      <Item Value="CertificationId"/>
     </AttrArray>
     <AttrArray Name="ListDisplayAttrNames">
-      <Item Value="astView"/>
+      <Item Value="Name"/>
     </AttrArray>
     <DisplayCriteria/>
   </ListBinding>

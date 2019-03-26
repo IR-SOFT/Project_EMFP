@@ -73,14 +73,4 @@
     ViewLink="model.VO.FkTblItemL2FkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblItemL3View"
-    ViewLink="model.VO.Fk2TblItemL2FkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblItemL4View"
-    ViewLink="model.VO.Fk3TblItemL2FkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
 </ViewObject>

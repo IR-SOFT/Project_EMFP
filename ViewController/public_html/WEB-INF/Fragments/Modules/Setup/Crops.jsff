@@ -24,7 +24,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblCropView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
-                                                                      partialTriggers="::b2 ::b4 ::b6 ::b12 ::b19" width="935"
+                                                                      partialTriggers="::b12 ::b19" width="935"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblCropView1.hints.CropId.name}"
                                                                            filterable="true" sortable="true"
@@ -150,7 +150,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr3">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5">
                                                     <af:spacer width="327" height="48" id="s17"/>
-                                                    <h:panelGroup id="pg1">
+                                                    <af:panelGroupLayout id="pg1" layout="horizontal">
                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"
                                                                   
@@ -178,7 +178,7 @@
                                                                    disabled="#{!bindings.Commit.enabled}" id="b11"
                                                                    icon="#{resource['images:save.png']}"
                                                                    inlineStyle="width:70px; text-align:center; vertical-align: middle;"/>
-                                                    </h:panelGroup>
+                                                    </af:panelGroupLayout>
                                                     
                                                     
                                                 </af:gridCell>
@@ -261,7 +261,7 @@
                                             <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr5">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
                                                     <af:spacer width="165" height="48" id="s12"/>
-                                                     <h:panelGroup id="pg2">
+                                                     <af:panelGroupLayout id="pg2">
                                                         <af:button actionListener="#{bindings.CreateInsert1.execute}"
                                                                    text="Add"
                                                                    
@@ -287,7 +287,7 @@
                                                                   
                                                                    icon="#{resource['images:Save.png']}"
                                                                    id="b16"/>
-                                                    </h:panelGroup>
+                                                    </af:panelGroupLayout>
                                                 </af:gridCell>
                                             </af:gridRow>
                                         </af:panelGridLayout>

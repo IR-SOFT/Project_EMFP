@@ -12,12 +12,10 @@
   <DesignTime>
     <Attr Name="_isExpertMode" Value="true"/>
   </DesignTime>
-  <SQLQuery><![CDATA[SELECT TblItemL4.ITEM_L4_ID,
-       TblItemL4.ITEM_L3_ID,
-       TblItemL4.ITEM_L2_ID,
-       TblItemL4.ITEM_L1_ID,
-       TblItemL4.NAME,
-       TblItemL4.AST
+  <SQLQuery><![CDATA[SELECT TblItemL4.ITEM_L4_ID, 
+       TblItemL4.ITEM_L3_ID, 
+       TblItemL4.NAME, 
+       TblItemL4.AST 
 FROM TBL_ITEM_L4 TblItemL4]]></SQLQuery>
   <ViewAttribute
     Name="ItemL4Id"
@@ -40,28 +38,6 @@ FROM TBL_ITEM_L4 TblItemL4]]></SQLQuery>
     ColumnType="NUMBER"
     AliasName="ITEM_L3_ID"
     Expression="ITEM_L3_ID"
-    SQLType="NUMERIC"/>
-  <ViewAttribute
-    Name="ItemL2Id"
-    IsUpdateable="false"
-    IsPersistent="false"
-    IsNotNull="true"
-    PrecisionRule="true"
-    Type="java.math.BigDecimal"
-    ColumnType="NUMBER"
-    AliasName="ITEM_L2_ID"
-    Expression="ITEM_L2_ID"
-    SQLType="NUMERIC"/>
-  <ViewAttribute
-    Name="ItemL1Id"
-    IsUpdateable="false"
-    IsPersistent="false"
-    IsNotNull="true"
-    PrecisionRule="true"
-    Type="java.math.BigDecimal"
-    ColumnType="NUMBER"
-    AliasName="ITEM_L1_ID"
-    Expression="ITEM_L1_ID"
     SQLType="NUMERIC"/>
   <ViewAttribute
     Name="Name"
@@ -90,7 +66,7 @@ FROM TBL_ITEM_L4 TblItemL4]]></SQLQuery>
     ColumnType="CHAR"
     AliasName="AST"
     Expression="AST"
-    SQLType="CHAR">
+    SQLType="VARCHAR">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="1"/>
     </DesignTime>

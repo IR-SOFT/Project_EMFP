@@ -66,7 +66,7 @@ FROM TBL_ITEM_L2 TblItemL2]]></SQLQuery>
     ColumnType="CHAR"
     AliasName="AST"
     Expression="AST"
-    SQLType="CHAR">
+    SQLType="VARCHAR">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="1"/>
     </DesignTime>
@@ -77,11 +77,6 @@ FROM TBL_ITEM_L2 TblItemL2]]></SQLQuery>
   <ViewLinkAccessor
     Name="TblItemL3View"
     ViewLink="model.queryBasedVO.FkTblItemL3FkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="TblItemL4View"
-    ViewLink="model.queryBasedVO.Fk2TblItemL3FkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

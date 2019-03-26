@@ -135,7 +135,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr5">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc6">
                                                     <af:spacer width="343" height="20" id="s2"/>
-                                                    <h:panelGroup id="pg1">
+                                                    <af:panelGroupLayout id="pg1" layout="horizontal">
                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"
                                                                   
@@ -163,7 +163,7 @@
                                                                   
                                                                    id="b8"
                                                                    inlineStyle="width:70px; text-align:center; vertical-align: middle;"/>
-                                                    </h:panelGroup>
+                                                    </af:panelGroupLayout>
                                                 </af:gridCell>
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr6">

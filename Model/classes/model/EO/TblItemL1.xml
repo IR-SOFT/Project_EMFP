@@ -56,20 +56,6 @@
     AssociationOtherEnd="model.EO.FkTblItemL2FkAssoc.TblItemL1"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
-  <AccessorAttribute
-    Name="TblItemL3"
-    Association="model.EO.Fk2TblItemL2FkAssoc"
-    AssociationEnd="model.EO.Fk2TblItemL2FkAssoc.TblItemL3"
-    AssociationOtherEnd="model.EO.Fk2TblItemL2FkAssoc.TblItemL1"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
-  <AccessorAttribute
-    Name="TblItemL4"
-    Association="model.EO.Fk3TblItemL2FkAssoc"
-    AssociationEnd="model.EO.Fk3TblItemL2FkAssoc.TblItemL4"
-    AssociationOtherEnd="model.EO.Fk3TblItemL2FkAssoc.TblItemL1"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
   <Key
     Name="PkTblItemL1Pk"
     PrimaryKey="true">
