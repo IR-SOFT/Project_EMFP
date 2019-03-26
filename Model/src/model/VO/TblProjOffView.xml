@@ -60,6 +60,25 @@
   <EntityUsage
     Name="TblProjOff"
     Entity="model.EO.TblProjOff"/>
+  <EntityUsage
+    Name="TblProj"
+    Entity="model.EO.TblProj"
+    Association="model.EO.FkTblProjOffTblProjFkAssoc"
+    AssociationEnd="model.EO.FkTblProjOffTblProjFkAssoc.TblProj"
+    SourceUsage="model.VO.TblProjOffView.TblProjOff"
+    ReadOnly="true"
+    Reference="true"
+    DeleteParticipant="false"
+    JoinType="LEFT OUTER JOIN">
+    <DesignTime>
+      <AttrArray Name="_srcAttributes">
+        <Item Value="model.EO.TblProjOff.ProjId"/>
+      </AttrArray>
+      <AttrArray Name="_dstAttributes">
+        <Item Value="model.EO.TblProj.ProjId"/>
+      </AttrArray>
+    </DesignTime>
+  </EntityUsage>
   <ViewAttribute
     Name="ProjOffId"
     IsNotNull="true"
@@ -150,6 +169,23 @@
     EntityAttrName="Designation"
     EntityUsage="TblProjOff"
     AliasName="DESIGNATION"/>
+  <ViewAttribute
+    Name="Project_Name"
+    IsUnique="true"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Name"
+    EntityUsage="TblProj"
+    AliasName="NAME1"/>
+  <ViewAttribute
+    Name="ProjId1"
+    PrecisionRule="true"
+    EntityAttrName="ProjId"
+    EntityUsage="TblProj"
+    AliasName="PROJ_ID1"/>
+  <AttrArray Name="KeyAttributes">
+    <Item Value="ProjOffId"/>
+  </AttrArray>
   <ViewLinkAccessor
     Name="TblTargetCropsView"
     ViewLink="model.VO.FkTblTargetCropsFkLink"

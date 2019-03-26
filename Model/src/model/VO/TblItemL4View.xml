@@ -39,44 +39,6 @@
     Name="TblItemL4"
     Entity="model.EO.TblItemL4"/>
   <EntityUsage
-    Name="TblItemL1"
-    Entity="model.EO.TblItemL1"
-    Association="model.EO.Fk3TblItemL2FkAssoc"
-    AssociationEnd="model.EO.Fk3TblItemL2FkAssoc.TblItemL1"
-    SourceUsage="model.VO.TblItemL4View.TblItemL4"
-    ReadOnly="true"
-    Reference="true"
-    DeleteParticipant="false"
-    JoinType="LEFT OUTER JOIN">
-    <DesignTime>
-      <AttrArray Name="_srcAttributes">
-        <Item Value="model.EO.TblItemL4.ItemL1Id"/>
-      </AttrArray>
-      <AttrArray Name="_dstAttributes">
-        <Item Value="model.EO.TblItemL1.ItemL1Id"/>
-      </AttrArray>
-    </DesignTime>
-  </EntityUsage>
-  <EntityUsage
-    Name="TblItemL2"
-    Entity="model.EO.TblItemL2"
-    Association="model.EO.Fk2TblItemL3FkAssoc"
-    AssociationEnd="model.EO.Fk2TblItemL3FkAssoc.TblItemL2"
-    SourceUsage="model.VO.TblItemL4View.TblItemL4"
-    ReadOnly="true"
-    Reference="true"
-    DeleteParticipant="false"
-    JoinType="LEFT OUTER JOIN">
-    <DesignTime>
-      <AttrArray Name="_srcAttributes">
-        <Item Value="model.EO.TblItemL4.ItemL2Id"/>
-      </AttrArray>
-      <AttrArray Name="_dstAttributes">
-        <Item Value="model.EO.TblItemL2.ItemL2Id"/>
-      </AttrArray>
-    </DesignTime>
-  </EntityUsage>
-  <EntityUsage
     Name="TblItemL3"
     Entity="model.EO.TblItemL3"
     Association="model.EO.FkTblItemL4FkAssoc"
@@ -110,20 +72,6 @@
     EntityUsage="TblItemL4"
     AliasName="ITEM_L3_ID"/>
   <ViewAttribute
-    Name="ItemL2Id"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="ItemL2Id"
-    EntityUsage="TblItemL4"
-    AliasName="ITEM_L2_ID"/>
-  <ViewAttribute
-    Name="ItemL1Id"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="ItemL1Id"
-    EntityUsage="TblItemL4"
-    AliasName="ITEM_L1_ID"/>
-  <ViewAttribute
     Name="Name"
     IsUnique="true"
     IsNotNull="true"
@@ -146,34 +94,6 @@
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
-  <ViewAttribute
-    Name="L1_Name"
-    IsUnique="true"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="Name"
-    EntityUsage="TblItemL1"
-    AliasName="NAME1"/>
-  <ViewAttribute
-    Name="ItemL1Id1"
-    PrecisionRule="true"
-    EntityAttrName="ItemL1Id"
-    EntityUsage="TblItemL1"
-    AliasName="ITEM_L1ID1"/>
-  <ViewAttribute
-    Name="L2_Name"
-    IsUnique="true"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="Name"
-    EntityUsage="TblItemL2"
-    AliasName="NAME1"/>
-  <ViewAttribute
-    Name="ItemL2Id1"
-    PrecisionRule="true"
-    EntityAttrName="ItemL2Id"
-    EntityUsage="TblItemL2"
-    AliasName="ITEM_L2ID1"/>
   <ViewAttribute
     Name="L3_Name"
     IsUnique="true"

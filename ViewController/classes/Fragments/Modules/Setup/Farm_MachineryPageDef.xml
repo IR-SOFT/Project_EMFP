@@ -26,12 +26,8 @@
         <AttrNames>
           <Item Value="ItemL4Id"/>
           <Item Value="ItemL3Id"/>
-          <Item Value="ItemL2Id"/>
-          <Item Value="ItemL1Id"/>
           <Item Value="Name"/>
           <Item Value="Ast"/>
-          <Item Value="L1_Name"/>
-          <Item Value="L2_Name"/>
           <Item Value="L3_Name"/>
         </AttrNames>
       </nodeDefinition>
@@ -68,7 +64,6 @@
         <AttrNames>
           <Item Value="ItemL3Id"/>
           <Item Value="ItemL2Id"/>
-          <Item Value="ItemL1Id"/>
           <Item Value="Name"/>
           <Item Value="Ast"/>
         </AttrNames>
@@ -83,8 +78,6 @@
         <AttrNames>
           <Item Value="ItemL4Id"/>
           <Item Value="ItemL3Id"/>
-          <Item Value="ItemL2Id"/>
-          <Item Value="ItemL1Id"/>
           <Item Value="Name"/>
           <Item Value="Ast"/>
         </AttrNames>

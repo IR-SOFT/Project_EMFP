@@ -23,6 +23,7 @@
     ListRangeSize="-1"
     NullValueFlag="none"
     MRUCount="0">
+    <?audit suppress oracle.jbo.view.lov-rangesize?>
     <AttrArray Name="AttrNames">
       <Item Value="Ast"/>
     </AttrArray>
@@ -52,13 +53,6 @@
     EntityAttrName="ItemL2Id"
     EntityUsage="TblItemL3"
     AliasName="ITEM_L2_ID"/>
-  <ViewAttribute
-    Name="ItemL1Id"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="ItemL1Id"
-    EntityUsage="TblItemL3"
-    AliasName="ITEM_L1_ID"/>
   <ViewAttribute
     Name="Name"
     IsUnique="true"

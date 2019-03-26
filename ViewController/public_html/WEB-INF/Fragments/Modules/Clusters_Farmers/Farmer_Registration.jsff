@@ -138,14 +138,14 @@
                                                 <f:selectItems value="#{bindings.MarStatus.items}" id="si5"/>
                                                 <f:validator binding="#{bindings.MarStatus.validator}"/>
                                             </af:selectOneChoice>
-                                            <af:inputDate value="#{bindings.Dob.inputValue}" label="DOB"
-                                                          required="#{bindings.Dob.hints.mandatory}"
-                                                          columns="#{bindings.Dob.hints.displayWidth}"
-                                                          shortDesc="#{bindings.Dob.hints.tooltip}" id="id1"
-                                                          contentStyle="width:200px">
-                                                <f:validator binding="#{bindings.Dob.validator}"/>
-                                                <af:convertDateTime pattern="#{bindings.Dob.format}"/>
-                                            </af:inputDate>
+                                    <af:inputDate value="#{bindings.Dob.inputValue}" label="DOB"
+                                                  required="#{bindings.Dob.hints.mandatory}"
+                                                  columns="#{bindings.Dob.hints.displayWidth}"
+                                                  shortDesc="#{bindings.Dob.hints.tooltip}" id="id5">
+                                        <f:validator binding="#{bindings.Dob.validator}"/>
+                                        <af:convertDateTime pattern="#{bindings.Dob.format}"/>
+                                    </af:inputDate>
+                                    
                                             <af:inputDate value="#{bindings.Doj.inputValue}" label="DOJ"
                                                           required="#{bindings.Doj.hints.mandatory}"
                                                           columns="#{bindings.Doj.hints.displayWidth}"
@@ -268,7 +268,7 @@
                                                                    disabled="#{!bindings.Last.enabled}"
                                                                    partialSubmit="true" id="b8"
                                                                    icon="#{resource['images:last.png']}"/>
-                                                        <panelGroup id="pg1">
+                                                        <af:panelGroupLayout id="pg1" layout="horizontal">
                                                             <af:spacer width="130" height="20" id="s15"/>
                                                             <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                        text="Add" icon="#{resource['images:add.png']}"
@@ -292,7 +292,7 @@
                                                                        text="Save" icon="#{resource['images:save.png']}"
                                                                        disabled="#{!bindings.Commit.enabled}" id="b14"
                                                                        inlineStyle="width:70px; text-align:center; vertical-align: middle;"/>
-                                                        </panelGroup>
+                                                        </af:panelGroupLayout>
                                                     </af:panelGroupLayout>
                                                 </af:panelGroupLayout>
                                             </f:facet>
@@ -554,7 +554,7 @@
                                                    disabled="#{!bindings.Execute1.enabled}" id="b34"
                                                    icon="#{resource['images:refresh.png']}"/>
                                         <af:spacer width="200" height="20" id="s7"/>
-                                        <panelGroup id="pg2">
+                                        <af:panelGroupLayout id="pg2" layout="horizontal">
                                             <af:spacer width="348" height="20" id="s12"/>
                                             <af:button actionListener="#{bindings.CreateInsert1.execute}" text="Add"
                                                        icon="#{resource['images:add.png']}"
@@ -572,7 +572,7 @@
                                             <af:button actionListener="#{bindings.Commit.execute}" text="Save"
                                                        icon="#{resource['images:save.png']}"
                                                        disabled="#{!bindings.Commit.enabled}" id="b18"/>
-                                        </panelGroup>
+                                        </af:panelGroupLayout>
                                     </af:showDetailItem>
                                     <af:showDetailItem text="Farmer Dependents" id="sdi3">
                                         <af:table value="#{bindings.TblFarmerRegMemView3.collectionModel}" var="row"
@@ -752,7 +752,7 @@
                                                    disabled="#{!bindings.Execute2.enabled}" id="b35"
                                                    icon="#{resource['images:refresh.png']}"/>
                                         <af:spacer width="200" height="20" id="s9"/>
-                                        <panelGroup id="pg3">
+                                        <af:panelGroupLayout id="pg3" layout="horizontal">
                                             <af:spacer width="350" height="20" id="s8"/>
                                             <af:button actionListener="#{bindings.CreateInsert2.execute}" text="Add"
                                                        icon="#{resource['images:add.png']}"
@@ -770,7 +770,7 @@
                                             <af:button actionListener="#{bindings.Commit.execute}" text="Save"
                                                        icon="#{resource['images:save.png']}"
                                                        disabled="#{!bindings.Commit.enabled}" id="b22"/>
-                                        </panelGroup>
+                                        </af:panelGroupLayout>
                                     </af:showDetailItem>
                                     <af:showDetailItem text="Crops Grown" id="sdi4">
                                         <af:table value="#{bindings.TblFarmerRegCropsView4.collectionModel}" var="row"
@@ -877,7 +877,7 @@
                                                    disabled="#{!bindings.Execute3.enabled}" id="b36"
                                                    icon="#{resource['images:refresh.png']}"/>
                                         <af:spacer width="210" height="20" id="s10"/>
-                                        <panelGroup id="pg4">
+                                        <af:panelGroupLayout id="pg4" layout="horizontal">
                                             <af:spacer width="210" height="20" id="s11"/>
                                             <af:button actionListener="#{bindings.CreateInsert3.execute}" text="Add"
                                                        icon="#{resource['images:add.png']}"
@@ -895,7 +895,7 @@
                                             <af:button actionListener="#{bindings.Commit.execute}" text="Save"
                                                        disabled="#{!bindings.Commit.enabled}"
                                                        icon="#{resource['images:save.png']}" id="b26"/>
-                                        </panelGroup>
+                                        </af:panelGroupLayout>
                                     </af:showDetailItem>
                                     <af:showDetailItem text="Farmer Certification" id="sdi5">
                                         <af:table value="#{bindings.TblFarmerRegCertView4.collectionModel}" var="row"
@@ -951,7 +951,7 @@
                                                    disabled="#{!bindings.Execute4.enabled}" id="b37"
                                                    icon="#{resource['images:refresh.png']}"/>
                                         <af:spacer width="210" height="20" id="s29"/>
-                                        <panelGroup id="pg5">
+                                        <af:panelGroupLayout id="pg5" layout="horizontal">
                                             <af:spacer width="18" height="20" id="s28"/>
                                             <af:button actionListener="#{bindings.CreateInsert4.execute}" text="Add"
                                                        icon="#{resource['images:add.png']}"
@@ -969,7 +969,7 @@
                                             <af:button actionListener="#{bindings.Commit.execute}" text="Save"
                                                        icon="#{resource['images:save.png']}"
                                                        disabled="#{!bindings.Commit.enabled}" id="b29"/>
-                                        </panelGroup>
+                                        </af:panelGroupLayout>
                                     </af:showDetailItem>
                                     <af:showDetailItem text="Farmer Ownership" id="sdi6">
                                         <af:table value="#{bindings.TblFarmerRegOwnershipView3.collectionModel}"
@@ -1078,7 +1078,7 @@
                                                    disabled="#{!bindings.Execute5.enabled}" id="b38"
                                                    icon="#{resource['images:refresh.png']}"/>
                                         <af:spacer width="210" height="20" id="s30"/>
-                                        <panelGroup id="pg6">
+                                        <af:panelGroupLayout id="pg6" layout="horizontal">
                                             <af:spacer width="285" height="10" id="s37"/>
                                             <af:button actionListener="#{bindings.CreateInsert5.execute}" text="Add"
                                                        icon="#{resource['images:add.png']}"
@@ -1096,7 +1096,7 @@
                                             <af:button actionListener="#{bindings.Commit.execute}" text="Save"
                                                        disabled="#{!bindings.Commit.enabled}"
                                                        icon="#{resource['images:save.png']}" id="b32"/>
-                                        </panelGroup>
+                                        </af:panelGroupLayout>
                                     </af:showDetailItem>
                                 </af:panelTabbed>
                             </af:gridCell>

@@ -1088,12 +1088,6 @@
     DstViewUsageName="model.AppModule.TblItemL2View3"
     Reversed="false"/>
   <ViewLinkUsage
-    Name="Fk2TblItemL2FkLink1"
-    ViewLinkObjectName="model.VO.Fk2TblItemL2FkLink"
-    SrcViewUsageName="model.AppModule.TblItemL1View1"
-    DstViewUsageName="model.AppModule.TblItemL3View3"
-    Reversed="false"/>
-  <ViewLinkUsage
     Name="FkTblItemL3FkLink1"
     ViewLinkObjectName="model.VO.FkTblItemL3FkLink"
     SrcViewUsageName="model.AppModule.TblItemL2View3"
@@ -1104,18 +1098,6 @@
     ViewLinkObjectName="model.VO.Fk3TblGrantAppDetailFkLink"
     SrcViewUsageName="model.AppModule.TblItemL4View1"
     DstViewUsageName="model.AppModule.TblGrantAppDetailView4"
-    Reversed="false"/>
-  <ViewLinkUsage
-    Name="Fk2TblItemL3FkLink1"
-    ViewLinkObjectName="model.VO.Fk2TblItemL3FkLink"
-    SrcViewUsageName="model.AppModule.TblItemL2View1"
-    DstViewUsageName="model.AppModule.TblItemL4View3"
-    Reversed="false"/>
-  <ViewLinkUsage
-    Name="Fk3TblItemL2FkLink1"
-    ViewLinkObjectName="model.VO.Fk3TblItemL2FkLink"
-    SrcViewUsageName="model.AppModule.TblItemL1View1"
-    DstViewUsageName="model.AppModule.TblItemL4View4"
     Reversed="false"/>
   <ViewLinkUsage
     Name="FkTblItemL4FkLink1"
@@ -1610,28 +1592,10 @@
     DstViewUsageName="model.AppModule.TblItemL2View4"
     Reversed="false"/>
   <ViewLinkUsage
-    Name="Fk2TblItemL2FkLink2"
-    ViewLinkObjectName="model.queryBasedVO.Fk2TblItemL2FkLink"
-    SrcViewUsageName="model.AppModule.TblItemL1View2"
-    DstViewUsageName="model.AppModule.TblItemL3View5"
-    Reversed="false"/>
-  <ViewLinkUsage
-    Name="Fk3TblItemL2FkLink2"
-    ViewLinkObjectName="model.queryBasedVO.Fk3TblItemL2FkLink"
-    SrcViewUsageName="model.AppModule.TblItemL1View2"
-    DstViewUsageName="model.AppModule.TblItemL4View6"
-    Reversed="false"/>
-  <ViewLinkUsage
     Name="FkTblItemL3FkLink2"
     ViewLinkObjectName="model.queryBasedVO.FkTblItemL3FkLink"
     SrcViewUsageName="model.AppModule.TblItemL2View2"
     DstViewUsageName="model.AppModule.TblItemL3View6"
-    Reversed="false"/>
-  <ViewLinkUsage
-    Name="Fk2TblItemL3FkLink2"
-    ViewLinkObjectName="model.queryBasedVO.Fk2TblItemL3FkLink"
-    SrcViewUsageName="model.AppModule.TblItemL2View2"
-    DstViewUsageName="model.AppModule.TblItemL4View7"
     Reversed="false"/>
   <ViewLinkUsage
     Name="FkTblItemL4FkLink2"

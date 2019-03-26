@@ -27,6 +27,7 @@
           <Item Value="Category"/>
           <Item Value="Ast"/>
           <Item Value="Designation"/>
+          <Item Value="Project_Name"/>
         </AttrNames>
       </nodeDefinition>
     </tree>
