@@ -337,7 +337,8 @@
                                                                                   columns="#{bindings.TblClusterAttDetailView3.hints.Farmer_Cnic.displayWidth}"
                                                                                   maximumLength="#{bindings.TblClusterAttDetailView3.hints.Farmer_Cnic.precision}"
                                                                                   shortDesc="#{bindings.TblClusterAttDetailView3.hints.Farmer_Cnic.tooltip}"
-                                                                                  id="it6">
+                                                                                  id="it6" contentStyle='text-align:center'>
+                                                                        <f:validateRegex pattern="(^[0-9]{5}-[0-9]{7}-[0-9]$)"/>
                                                                         <f:validator binding="#{row.bindings.Farmer_Cnic.validator}"/>
                                                                     </af:inputText>
                                                                 </af:column>

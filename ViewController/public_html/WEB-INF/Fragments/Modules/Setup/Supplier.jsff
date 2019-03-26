@@ -79,6 +79,7 @@
                                                                                   maximumLength="#{bindings.TblSupplierView1.hints.Cnic.precision}"
                                                                                   shortDesc="#{bindings.TblSupplierView1.hints.Cnic.tooltip}"
                                                                                   id="it16" contentStyle='text-align:center'>
+                                                                       <f:validateRegex pattern="(^[0-9]{5}-[0-9]{7}-[0-9]$)"/>
                                                                         <f:validator binding="#{row.bindings.Cnic.validator}"/>
                                                                     </af:inputText>
                                                                 </af:column>

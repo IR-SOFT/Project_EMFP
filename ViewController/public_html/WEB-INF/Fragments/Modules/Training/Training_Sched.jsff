@@ -177,10 +177,10 @@
                                                                                        partialSubmit="true" id="b20"
                                                                                        icon="#{resource['images:last.png']}"/>
                                                                         <af:spacer width="100" height="10" id="s10"/>
-                                                        <af:button actionListener="#{bindings.CreateInsert.execute}"
+                                                        <af:button actionListener="#{bindings.CreateInsert1.execute}"
                                                                text="Add"
                                                                icon="#{resource['images:add.png']}"
-                                                               disabled="#{!bindings.CreateInsert.enabled}" id="b7"/>
+                                                               disabled="#{!bindings.CreateInsert1.enabled}" id="b13"/>
                                                         <af:spacer width="5" height="10" id="s17"/>
                                                         <af:button actionListener="#{bindings.Execute.execute}"
                                                     icon="#{resource['images:edit.png']}"
@@ -321,10 +321,10 @@
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc7">
                                                     <af:spacer width="100" height="20" id="s9"/>
                                                     <h:panelGroup id="pg2">
-                                                        <af:button actionListener="#{bindings.CreateInsert1.execute}"
+                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                text="Add"
                                                                icon="#{resource['images:add.png']}"
-                                                               disabled="#{!bindings.CreateInsert1.enabled}" id="b13"/>
+                                                               disabled="#{!bindings.CreateInsert.enabled}" id="b7"/>
                                                         <af:spacer width="5" height="10" id="s13"/>
                                                         <af:button actionListener="#{bindings.Execute1.execute}"
                                                                text="Edit" disabled="#{!bindings.Execute1.enabled}"

@@ -88,15 +88,23 @@
                                                                         <f:validator binding="#{row.bindings.FatherName.validator}"/>
                                                                     </af:inputText>
                                                                 </af:column>
-                                                                <af:column headerText="CNIC"
+                                                                <af:column sortProperty="#{bindings.TblTrainerView1.hints.Cnic.name}"
+                                                                           filterable="true" sortable="true"
+                                                                           headerText="CNIC" align="center"
                                                                            id="c19" width="80">
+                                                                            <f:facet name="filter">
+                                                                       <af:inputText value="#{vs.filterCriteria.Cnic}"
+                                                                                     id="it8" placeholder="Search CNIC">
+                                                                       </af:inputText>
+                                                                   </f:facet>
                                                                     <af:inputText value="#{row.bindings.Cnic.inputValue}"
                                                                                   label="#{bindings.TblTrainerView1.hints.Cnic.label}"
                                                                                   required="#{bindings.TblTrainerView1.hints.Cnic.mandatory}"
                                                                                   columns="#{bindings.TblTrainerView1.hints.Cnic.displayWidth}"
                                                                                   maximumLength="#{bindings.TblTrainerView1.hints.Cnic.precision}"
                                                                                   shortDesc="#{bindings.TblTrainerView1.hints.Cnic.tooltip}"
-                                                                                  id="it5">
+                                                                                  id="it5" contentStyle='text-align:center'>
+                                                                       <f:validateRegex pattern="(^[0-9]{5}-[0-9]{7}-[0-9]$)"/>
                                                                         <f:validator binding="#{row.bindings.Cnic.validator}"/>
                                                                     </af:inputText>
                                                                 </af:column>
@@ -708,8 +716,7 @@
                                                                 <af:spacer width="346" height="20" id="s12"/>
                                                                 <af:button actionListener="#{bindings.CreateInsert2.execute}"
                                                                            text="Add"
-                                                                  
-                                                                           icon="#{resource['images:add.png']}"
+                                                                            icon="#{resource['images:add.png']}"
                                                                            disabled="#{!bindings.CreateInsert2.enabled}"
                                                                            id="b19"/>
                                                                 <af:spacer width="5" height="10" id="s17"/>

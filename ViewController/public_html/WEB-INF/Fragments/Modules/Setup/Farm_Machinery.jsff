@@ -649,7 +649,7 @@
                                                                 </af:column>
                                                                 <af:column sortProperty="#{bindings.TblItemL4View1.hints.Name.name}"
                                                                            filterable="true"
-                                                                           headerText="Farm Machinery &amp; Implementations"
+                                                                           headerText="Farm Machinery &amp; Implements"
                                                                            align="left" id="c5" width="250">
                                                                     <f:facet name="filter">
                                                                         <af:inputText value="#{vs.filterCriteria.Name}"

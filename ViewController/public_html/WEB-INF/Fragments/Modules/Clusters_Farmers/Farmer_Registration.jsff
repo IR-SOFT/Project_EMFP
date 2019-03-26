@@ -168,6 +168,7 @@
                                                           maximumLength="#{bindings.Cnic.hints.precision}"
                                                           shortDesc="#{bindings.Cnic.hints.tooltip}" id="it8"
                                                           contentStyle="width:200px">
+                                                <f:validateRegex pattern="(^[0-9]{5}-[0-9]{7}-[0-9]$)"/>
                                                 <f:validator binding="#{bindings.Cnic.validator}"/>
                                             </af:inputText>
                                             <af:inputText value="#{bindings.DrLicNo.inputValue}" label="Driving License"
@@ -670,7 +671,8 @@
                                                               columns="#{bindings.TblFarmerRegMemView3.hints.Cnic.displayWidth}"
                                                               maximumLength="#{bindings.TblFarmerRegMemView3.hints.Cnic.precision}"
                                                               shortDesc="#{bindings.TblFarmerRegMemView3.hints.Cnic.tooltip}"
-                                                              id="it34">
+                                                              id="it34" contentStyle='text-align:center'>
+                                                     <f:validateRegex pattern="(^[0-9]{5}-[0-9]{7}-[0-9]$)"/>
                                                     <f:validator binding="#{row.bindings.Cnic.validator}"/>
                                                 </af:inputText>
                                             </af:column>
