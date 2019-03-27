@@ -60,6 +60,25 @@
   <EntityUsage
     Name="TblClusterAttDetail"
     Entity="model.EO.TblClusterAttDetail"/>
+  <EntityUsage
+    Name="TblFarmerReg"
+    Entity="model.EO.TblFarmerReg"
+    Association="model.EO.Fk2TblClusterAttDetailFkAssoc"
+    AssociationEnd="model.EO.Fk2TblClusterAttDetailFkAssoc.TblFarmerReg"
+    SourceUsage="model.VO.TblClusterAttDetailView.TblClusterAttDetail"
+    ReadOnly="true"
+    Reference="true"
+    DeleteParticipant="false"
+    JoinType="LEFT OUTER JOIN">
+    <DesignTime>
+      <AttrArray Name="_srcAttributes">
+        <Item Value="model.EO.TblClusterAttDetail.FarmerRegId"/>
+      </AttrArray>
+      <AttrArray Name="_dstAttributes">
+        <Item Value="model.EO.TblFarmerReg.FarmerRegId"/>
+      </AttrArray>
+    </DesignTime>
+  </EntityUsage>
   <ViewAttribute
     Name="ClusterAttDetailId"
     IsNotNull="true"
@@ -104,4 +123,35 @@
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
+  <ViewAttribute
+    Name="Farmer_Cnic"
+    IsUnique="true"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Cnic"
+    EntityUsage="TblFarmerReg"
+    AliasName="CNIC"/>
+  <ViewAttribute
+    Name="FarmerRegId1"
+    PrecisionRule="true"
+    EntityAttrName="FarmerRegId"
+    EntityUsage="TblFarmerReg"
+    AliasName="FARMER_REG_ID1"/>
+  <ViewAttribute
+    Name="Farmer_Name"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Name"
+    EntityUsage="TblFarmerReg"
+    AliasName="NAME"/>
+  <ViewAttribute
+    Name="Farmer_Mobile"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Mobile"
+    EntityUsage="TblFarmerReg"
+    AliasName="MOBILE"/>
+  <AttrArray Name="KeyAttributes">
+    <Item Value="ClusterAttDetailId"/>
+  </AttrArray>
 </ViewObject>
