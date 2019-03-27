@@ -23,7 +23,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblClusterAttMasterView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
-                                                                      partialTriggers="::b8 ::b9 ::b10 ::b15"
+                                                                      partialTriggers="::b8 ::b9 ::b15"
                                                                       scrollPolicy="page" autoHeightRows="0"
                                                                       width="1014">
                                                                 <af:column sortProperty="#{bindings.TblClusterAttMasterView1.hints.ClusterId.name}"
@@ -132,7 +132,8 @@
                                                                         <f:validator binding="#{row.bindings.TrainerId.validator}"/>
                                                                     </af:inputText>
                                                                 </af:column>
-                                                                <af:column sortProperty="#{bindings.TblClusterAttMasterView1.hints.Trainer_Name.name}"
+                                    
+                                    <af:column sortProperty="#{bindings.TblClusterAttMasterView1.hints.Trainer_Name.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Trainer"
                                                                            id="c6" width="200">
@@ -188,7 +189,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr3">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc4">
                                                     <af:spacer width="357" height="20" id="s16"/>
-                                                    <h:panelGroup id="pg1">
+                                                    <af:panelGroupLayout id="pg1">
                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"
                                                                    icon="#{resource['images:add.png']}"
@@ -208,7 +209,7 @@
                                                         <af:button actionListener="#{bindings.Commit.execute}"
                                                                    text="Save" icon="#{resource['images:save.png']}"
                                                                    disabled="#{!bindings.Commit.enabled}" id="b16"/>
-                                                    </h:panelGroup>
+                                                    </af:panelGroupLayout>
                                                 </af:gridCell>
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
@@ -232,7 +233,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblClusterAttDetailView3Query.processQuery}"
                                                                       varStatus="vs" id="t2"
-                                                                      partialTriggers="::b11 ::b12 ::b13 ::b18" width="1011"
+                                                                      partialTriggers=" ::b12 ::b13 ::b18" width="1011"
                                                                       scrollPolicy="page" autoHeightRows="0" >
                                                                 
                                                                 <af:column sortProperty="#{bindings.TblClusterAttDetailView3.hints.ClusterAttMasterId.name}"
@@ -299,6 +300,8 @@
                                                                         <f:validator binding="#{row.bindings.FarmerRegId.validator}"/>
                                                                     </af:inputText>
                                                                 </af:column>
+                                      
+                                                                
                                                                 <af:column sortProperty="#{bindings.TblClusterAttDetailView3.hints.Farmer_Name.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Farmer"
@@ -397,7 +400,7 @@
                                             <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr6">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc7">
                                                     <af:spacer width="367" height="20" id="s9"/>
-                                                    <h:panelGroup id="pg2">
+                                                    <af:panelGroupLayout id="pg2">
                                                         <af:button actionListener="#{bindings.CreateInsert1.execute}"
                                                                    text="Add" icon="#{resource['images:add.png']}"
                                                                    disabled="#{!bindings.CreateInsert1.enabled}"
@@ -415,7 +418,7 @@
                                                         <af:button actionListener="#{bindings.Commit.execute}"
                                                                    text="Save" icon="#{resource['images:save.png']}"
                                                                    disabled="#{!bindings.Commit.enabled}" id="b17"/>
-                                                    </h:panelGroup>
+                                                    </af:panelGroupLayout>
                                                 </af:gridCell>
                                             </af:gridRow>
                                         </af:panelGridLayout>
