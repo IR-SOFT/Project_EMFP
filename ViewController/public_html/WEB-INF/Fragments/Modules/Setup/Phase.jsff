@@ -208,6 +208,25 @@
                                                 <af:button actionListener="#{bindings.Last.execute}" text="Last"
                                                            disabled="#{!bindings.Last.enabled}" partialSubmit="true"
                                                            id="b4" icon="#{resource['images:forward.png']}"/>
+                                            <af:spacer width="100" height="20" id="s12"/>
+                                       
+                                            <af:button actionListener="#{bindings.CreateInsert.execute}" text="Add"
+                                                       icon="#{resource['images:add.png']}"
+                                                       disabled="#{!bindings.CreateInsert.enabled}" id="b10"/>
+                                            <af:spacer width="5" height="10" id="s13"/>
+                                            <af:button actionListener="#{bindings.Execute.execute}" text="Edit"
+                                                       icon="#{resource['images:edit.png']}"
+                                                       disabled="#{!bindings.Execute.enabled}" id="b11"/>
+                                            <af:spacer width="5" height="10" id="s10"/>
+                                            <af:button actionListener="#{bindings.Delete.execute}" text="Delete"
+                                                       icon="#{resource['images:delete.png']}"
+                                                       disabled="#{!bindings.Delete.enabled}" id="b12" immediate="true"
+                                                       action="Phase.jsf"/>
+                                            <af:spacer width="5" height="10" id="s11"/>
+                                            <af:button actionListener="#{bindings.Commit.execute}"
+                                                       icon="#{resource['images:save.png']}" text="Save"
+                                                       disabled="#{!bindings.Commit.enabled}" id="b13"/>
+                                        
                                             </af:panelGroupLayout>
                                         </af:panelGroupLayout>
                                     </f:facet>
@@ -333,24 +352,6 @@
                                         <af:button actionListener="#{bindings.Commit.execute}" text="Save"
                                                    disabled="#{!bindings.Commit.enabled}" id="b9"
                                                    icon="#{resource['images:save.png']}"/>
-                                        <af:spacer width="100" height="20" id="s12"/>
-                                       
-                                            <af:button actionListener="#{bindings.CreateInsert.execute}" text="Add"
-                                                       icon="#{resource['images:add.png']}"
-                                                       disabled="#{!bindings.CreateInsert.enabled}" id="b10"/>
-                                            <af:spacer width="5" height="10" id="s13"/>
-                                            <af:button actionListener="#{bindings.Execute.execute}" text="Edit"
-                                                       icon="#{resource['images:edit.png']}"
-                                                       disabled="#{!bindings.Execute.enabled}" id="b11"/>
-                                            <af:spacer width="5" height="10" id="s10"/>
-                                            <af:button actionListener="#{bindings.Delete.execute}" text="Delete"
-                                                       icon="#{resource['images:delete.png']}"
-                                                       disabled="#{!bindings.Delete.enabled}" id="b12" immediate="true"
-                                                       action="Phase.jsf"/>
-                                            <af:spacer width="5" height="10" id="s11"/>
-                                            <af:button actionListener="#{bindings.Commit.execute}"
-                                                       icon="#{resource['images:save.png']}" text="Save"
-                                                       disabled="#{!bindings.Commit.enabled}" id="b13"/>
                                         
                                     </af:panelGroupLayout>
                                 </af:panelGroupLayout>
