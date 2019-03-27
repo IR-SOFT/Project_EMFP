@@ -919,7 +919,7 @@
                                                     <af:inputText value="#{vs.filterCriteria.FarmerRegCertId}" id="it17"
                                                                   placeholder="Search ID"></af:inputText>
                                                 </f:facet>
-                                                <af:inputText value="#{row.bindings.FarmerRegCertId.inputValue}"
+                                                <af:inputText readOnly="true" value="#{row.bindings.FarmerRegCertId.inputValue}"
                                                               label="#{bindings.TblFarmerRegCertView4.hints.FarmerRegCertId.label}"
                                                               required="#{bindings.TblFarmerRegCertView4.hints.FarmerRegCertId.mandatory}"
                                                               columns="#{bindings.TblFarmerRegCertView4.hints.FarmerRegCertId.displayWidth}"
@@ -992,7 +992,7 @@
                                                     <af:inputText value="#{vs.filterCriteria.FarmerRegOwnershipId}"
                                                                   id="it24" placeholder="Search ID"></af:inputText>
                                                 </f:facet>
-                                                <af:inputText value="#{row.bindings.FarmerRegOwnershipId.inputValue}"
+                                                <af:inputText readOnly="true" value="#{row.bindings.FarmerRegOwnershipId.inputValue}"
                                                               label="#{bindings.TblFarmerRegOwnershipView3.hints.FarmerRegOwnershipId.label}"
                                                               required="#{bindings.TblFarmerRegOwnershipView3.hints.FarmerRegOwnershipId.mandatory}"
                                                               columns="#{bindings.TblFarmerRegOwnershipView3.hints.FarmerRegOwnershipId.displayWidth}"
