@@ -10,7 +10,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr2">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
                                                     <af:panelTabbed position="above" id="pt2"
-                                                                    inlineStyle="width:1004px;">
+                                                                    inlineStyle="width:948px;">
                                                         <af:showDetailItem id="tab1" text="Project Components">
                                                             <af:table value="#{bindings.TblProjCompView1.collectionModel}"
                                                                       var="row"
@@ -26,7 +26,7 @@
                                                                       queryListener="#{bindings.TblProjCompView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
                                                                       partialTriggers="::b13 ::b14 ::b15 ::b2"
-                                                                      width="977"
+                                                                      width="936"
                                                                       scrollPolicy="page" autoHeightRows="0" >
                                                                 <af:column sortProperty="#{bindings.TblProjCompView1.hints.ProjId.name}"
                                                                            filterable="true" sortable="true"
@@ -145,7 +145,7 @@
                                             <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr3">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc4">
                                                     <af:panelGroupLayout id="pg3" layout="horizontal">
-                                                    <af:spacer width="343" height="10" id="s2"/>
+                                                    <af:spacer width="310" height="10" id="s2"/>
                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                text="Add"
                                                                  
@@ -189,7 +189,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" id="gc5">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:590px;">
+                                                                    inlineStyle="width:555px;">
                                                         <af:showDetailItem text="Beneficiary" id="sdi3">
                                                             <af:table value="#{bindings.TblBeneficiaryView1.collectionModel}"
                                                                       var="row"
@@ -206,7 +206,7 @@
                                                                       varStatus="vs" id="t4"
                                                                       partialTriggers="::b4 ::b12 ::b19 ::b6"
                                                                       scrollPolicy="page" autoHeightRows="0"
-                                                                      width="569">
+                                                                      width="544">
                                                                 <af:column sortProperty="#{bindings.TblBeneficiaryView1.hints.BeneficiaryId.name}"
                                                                            filterable="true" sortable="true" align="center"
                                                                            headerText=" Beneficiary ID"
@@ -247,7 +247,7 @@
                                                                 </af:column>
                                                                 <af:column sortProperty="#{bindings.TblBeneficiaryView1.hints.Vtp.name}"
                                                                            filterable="true" sortable="true"
-                                                                           headerText="#{bindings.TblBeneficiaryView1.hints.Vtp.label}"
+                                                                           headerText="VTP"
                                                                            id="c16" width="80">
                                                                            <f:facet name="filter">
                                                                        <af:inputText value="#{vs.filterCriteria.Vtp}"
@@ -260,7 +260,7 @@
                                                                                   columns="#{bindings.TblBeneficiaryView1.hints.Vtp.displayWidth}"
                                                                                   maximumLength="#{bindings.TblBeneficiaryView1.hints.Vtp.precision}"
                                                                                   shortDesc="#{bindings.TblBeneficiaryView1.hints.Vtp.tooltip}"
-                                                                                  id="it13" contentStyle='text-align:center'>
+                                                                                  id="it13" contentStyle='width:80px;'>
                                                                         <f:validator binding="#{row.bindings.Vtp.validator}"/>
                                                                     </af:inputText>
                                                                 </af:column>
@@ -294,7 +294,7 @@
                                                                        icon="#{resource['images:refresh.png']}"/>
                                                             <af:spacer width="30" height="40" id="s14"/>
                                                     <af:panelGroupLayout id="pg4" layout="horizontal">
-                                                        <af:spacer width="138" height="20" id="s15"/>
+                                                        <af:spacer width="130" height="20" id="s15"/>
                                     
                                     <af:button actionListener="#{bindings.CreateInsert1.execute}"
                                                                text="Add"

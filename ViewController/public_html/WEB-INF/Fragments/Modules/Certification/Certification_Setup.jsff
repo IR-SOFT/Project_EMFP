@@ -55,7 +55,8 @@
                                                                                   columns="#{bindings.TblCertificationView1.hints.Name.displayWidth}"
                                                                                   maximumLength="#{bindings.TblCertificationView1.hints.Name.precision}"
                                                                                   shortDesc="#{bindings.TblCertificationView1.hints.Name.tooltip}"
-                                                                                  id="it2" placeholder="aaa.......">
+                                                                                  id="it2" placeholder="aaa......."
+                                                                                  inlineStyle="column-fill:balance;">
                                                                         <f:validateRegex pattern="(^[0-9]{5}-[0-9]{7}-[0-9]$)"/>
                                                                         <f:validator binding="#{row.bindings.Name.validator}"/>
                                                                     </af:inputText>

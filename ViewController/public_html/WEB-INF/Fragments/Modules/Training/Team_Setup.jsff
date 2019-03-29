@@ -8,7 +8,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr2">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
                                                     <af:panelTabbed position="above" id="pt2"
-                                                                    inlineStyle="width:786px;">
+                                                                    inlineStyle="width:754px;">
                                                         <af:showDetailItem id="tab1" text="Team Setup">
                                                             <af:table value="#{bindings.TblTeamView1.collectionModel}"
                                                                       var="row"
@@ -23,7 +23,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblTeamView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
-                                                                      partialTriggers="::b6 ::b7 ::b8 ::b13" width="777"
+                                                                      partialTriggers="::b6 ::b7 ::b8 ::b13" width="744"
                                                                       scrollPolicy="page" autoHeightRows="0" >
                                                                 <af:column sortProperty="#{bindings.TblTeamView1.hints.TeamId.name}"
                                                                            filterable="true" sortable="true"
@@ -120,7 +120,7 @@
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" id="gr3">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc4">
-                                                    <af:spacer width="243" height="20" id="s12"/>
+                                                    <af:spacer width="235" height="20" id="s12"/>
                                                     <h:panelGroup id="pg1">
                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"

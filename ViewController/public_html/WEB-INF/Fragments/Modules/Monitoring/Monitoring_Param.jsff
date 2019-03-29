@@ -10,7 +10,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:1001px;">
+                                                                    inlineStyle="width:936px;">
                                                         <af:showDetailItem id="tab2" text="Monitoring Parameters">
                                                             <af:table value="#{bindings.TblMonParamView1.collectionModel}"
                                                                       var="row"
@@ -25,7 +25,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblMonParamView1Query.processQuery}"
                                                                       varStatus="vs" id="t2"
-                                                                      partialTriggers="::b4 ::b6 ::b7 ::b2" width="979"
+                                                                      partialTriggers="::b4 ::b6 ::b7 ::b2" width="923"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblMonParamView1.hints.OutputIndId.name}"
                                                                            filterable="true" sortable="true"
@@ -87,7 +87,7 @@
                                                                 </af:column>
                                                                 <af:column sortProperty="#{bindings.TblMonParamView1.hints.Perc.name}"
                                                                            filterable="true" sortable="true"
-                                                                           headerText="Perquisites" id="c8" width="250">
+                                                                           headerText="Perquisites" id="c8" width="200">
                                                                     <f:facet name="filter">
                                                                         <af:inputText value="#{vs.filterCriteria.Perc}"
                                                                                       id="it10"
@@ -99,7 +99,7 @@
                                                                                   columns="#{bindings.TblMonParamView1.hints.Perc.displayWidth}"
                                                                                   maximumLength="#{bindings.TblMonParamView1.hints.Perc.precision}"
                                                                                   shortDesc="#{bindings.TblMonParamView1.hints.Perc.tooltip}"
-                                                                                  id="it4">
+                                                                                  id="it4" contentStyle='width:200px;'> 
                                                                         <f:validator binding="#{row.bindings.Perc.validator}"/>
                                                                         <af:convertNumber groupingUsed="false"
                                                                                           pattern="#{bindings.TblMonParamView1.hints.Perc.format}"/>
@@ -107,7 +107,7 @@
                                                                 </af:column>
                                                                 <af:column sortProperty="#{bindings.TblMonParamView1.hints.Ast.name}"
                                                                            filterable="true" sortable="true"
-                                                                           headerText="Active" id="c9" width="80">
+                                                                           headerText="Active" id="c9" width="116">
                                                                     <f:facet name="filter">
                                                                         <af:inputText value="#{vs.filterCriteria.Ast}"
                                                                                       id="it11"
@@ -136,7 +136,8 @@
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc6">
                                                     <af:spacer width="343" height="20" id="s2"/>
                                                     <af:panelGroupLayout id="pg1" layout="horizontal">
-                                                        <af:button actionListener="#{bindings.CreateInsert.execute}"
+                                                                   <af:spacer width="322" height="10" id="s1"/>
+                                                                   <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"
                                                                   
                                                                    icon="#{resource['images:add.png']}"
