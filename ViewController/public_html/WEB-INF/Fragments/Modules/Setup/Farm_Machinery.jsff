@@ -569,8 +569,33 @@
                                                                       varStatus="vs" id="t1"
                                                                       partialTriggers=" ::b28"
                                                                       scrollPolicy="page" autoHeightRows="0">
-                                                                
-                                                                <af:column sortProperty="#{bindings.TblItemL4View1.hints.ItemL3Id.name}"
+                                    <af:column headerText="#{bindings.TblItemL4View1.hints.ItemL1Id.label}" id="c3">
+                                        <af:outputText value="#{row.ItemL1Id}"
+                                                       shortDesc="#{bindings.TblItemL4View1.hints.ItemL1Id.tooltip}"
+                                                       id="ot3">
+                                            <af:convertNumber groupingUsed="false"
+                                                              pattern="#{bindings.TblItemL4View1.hints.ItemL1Id.format}"/>
+                                        </af:outputText>
+                                    </af:column>
+                                    <af:column headerText="#{bindings.TblItemL4View1.hints.L1_Name.label}" id="c4">
+                                        <af:outputText value="#{row.L1_Name}"
+                                                       shortDesc="#{bindings.TblItemL4View1.hints.L1_Name.tooltip}"
+                                                       id="ot4"/>
+                                    </af:column>
+                                    <af:column headerText="#{bindings.TblItemL4View1.hints.ItemL2Id.label}" id="c11">
+                                        <af:outputText value="#{row.ItemL2Id}"
+                                                       shortDesc="#{bindings.TblItemL4View1.hints.ItemL2Id.tooltip}"
+                                                       id="ot8">
+                                            <af:convertNumber groupingUsed="false"
+                                                              pattern="#{bindings.TblItemL4View1.hints.ItemL2Id.format}"/>
+                                        </af:outputText>
+                                    </af:column>
+                                    <af:column headerText="#{bindings.TblItemL4View1.hints.L2_Name.label}" id="c14">
+                                        <af:outputText value="#{row.L2_Name}"
+                                                       shortDesc="#{bindings.TblItemL4View1.hints.L2_Name.tooltip}"
+                                                       id="ot9"/>
+                                    </af:column>
+                                    <af:column sortProperty="#{bindings.TblItemL4View1.hints.ItemL3Id.name}"
                                                                            filterable="true" headerText="Level-3 ID"
                                                                            id="c2" width="47" align="center">
                                                                     <f:facet name="filter">
