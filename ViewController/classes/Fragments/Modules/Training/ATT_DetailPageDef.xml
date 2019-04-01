@@ -23,6 +23,7 @@
           <Item Value="Dated"/>
           <Item Value="Status"/>
           <Item Value="Remarks"/>
+          <Item Value="Trainer_Name"/>
         </AttrNames>
       </nodeDefinition>
     </tree>
@@ -39,6 +40,9 @@
           <Item Value="ClusterAttMasterId"/>
           <Item Value="FarmerRegId"/>
           <Item Value="Ast"/>
+          <Item Value="Farmer_Cnic"/>
+          <Item Value="Farmer_Mobile"/>
+          <Item Value="Farmer_Name"/>
         </AttrNames>
       </nodeDefinition>
     </tree>
