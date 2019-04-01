@@ -8,7 +8,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:939px;">
+                                                                    inlineStyle="width:1015px;">
                                                         <af:showDetailItem id="tab2" text="Clusters Setup">
                                                             <af:table value="#{bindings.TblClusterView1.collectionModel}"
                                                                       var="row"
@@ -25,7 +25,7 @@
                                                                       varStatus="vs" id="t2"
                                                                       partialTriggers="::b6 ::b7 ::b8 ::b9"
                                                                       scrollPolicy="page" autoHeightRows="0"
-                                                                      width="925">
+                                                                      width="993">
                                                                 <af:column sortProperty="#{bindings.TblClusterView1.hints.ClusterId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Cluster ID"
@@ -243,7 +243,6 @@
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc6">
                                                     <af:spacer width="350" height="10" id="s7"/>
                                                     <af:panelGroupLayout id="pg1" layout="horizontal">
-                                                    <af:spacer width="315" height="10" id="s1"/>
                                                     <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"
                                                                     icon="#{resource['images:add.png']}"

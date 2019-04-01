@@ -10,7 +10,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:796px;">
+                                                                    inlineStyle="width:827px;">
                                                         <af:showDetailItem id="tab2" text="Output Indicators">
                                                             
                                                             <af:table value="#{bindings.TblOutputIndView1.collectionModel}"
@@ -28,7 +28,7 @@
                                                                       varStatus="vs" id="t2"
                                                                       partialTriggers="::b4 ::b6 ::b7 ::b9"
                                                                       scrollPolicy="page" autoHeightRows="0"
-                                                                      width="784">
+                                                                      width="810">
                                                                 <af:column sortProperty="#{bindings.TblOutputIndView1.hints.OutputIndId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Output Indicators ID"
@@ -125,8 +125,7 @@
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc6">
                                                     <af:spacer width="260" height="20" id="s2"/>
                                                     <af:panelGroupLayout id="pg1" layout="horizontal">
-                                                    <af:spacer width="245" height="10" id="s1"/>
-                                                    <af:button actionListener="#{bindings.CreateInsert.execute}"
+                                                        <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    disabled="#{!bindings.CreateInsert.enabled}"
                                                                    text="Add"
                                                                   
