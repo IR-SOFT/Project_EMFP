@@ -8,7 +8,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr2">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc4">
                                                     <af:panelTabbed position="above" id="pt2"
-                                                                    inlineStyle="width:630px;">
+                                                                    inlineStyle="width:665px;">
                                                         <af:showDetailItem id="tab1" text="Program Setup">
                                                             <af:table value="#{bindings.TblProgView1.collectionModel}"
                                                                       var="row"
@@ -23,7 +23,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblProgView1Query.processQuery}"
                                                                       varStatus="vs" id="t1" inlineStyle="height:242px;"
-                                                                      partialTriggers="::b7 ::b8 ::b9 ::b16" width="619"
+                                                                      partialTriggers="::b7 ::b8 ::b9 ::b16" width="644"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblProgView1.hints.ProgId.name}"
                                                                            filterable="true" sortable="true"
@@ -149,7 +149,7 @@
                                                                       filterModel="#{bindings.TblProgOffView3Query.queryDescriptor}"
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblProgOffView3Query.processQuery}"
-                                                                      varStatus="vs" id="t2" width="1017"
+                                                                      varStatus="vs" id="t2" width="1012"
                                                                       inlineStyle="height:241px;"
                                                                       partialTriggers="::b12 ::b13 ::b14 ::b17"
                                                                       scrollPolicy="page" autoHeightRows="0">
@@ -177,7 +177,7 @@
                                                                 <af:column sortProperty="#{bindings.TblProgOffView3.hints.Name.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Office" align="left" id="c6"
-                                                                           width="150">
+                                                                           width="161">
                                                                      <f:facet name="filter">
                                                                        <af:inputText 
                                                                        value="#{vs.filterCriteria.Name}"
@@ -216,7 +216,7 @@
                                                                 </af:column>
                                                                 <af:column  filterable="true" sortable="true"
                                                                             headerText="#{bindings.TblProgOffView3.hints.Designation.label}"
-                                                                           id="c14" width="90">
+                                                                           id="c14">
                                                                             <f:facet name="filter">
                                                                        <af:inputText 
                                                                        value="#{vs.filterCriteria.Designation}"
@@ -236,7 +236,7 @@
                                                                 <af:column sortProperty="#{bindings.TblProgOffView3.hints.Address.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Address" align="left" id="c8"
-                                                                           width="200">
+                                                                           width="210">
                                                                      <f:facet name="filter">
                                                                        <af:inputText 
                                                                        value="#{vs.filterCriteria.Address}"
@@ -320,7 +320,7 @@
                                                                 <af:column sortProperty="#{bindings.TblProgOffView3.hints.Category.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="#{bindings.TblProgOffView3.hints.Category.label}"
-                                                                           id="c12" width="80" align="left">
+                                                                           id="c12" width="92" align="left">
                                                                     <f:facet name="filter">
                                                                        <af:inputText 
                                                                        value="#{vs.filterCriteria.Category}"
@@ -339,7 +339,7 @@
                                                                 </af:column>
                                                                 <af:column sortProperty="#{bindings.TblProgOffView3.hints.Ast.name}"
                                                                            filterable="true" sortable="true"
-                                                                           headerText="Active" id="c13" width="55"
+                                                                           headerText="Active" id="c13" width="47"
                                                                            align="left">
                                                                      <f:facet name="filter">
                                                                        <af:inputText 
