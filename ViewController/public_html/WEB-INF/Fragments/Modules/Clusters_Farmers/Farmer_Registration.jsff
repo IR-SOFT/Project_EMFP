@@ -243,7 +243,8 @@
                                                           value="#{pageFlowScope.FileManagingBean.file}"/>
                                             <af:button text="button 1" id="b2" partialSubmit="true"
                                                        actionListener="#{pageFlowScope.FileManagingBean.UploadFarmerImage}"/>
-                                    <af:image id="i1" source="/ViewController/faces/javax.faces.resource/#{bindings.Image.inputValue}?ln=user_data/farmerImages" />
+                                    <af:image id="i1" shortDesc="Upload image or refresh application to render properly" source="/ViewController/faces/javax.faces.resource/#{bindings.Image.inputValue}?ln=user_data/farmerImages" />
+                                    
                                     <f:facet name="footer">
                                                 <af:panelGroupLayout id="pgl3">
                                                     <af:panelGroupLayout layout="horizontal" id="pgl4">
