@@ -9,7 +9,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr2">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
                                                     <af:panelTabbed position="above" id="pt2"
-                                                                    inlineStyle="width:772px;">
+                                                                    inlineStyle="width:756px;">
                                                         <af:showDetailItem id="tab1" text="Trainer Setup">
                                                             <af:table value="#{bindings.TblTrainerView1.collectionModel}"
                                                                       var="row"
@@ -25,7 +25,7 @@
                                                                       queryListener="#{bindings.TblTrainerView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
                                                                       partialTriggers="::b7 ::b8 ::b9 ::b12 ::b13 ::b24 ::b25 ::b26"
-                                                                      width="761"
+                                                                      width="751"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblTrainerView1.hints.TrainerId.name}"
                                                                            filterable="true" sortable="true"
@@ -91,7 +91,7 @@
                                                                 <af:column sortProperty="#{bindings.TblTrainerView1.hints.Cnic.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="CNIC" align="center"
-                                                                           id="c19" width="80">
+                                                                           id="c19" width="100">
                                                                             <f:facet name="filter">
                                                                        <af:inputText value="#{vs.filterCriteria.Cnic}"
                                                                                      id="it8" placeholder="Search CNIC">
@@ -345,29 +345,9 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblTrainerAcaView3Query.processQuery}"
                                                                       varStatus="vs" id="t2"
-                                                                      partialTriggers="::b15 ::b16 ::b17 ::b26" width="989"
+                                                                      partialTriggers="::b15 ::b16 ::b17 ::b26"
+                                                                      width="981"
                                                                       scrollPolicy="page" autoHeightRows="0" >
-                                                                <af:column sortProperty="#{bindings.TblTrainerAcaView3.hints.TrainerId.name}"
-                                                                           filterable="true" sortable="true"
-                                                                           headerText="Trainer ID" align="center"
-                                                                           id="c6" width="60">
-                                                                           
-                                                                                <f:facet name="filter">
-                                                                       <af:inputText value="#{vs.filterCriteria.TrainerId}"
-                                                                                     id="it31" placeholder="Search ID">
-                                                                       </af:inputText>
-                                                                   </f:facet>
-                                                                           
-                                                                    <af:inputText value="#{row.bindings.TrainerId.inputValue}"
-                                                                                  label="#{bindings.TblTrainerAcaView3.hints.TrainerId.label}"
-                                                                                  required="#{bindings.TblTrainerAcaView3.hints.TrainerId.mandatory}"
-                                                                                  columns="#{bindings.TblTrainerAcaView3.hints.TrainerId.displayWidth}"
-                                                                                  maximumLength="#{bindings.TblTrainerAcaView3.hints.TrainerId.precision}"
-                                                                                  shortDesc="#{bindings.TblTrainerAcaView3.hints.TrainerId.tooltip}"
-                                                                                  id="it17">
-                                                                        <f:validator binding="#{row.bindings.TrainerId.validator}"/>
-                                                                    </af:inputText>
-                                                                </af:column>
                                                                 <af:column sortProperty="#{bindings.TblTrainerAcaView3.hints.TrainerAcaId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Academy ID" align="center"
@@ -392,7 +372,7 @@
                                                                 <af:column sortProperty="#{bindings.TblTrainerAcaView3.hints.Degree.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="#{bindings.TblTrainerAcaView3.hints.Degree.label}"
-                                                                           id="c7" width="150">
+                                                                           id="c7" width="200">
                                                                            
                                                                                     <f:facet name="filter">
                                                                        <af:inputText value="#{vs.filterCriteria.Degree}"
@@ -437,7 +417,7 @@
                                                                 <af:column sortProperty="#{bindings.TblTrainerAcaView3.hints.MajSub.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Major Subject" id="c9"
-                                                                           width="150">
+                                                                           width="200">
                                                                            
                                                                                        <f:facet name="filter">
                                                                        <af:inputText value="#{vs.filterCriteria.MajSub}"
@@ -502,7 +482,7 @@
                                                                 <af:column sortProperty="#{bindings.TblTrainerAcaView3.hints.Cgpa.name}"
                                                                            filterable="true" sortable="true"
                                                                            align="center" headerText="CGPA" id="c12"
-                                                                           width="55">
+                                                                           width="70">
                                                                            
                                                                                   <f:facet name="filter">
                                                                        <af:inputText value="#{vs.filterCriteria.Cgpa}"
@@ -528,7 +508,7 @@
                                                                        icon="#{resource['images:refresh.png']}"/>
                                                             <af:spacer width="40" height="20" id="s9"/>
                                                             <af:panelGroupLayout id="pg2">
-                                                                <af:spacer width="346" height="20" id="s10"/>
+                                                                <af:spacer width="350" height="20" id="s10"/>
                                                                 <af:button actionListener="#{bindings.CreateInsert1.execute}"
                                                                            text="Add"
                                                                   
@@ -573,30 +553,9 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblTrainerPercView3Query.processQuery}"
                                                                       varStatus="vs" id="t3"
-                                                                      partialTriggers="::b19 ::b20 ::b21 ::b27" width="988"
+                                                                      partialTriggers="::b19 ::b20 ::b21 ::b27"
+                                                                      width="931"
                                                                       scrollPolicy="page" autoHeightRows="0" >
-                                                                <af:column sortProperty="#{bindings.TblTrainerPercView3.hints.TrainerId.name}"
-                                                                           filterable="true" sortable="true"
-                                                                           headerText="Trainer ID" align="center"
-                                                                           id="c14" width="60">
-                                                                           
-                                                                                   <f:facet name="filter">
-                                                                       <af:inputText value="#{vs.filterCriteria.TrainerId}"
-                                                                                     id="it39" placeholder="Search ID">
-                                                                       </af:inputText>
-                                                                   </f:facet>
-                                                                           
-                                                                           
-                                                                    <af:inputText value="#{row.bindings.TrainerId.inputValue}"
-                                                                                  label="#{bindings.TblTrainerPercView3.hints.TrainerId.label}"
-                                                                                  required="#{bindings.TblTrainerPercView3.hints.TrainerId.mandatory}"
-                                                                                  columns="#{bindings.TblTrainerPercView3.hints.TrainerId.displayWidth}"
-                                                                                  maximumLength="#{bindings.TblTrainerPercView3.hints.TrainerId.precision}"
-                                                                                  shortDesc="#{bindings.TblTrainerPercView3.hints.TrainerId.tooltip}"
-                                                                                  id="it25" >
-                                                                        <f:validator binding="#{row.bindings.TrainerId.validator}"/>
-                                                                    </af:inputText>
-                                                                </af:column>
                                                                 <af:column sortProperty="#{bindings.TblTrainerPercView3.hints.TrainerPercId.name}"
                                                                            filterable="true" sortable="true"
                                                                            align="center"
@@ -622,7 +581,7 @@
                                                                 <af:column sortProperty="#{bindings.TblTrainerPercView3.hints.PercName.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Perquisites" id="c15"
-                                                                           width="150">
+                                                                           width="200">
                                                                            
                                                                                      <f:facet name="filter">
                                                                        <af:inputText value="#{vs.filterCriteria.PercName}"
@@ -713,7 +672,7 @@
                                                                        icon="#{resource['images:refresh.png']}"/>
                                                             <af:spacer width="30" height="20" id="s11"/>
                                                             <af:panelGroupLayout id="pg3">
-                                                                <af:spacer width="346" height="20" id="s12"/>
+                                                                <af:spacer width="330" height="20" id="s12"/>
                                                                 <af:button actionListener="#{bindings.CreateInsert2.execute}"
                                                                            text="Add"
                                                                             icon="#{resource['images:add.png']}"

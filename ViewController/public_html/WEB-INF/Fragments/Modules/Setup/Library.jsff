@@ -8,7 +8,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr2">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
                                                     <af:panelTabbed position="above" id="pt2"
-                                                                    inlineStyle="width:445px;">
+                                                                    inlineStyle="width:426px;">
                                                         <af:showDetailItem id="tab1" text="Library Master">
                                                             <af:table value="#{bindings.TblLibrMasterView1.collectionModel}"
                                                                       var="row"
@@ -23,7 +23,8 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblLibrMasterView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
-                                                                      partialTriggers="::b10 ::b11 ::b12 ::b8" width="430"
+                                                                      partialTriggers="::b10 ::b11 ::b12 ::b8"
+                                                                      width="412"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblLibrMasterView1.hints.LibrMasterId.name}"
                                                                            filterable="true" sortable="true"
@@ -108,7 +109,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr5">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc6">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:610px;">
+                                                                    inlineStyle="width:588px;">
                                                         <af:showDetailItem id="tab2" text="Library Detail">
                                                             <af:table value="#{bindings.TblLibrDetailView3.collectionModel}"
                                                                       var="row"
@@ -123,7 +124,8 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblLibrDetailView3Query.processQuery}"
                                                                       varStatus="vs" id="t2"
-                                                                      partialTriggers="::b13 ::b14 ::b15 ::b9" width="594"
+                                                                      partialTriggers="::b13 ::b14 ::b15 ::b9"
+                                                                      width="575"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblLibrDetailView3.hints.LibrDetailId.name}"
                                                                            filterable="true" sortable="true"
@@ -197,7 +199,7 @@
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr6">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc7">
-                                                    <af:spacer width="157" height="20" id="s10"/>
+                                                    <af:spacer width="150" height="20" id="s10"/>
                                                     <h:panelGroup id="pg1">
                                                         <af:button actionListener="#{bindings.CreateInsert1.execute}"
                                                                    text="Add" icon="#{resource['images:add.png']}"

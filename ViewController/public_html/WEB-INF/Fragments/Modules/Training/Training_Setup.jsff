@@ -10,7 +10,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:828px;">
+                                                                    inlineStyle="width:797px;">
                                                         <af:showDetailItem id="tab2" text="Training Setup">
                                                             <af:table value="#{bindings.TblCourseView1.collectionModel}"
                                                                       var="row"
@@ -27,7 +27,7 @@
                                                                       varStatus="vs" id="t2"
                                                                       partialTriggers="::b7 ::b8 ::b9 ::b13"
                                                                       scrollPolicy="page" autoHeightRows="0"
-                                                                      width="813">
+                                                                      width="785">
                                                                 <af:column sortProperty="#{bindings.TblCourseView1.hints.CourseId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Training ID"

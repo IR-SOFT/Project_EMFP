@@ -11,7 +11,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr3">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc4">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:850px;">
+                                                                    inlineStyle="width:776px;">
                                                         <af:showDetailItem id="tab2" text="Project Setup">
                                                             <af:table value="#{bindings.TblProjView1.collectionModel}"
                                                                       var="row"
@@ -26,7 +26,8 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblProjView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"
-                                                                      partialTriggers="::b11 ::b12 ::b13 ::b16" width="832"
+                                                                      partialTriggers="::b11 ::b12 ::b13 ::b16"
+                                                                      width="765"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblProjView1.hints.ProgId.name}"
                                                                            headerText="Program" filterable="true"
@@ -122,7 +123,7 @@
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5">
-                                                    <af:spacer width="277" height="15" id="s16"/>
+                                                    <af:spacer width="235" height="15" id="s16"/>
                                                      <h:panelGroup id="pg1">
                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"
@@ -196,7 +197,7 @@
                                                                 </af:column>
                                                                 <af:column sortProperty="#{bindings.TblProjOffView3.hints.Name.name}"
                                                                            filterable="true" sortable="true"
-                                                                           headerText="Office" id="c7" width="173"
+                                                                           headerText="Office" id="c7" width="170"
                                                                            align="left">
                                                                     <f:facet name="filter">
                                                                        <af:inputText 
@@ -217,7 +218,7 @@
                                                                 <af:column sortProperty="#{bindings.TblProjOffView3.hints.ContactPer.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Contact Person" id="c8"
-                                                                           align="left" width="120">
+                                                                           align="left" width="100">
                                                                      <f:facet name="filter">
                                                                        <af:inputText 
                                                                        value="#{vs.filterCriteria.ContactPer}"
@@ -236,7 +237,7 @@
                                                                 </af:column>
                                                                 <af:column  filterable="true" sortable="true"
                                                                             headerText="#{bindings.TblProjOffView3.hints.Designation.label}"
-                                                                           id="c2">
+                                                                           id="c2" width="80">
                                                                             <f:facet name="filter">
                                                                        <af:inputText 
                                                                        value="#{vs.filterCriteria.Designation}"
@@ -256,7 +257,7 @@
                                                                 <af:column sortProperty="#{bindings.TblProjOffView3.hints.Address.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="#{bindings.TblProjOffView3.hints.Address.label}"
-                                                                           id="c9" align="left" width="210">
+                                                                           id="c9" align="left" width="200">
                                                                     <f:facet name="filter">
                                                                        <af:inputText 
                                                                        value="#{vs.filterCriteria.Address}"
@@ -317,7 +318,7 @@
                                                                 </af:column>
                                                                 <af:column sortProperty="#{bindings.TblProjOffView3.hints.Email.name}"
                                                                            filterable="true" sortable="true"
-                                                                           headerText="E-mail" id="c12" width="70"
+                                                                           headerText="E-mail" id="c12" width="80"
                                                                            align="left">
                                                                     <f:facet name="filter">
                                                                        <af:inputText 
@@ -338,7 +339,7 @@
                                                                 <af:column sortProperty="#{bindings.TblProjOffView3.hints.Category.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="#{bindings.TblProjOffView3.hints.Category.label}"
-                                                                           id="c13" width="88" align="left">
+                                                                           id="c13" width="80" align="left">
                                                                      <f:facet name="filter">
                                                                        <af:inputText 
                                                                        value="#{vs.filterCriteria.Category}"
@@ -357,7 +358,7 @@
                                                                 </af:column>
                                                                 <af:column sortProperty="#{bindings.TblProjOffView3.hints.Ast.name}"
                                                                            filterable="true" sortable="true"
-                                                                           headerText="Active" id="c14" width="52"
+                                                                           headerText="Active" id="c14" width="58"
                                                                            align="left">
                                                                      <f:facet name="filter">
                                                                        <af:inputText 

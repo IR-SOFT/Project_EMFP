@@ -33,7 +33,7 @@
                                                                                           varStatus="vs" id="t2"
                                                                                           partialTriggers="::b9 ::b10 ::b11 ::b25"
                                                                                           scrollPolicy="page" autoHeightRows="0"
-                                                                                          width="460">
+                                                                                          width="439">
                                                                                     <af:column sortProperty="#{bindings.TblItemL1View1.hints.ItemL1Id.name}"
                                                                                                filterable="true"
                                                                                                sortable="true"
@@ -152,7 +152,7 @@
                                                                     <af:gridCell marginStart="5px" width="100%"
                                                                                  marginEnd="5px" id="gc10">
                                                                         <af:panelTabbed position="above" id="pt4"
-                                                                                        inlineStyle="width:996px;">
+                                                                                        inlineStyle="width:445px;">
                                                                             <af:showDetailItem id="tab3" text="Level 2">
                                                                                 <af:table value="#{bindings.TblItemL2View3.collectionModel}"
                                                                                           var="row"
@@ -169,7 +169,7 @@
                                                                                           varStatus="vs" id="t3"
                                                                                           partialTriggers="::b14 ::b15 ::b16 ::b17 ::b18 ::b19 ::b26"
                                                                                           scrollPolicy="page" autoHeightRows="0"
-                                                                                          width="457">
+                                                                                          width="437">
                                                                                     <af:column sortProperty="#{bindings.TblItemL2View3.hints.ItemL2Id.name}"
                                                                                                filterable="true"
                                                                                                sortable="true"
@@ -286,7 +286,7 @@
                                                                     <af:gridCell marginStart="5px" width="100%"
                                                                                  marginEnd="5px" id="gc12">
                                                                         <af:panelTabbed position="above" id="pt5"
-                                                                                        inlineStyle="width:993px;">
+                                                                                        inlineStyle="width:450px;">
                                                                             <af:showDetailItem id="tab4" text="Level 3">
                                                                                 <af:table value="#{bindings.TblItemL3View4.collectionModel}"
                                                                                           var="row"
@@ -303,7 +303,7 @@
                                                                                           varStatus="vs" id="t4"
                                                                                           partialTriggers="::b17 ::b18 ::b19 ::b27"
                                                                                           scrollPolicy="page" autoHeightRows="0"
-                                                                                          width="459">
+                                                                                          width="438">
                                                                                     <af:column sortProperty="#{bindings.TblItemL3View4.hints.ItemL3Id.name}"
                                                                                                filterable="true"
                                                                                                sortable="true"
@@ -420,7 +420,7 @@
                                                                     <af:gridCell marginStart="5px" width="100%"
                                                                                  marginEnd="5px" id="gc14">
                                                                         <af:panelTabbed position="above" id="pt6"
-                                                                                        inlineStyle="width:994px;">
+                                                                                        inlineStyle="width:453px;">
                                                                             <af:showDetailItem id="tab5" text="Level 4">
                                                                                 <af:table value="#{bindings.TblItemL4View5.collectionModel}"
                                                                                           var="row"
@@ -437,7 +437,7 @@
                                                                                           varStatus="vs" id="t5"
                                                                                           partialTriggers="::b21 ::b22 ::b23 ::b29"
                                                                                           scrollPolicy="page" autoHeightRows="0"
-                                                                                          width="460">
+                                                                                          width="441">
                                                                                     <af:column sortProperty="#{bindings.TblItemL4View5.hints.ItemL4Id.name}"
                                                                                                filterable="true"
                                                                                                sortable="true"
@@ -569,8 +569,33 @@
                                                                       varStatus="vs" id="t1"
                                                                       partialTriggers=" ::b28"
                                                                       scrollPolicy="page" autoHeightRows="0">
-                                                                
-                                                                <af:column sortProperty="#{bindings.TblItemL4View1.hints.ItemL3Id.name}"
+                                    <af:column headerText="#{bindings.TblItemL4View1.hints.ItemL1Id.label}" id="c3">
+                                        <af:outputText value="#{row.ItemL1Id}"
+                                                       shortDesc="#{bindings.TblItemL4View1.hints.ItemL1Id.tooltip}"
+                                                       id="ot3">
+                                            <af:convertNumber groupingUsed="false"
+                                                              pattern="#{bindings.TblItemL4View1.hints.ItemL1Id.format}"/>
+                                        </af:outputText>
+                                    </af:column>
+                                    <af:column headerText="#{bindings.TblItemL4View1.hints.L1_Name.label}" id="c4">
+                                        <af:outputText value="#{row.L1_Name}"
+                                                       shortDesc="#{bindings.TblItemL4View1.hints.L1_Name.tooltip}"
+                                                       id="ot4"/>
+                                    </af:column>
+                                    <af:column headerText="#{bindings.TblItemL4View1.hints.ItemL2Id.label}" id="c11">
+                                        <af:outputText value="#{row.ItemL2Id}"
+                                                       shortDesc="#{bindings.TblItemL4View1.hints.ItemL2Id.tooltip}"
+                                                       id="ot8">
+                                            <af:convertNumber groupingUsed="false"
+                                                              pattern="#{bindings.TblItemL4View1.hints.ItemL2Id.format}"/>
+                                        </af:outputText>
+                                    </af:column>
+                                    <af:column headerText="#{bindings.TblItemL4View1.hints.L2_Name.label}" id="c14">
+                                        <af:outputText value="#{row.L2_Name}"
+                                                       shortDesc="#{bindings.TblItemL4View1.hints.L2_Name.tooltip}"
+                                                       id="ot9"/>
+                                    </af:column>
+                                    <af:column sortProperty="#{bindings.TblItemL4View1.hints.ItemL3Id.name}"
                                                                            filterable="true" headerText="Level-3 ID"
                                                                            id="c2" width="47" align="center">
                                                                     <f:facet name="filter">

@@ -7,7 +7,7 @@
                     <af:panelGridLayout id="pgl2">
                         <af:gridRow marginTop="5px" height="auto" id="gr2">
                             <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
-                                <af:panelTabbed position="above" id="pt2" inlineStyle="width:814px;">
+                                <af:panelTabbed position="above" id="pt2" inlineStyle="width:780px;">
                                     <af:showDetailItem id="tab1" text="Farmer Registration">
                                         <af:table value="#{bindings.TblFarmerRegView1.collectionModel}" var="row"
                                                   rows="#{bindings.TblFarmerRegView1.rangeSize}"
@@ -22,7 +22,7 @@
                                                   queryListener="#{bindings.TblFarmerRegView1Query.processQuery}"
                                                   varStatus="vs" id="t1"
                                                   partialTriggers="::b4 ::b6 ::b7 ::b8 ::b11 ::b12 ::b13 ::b33"
-                                                  width="797" scrollPolicy="page" autoHeightRows="0">
+                                                  width="766" scrollPolicy="page" autoHeightRows="0">
                                             <af:column sortProperty="#{bindings.TblFarmerRegView1.hints.ClusterId.name}"
                                                        filterable="true" sortable="true" headerText="Cluster" id="c20"
                                                        width="150">
@@ -342,7 +342,7 @@
                                                               columns="#{bindings.TblFarmerRegLandView3.hints.LandAcre.displayWidth}"
                                                               maximumLength="#{bindings.TblFarmerRegLandView3.hints.LandAcre.precision}"
                                                               shortDesc="#{bindings.TblFarmerRegLandView3.hints.LandAcre.tooltip}"
-                                                              id="it41">
+                                                              id="it41" >
                                                     <f:validator binding="#{row.bindings.LandAcre.validator}"/>
                                                     <af:convertNumber groupingUsed="false"
                                                                       pattern="#{bindings.TblFarmerRegLandView3.hints.LandAcre.format}"/>
@@ -361,7 +361,7 @@
                                                               columns="#{bindings.TblFarmerRegLandView3.hints.LandKanal.displayWidth}"
                                                               maximumLength="#{bindings.TblFarmerRegLandView3.hints.LandKanal.precision}"
                                                               shortDesc="#{bindings.TblFarmerRegLandView3.hints.LandKanal.tooltip}"
-                                                              id="it19">
+                                                              id="it19" >
                                                     <f:validator binding="#{row.bindings.LandKanal.validator}"/>
                                                     <af:convertNumber groupingUsed="false"
                                                                       pattern="#{bindings.TblFarmerRegLandView3.hints.LandKanal.format}"/>
@@ -587,7 +587,7 @@
                                                   filterVisible="true"
                                                   queryListener="#{bindings.TblFarmerRegMemView3Query.processQuery}"
                                                   varStatus="vs" id="t3" partialTriggers="::b19 ::b20 ::b21 ::b35"
-                                                  width="990" scrollPolicy="page" autoHeightRows="0">
+                                                  width="997" scrollPolicy="page" autoHeightRows="0">
                                             <af:column sortProperty="#{bindings.TblFarmerRegMemView3.hints.FarmerRegMemId.name}"
                                                        filterable="true" sortable="true" align="center"
                                                        headerText="Member ID" id="c19" width="60">
@@ -607,7 +607,7 @@
                                             </af:column>
                                             <af:column sortProperty="#{bindings.TblFarmerRegMemView3.hints.Name.name}"
                                                        filterable="true" sortable="true" headerText="Member" id="c21"
-                                                       width="120">
+                                                       width="150">
                                                 <f:facet name="filter">
                                                     <af:inputText value="#{vs.filterCriteria.Name}" id="it58"
                                                                   placeholder="Search Member"></af:inputText>
@@ -624,7 +624,7 @@
                                             </af:column>
                                             <af:column sortProperty="#{bindings.TblFarmerRegMemView3.hints.FatherName.name}"
                                                        filterable="true" sortable="true" headerText="Father" id="c22"
-                                                       width="120">
+                                                       width="150">
                                                 <f:facet name="filter">
                                                     <af:inputText value="#{vs.filterCriteria.FatherName}" id="it59"
                                                                   placeholder="Search Father"></af:inputText>
@@ -725,7 +725,7 @@
                                                               columns="#{bindings.TblFarmerRegMemView3.hints.Relation.displayWidth}"
                                                               maximumLength="#{bindings.TblFarmerRegMemView3.hints.Relation.precision}"
                                                               shortDesc="#{bindings.TblFarmerRegMemView3.hints.Relation.tooltip}"
-                                                              id="it37">
+                                                              id="it37" contentStyle='width:86px;'>
                                                     <f:validator binding="#{row.bindings.Relation.validator}"/>
                                                 </af:inputText>
                                             </af:column>
@@ -743,7 +743,7 @@
                                                               columns="#{bindings.TblFarmerRegMemView3.hints.Religion.displayWidth}"
                                                               maximumLength="#{bindings.TblFarmerRegMemView3.hints.Religion.precision}"
                                                               shortDesc="#{bindings.TblFarmerRegMemView3.hints.Religion.tooltip}"
-                                                              id="it38">
+                                                              id="it38" contentStyle='width:100px;'>
                                                     <f:validator binding="#{row.bindings.Religion.validator}"/>
                                                 </af:inputText>
                                             </af:column>
@@ -753,7 +753,7 @@
                                                    icon="#{resource['images:refresh.png']}"/>
                                         <af:spacer width="200" height="20" id="s9"/>
                                         <af:panelGroupLayout id="pg3" layout="horizontal">
-                                            <af:spacer width="350" height="20" id="s8"/>
+                                            <af:spacer width="330" height="20" id="s8"/>
                                             <af:button actionListener="#{bindings.CreateInsert2.execute}" text="Add"
                                                        icon="#{resource['images:add.png']}"
                                                        disabled="#{!bindings.CreateInsert2.enabled}" id="b19"/>
@@ -785,7 +785,7 @@
                                                   filterVisible="true"
                                                   queryListener="#{bindings.TblFarmerRegCropsView4Query.processQuery}"
                                                   varStatus="vs" id="t4" partialTriggers="::b23 ::b24 ::b25 ::b36"
-                                                  width="716" scrollPolicy="page" autoHeightRows="0">
+                                                  width="685" scrollPolicy="page" autoHeightRows="0">
                                             <af:column sortProperty="#{bindings.TblFarmerRegCropsView4.hints.FarmerRegCropsId.name}"
                                                        filterable="true" sortable="true" align="center"
                                                        headerText="Farmer Reg Crops ID" id="c29" width="100">
@@ -910,7 +910,7 @@
                                                   filterVisible="true"
                                                   queryListener="#{bindings.TblFarmerRegCertView4Query.processQuery}"
                                                   varStatus="vs" id="t5" partialTriggers="::b12 ::b27 ::b28 ::b37"
-                                                  width="329" scrollPolicy="page" autoHeightRows="0">
+                                                  width="315" scrollPolicy="page" autoHeightRows="0">
                                             <af:column sortProperty="#{bindings.TblFarmerRegCertView4.hints.FarmerRegCertId.name}"
                                                        filterable="true" sortable="true"
                                                        headerText="Farmer Certification ID" id="c35" align="center"
@@ -984,7 +984,7 @@
                                                   filterVisible="true"
                                                   queryListener="#{bindings.TblFarmerRegOwnershipView3Query.processQuery}"
                                                   varStatus="vs" id="t6" partialTriggers="::b10 ::b30 ::b31 ::b38"
-                                                  width="859" scrollPolicy="page" autoHeightRows="0">
+                                                  width="830" scrollPolicy="page" autoHeightRows="0">
                                             <af:column sortProperty="#{bindings.TblFarmerRegOwnershipView3.hints.FarmerRegOwnershipId.name}"
                                                        filterable="true" sortable="true" headerText="Farmer Owner ID"
                                                        id="c38" align="center" width="100">
@@ -1032,7 +1032,8 @@
                                                               columns="#{bindings.TblFarmerRegOwnershipView3.hints.Cnic.displayWidth}"
                                                               maximumLength="#{bindings.TblFarmerRegOwnershipView3.hints.Cnic.precision}"
                                                               shortDesc="#{bindings.TblFarmerRegOwnershipView3.hints.Cnic.tooltip}"
-                                                              id="it79" inlineStyle="text-align: center;">
+                                                              id="it79" contentStyle='text-align:center'>
+                                                     <f:validateRegex pattern="(^[0-9]{5}-[0-9]{7}-[0-9]$)"/>
                                                     <f:validator binding="#{row.bindings.Cnic.validator}"/>
                                                 </af:inputText>
                                             </af:column>
@@ -1079,7 +1080,7 @@
                                                    icon="#{resource['images:refresh.png']}"/>
                                         <af:spacer width="210" height="20" id="s30"/>
                                         <af:panelGroupLayout id="pg6" layout="horizontal">
-                                            <af:spacer width="285" height="10" id="s37"/>
+                                            <af:spacer width="270" height="10" id="s37"/>
                                             <af:button actionListener="#{bindings.CreateInsert5.execute}" text="Add"
                                                        icon="#{resource['images:add.png']}"
                                                        disabled="#{!bindings.CreateInsert5.enabled}" id="b10"/>

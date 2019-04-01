@@ -8,7 +8,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr2">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
                                                     <af:panelTabbed position="above" id="pt2"
-                                                                    inlineStyle="width:838px;">
+                                                                    inlineStyle="width:802px;">
                                                         <af:showDetailItem id="tab1" text="Supplier Rate Master Setup">
                                                             <af:table value="#{bindings.TblSupplierRateMasterView1.collectionModel}"
                                                                       var="row"
@@ -25,7 +25,7 @@
                                                                       varStatus="vs" id="t1"
                                                                       partialTriggers="::b9 ::b10 ::b11 ::b8"
                                                                       scrollPolicy="page" autoHeightRows="0"
-                                                                      width="818">
+                                                                      width="788">
                                                                 <af:column sortProperty="#{bindings.TblSupplierRateMasterView1.hints.SupplierId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Supplier" id="c13" width="200">
@@ -165,7 +165,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr5">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc6">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:587px;">
+                                                                    inlineStyle="width:550px;">
                                                         <af:showDetailItem id="tab2" text="Supplier Rate Detail Setup">
                                                             <af:table value="#{bindings.TblSupplierRateDetailView4.collectionModel}"
                                                                       var="row"
@@ -182,7 +182,7 @@
                                                                       varStatus="vs" id="t2"
                                                                       partialTriggers="::b13 ::b14 ::b15 ::b17"
                                                                       scrollPolicy="page" autoHeightRows="0"
-                                                                      width="569">
+                                                                      width="539">
                                                                 <af:column sortProperty="#{bindings.TblSupplierRateDetailView4.hints.SupplierRateDetailId.name}"
                                                                            filterable="true" sortable="true"
                                                                            align="center"
@@ -273,7 +273,7 @@
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr6">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc7">
-                                                    <af:spacer width="138" height="20" id="s15"/>
+                                                    <af:spacer width="120" height="20" id="s15"/>
                                                     <h:panelGroup id="pg2">
                                                         <af:button actionListener="#{bindings.CreateInsert1.execute}"
                                                                    text="Add"

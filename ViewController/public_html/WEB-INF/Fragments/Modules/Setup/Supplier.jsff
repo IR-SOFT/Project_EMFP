@@ -6,7 +6,7 @@
             <af:panelGridLayout id="pgl2">
                 <af:gridRow marginTop="5px" height="auto" id="gr2">
                     <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
-                        <af:panelTabbed position="above" id="pt2" inlineStyle="width:700px;">
+                        <af:panelTabbed position="above" id="pt2" inlineStyle="width:606px;">
                             <af:showDetailItem id="tab1" text="Supplier Setup">
                                 <af:table value="#{bindings.TblSupplierView1.collectionModel}" var="row"
                                           rows="#{bindings.TblSupplierView1.rangeSize}"
@@ -19,7 +19,7 @@
                                           filterVisible="true"
                                           queryListener="#{bindings.TblSupplierView1Query.processQuery}" varStatus="vs"
                                           id="t1" partialTriggers="::b9 ::b10 ::b13 ::b14 ::b16 ::b1"
-                                          scrollPolicy="page" autoHeightRows="0">
+                                          scrollPolicy="page" autoHeightRows="0" width="600">
                                     <af:column sortProperty="#{bindings.TblSupplierView1.hints.SupplierId.name}"
                                                filterable="true" sortable="true" align="center" headerText="Supplier ID"
                                                id="c1" width="65">
@@ -55,7 +55,7 @@
                                         </af:inputText>
                                     </af:column>
                                     <af:column filterable="true" sortable="true" headerText="CNIC" id="c4"
-                                               align="center" width="250">
+                                               align="center" width="200">
                                         <f:facet name="filter">
                                             <af:inputText value="#{vs.filterCriteria.Cnic}" id="it17"
                                                           placeholder="Search CNIC"></af:inputText>

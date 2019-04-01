@@ -334,7 +334,7 @@
                                            disabled="#{!bindings.Execute1.enabled}" id="b5"/>
                                 <af:spacer width="10" height="50" id="s5"/>
                                 <af:panelGroupLayout id="pgl5" layout="horizontal">
-                                    <af:spacer width="150" height="10" id="s6"/>
+                                    <af:spacer width="334" height="10" id="s6"/>
                                     <af:panelGroupLayout id="pgl4">
                                         <af:button actionListener="#{bindings.CreateInsert1.execute}" text="Add"
                                                    disabled="#{!bindings.CreateInsert1.enabled}" id="b6"

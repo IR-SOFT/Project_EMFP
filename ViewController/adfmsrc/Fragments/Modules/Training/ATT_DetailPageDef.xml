@@ -53,5 +53,18 @@
     <action IterBinding="TblClusterAttDetailView3Iterator" id="Execute1" RequiresUpdateModel="true"
             Action="iteratorExecute"/>
     <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction" DataControl="AppModuleDataControl"/>
+    <tree IterBinding="TblClusterAttMasterView1Iterator" id="TblClusterAttMasterView11">
+      <nodeDefinition DefName="model.VO.TblClusterAttMasterView" Name="TblClusterAttMasterView110">
+        <AttrNames>
+          <Item Value="ClusterAttMasterId"/>
+          <Item Value="TrainerId"/>
+          <Item Value="ClusterId"/>
+          <Item Value="Dated"/>
+          <Item Value="Status"/>
+          <Item Value="Remarks"/>
+          <Item Value="Trainer_Name"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
   </bindings>
 </pageDefinition>

@@ -8,7 +8,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr2">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
                                                     <af:panelTabbed position="above" id="pt2"
-                                                                    inlineStyle="width:735px;">
+                                                                    inlineStyle="width:616px;">
                                                         <af:showDetailItem id="tab1" text="Training Setup">
                                                             <af:table value="#{bindings.TblCourseView1.collectionModel}"
                                                                       var="row"
@@ -22,7 +22,7 @@
                                                                       filterModel="#{bindings.TblCourseView1Query.queryDescriptor}"
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblCourseView1Query.processQuery}"
-                                                                      varStatus="vs" id="t1" width="730"
+                                                                      varStatus="vs" id="t1" width="603"
                                                                       partialTriggers="::b13"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblCourseView1.hints.CourseId.name}"
@@ -95,7 +95,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:735px;">
+                                                                    inlineStyle="width:705px;">
                                                         <af:showDetailItem id="tab2" text="Module Setup">
                                                             <af:table value="#{bindings.TblModuleView3.collectionModel}"
                                                                       var="row"
@@ -110,7 +110,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblModuleView3Query.processQuery}"
                                                                       varStatus="vs" id="t2"
-                                                                      partialTriggers="::b4 ::b6 ::b7 ::b14" width="718"
+                                                                      partialTriggers="::b4 ::b6 ::b7 ::b14" width="694"
                                                                       scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblModuleView3.hints.CourseId.name}"
                                                                            filterable="true" sortable="true"
@@ -180,7 +180,7 @@
                                                                 </af:column>
                                                                 <af:column sortProperty="#{bindings.TblModuleView3.hints.Ast.name}"
                                                                            filterable="true" sortable="true"
-                                                                           headerText="Active" id="c8" width="60">
+                                                                           headerText="Active" id="c8" width="63">
                                                                            
                                                                                 <f:facet name="filter">
                                                                        <af:inputText value="#{vs.filterCriteria.Ast}"
@@ -210,7 +210,7 @@
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" id="gr5">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc6">
-                                                    <af:spacer width="220" height="20" id="s9"/>
+                                                    <af:spacer width="200" height="20" id="s9"/>
                                                     <h:panelGroup id="pg1">
                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                    text="Add"
