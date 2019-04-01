@@ -9,7 +9,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr2">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
                                                     <af:panelTabbed position="above" id="pt2"
-                                                                    inlineStyle="width:947px;">
+                                                                    inlineStyle="width:1014px;">
                                                         <af:showDetailItem id="tab1" text="Project Office">
                                                             <af:table value="#{bindings.TblProjOffView1.collectionModel}"
                                                                       var="row"
@@ -24,8 +24,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblProjOffView1Query.processQuery}"
                                                                       varStatus="vs" id="t1" partialTriggers="::b9"
-                                                                      scrollPolicy="page" autoHeightRows="0"
-                                                                      width="937">
+                                                                      scrollPolicy="page" autoHeightRows="0">
                                                                 <af:column sortProperty="#{bindings.TblProjOffView1.hints.Project_Name.name}"
                                                                            filterable="true"
                                                                            headerText="Project"
@@ -178,7 +177,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:668px;">
+                                                                    inlineStyle="width:706px;">
                                                         <af:showDetailItem id="tab2" text="Target Crops">
                                                             <af:table value="#{bindings.TblTargetCropsView4.collectionModel}"
                                                                       var="row"
@@ -195,7 +194,7 @@
                                                                       varStatus="vs" id="t2"
                                                                       partialTriggers="::b4 ::b6 ::b7 ::b10"
                                                                       scrollPolicy="page" autoHeightRows="0"
-                                                                      width="658">
+                                                                      width="687">
                                                                 <af:column sortProperty="#{bindings.TblTargetCropsView4.hints.CropId.name}"
                                                                            filterable="true" sortable="true"
                                                                            headerText="Crop"
@@ -292,7 +291,7 @@
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" id="gr5">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc6">
-                                                    <af:spacer width="180" height="20" id="s9"/>
+                                                    <af:spacer width="200" height="20" id="s9"/>
                                                     <h:panelGroup id="pg1">
                                                         <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                text="Add" icon="#{resource['images:add.png']}"

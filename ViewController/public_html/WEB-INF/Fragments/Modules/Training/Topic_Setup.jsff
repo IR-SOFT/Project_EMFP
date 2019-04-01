@@ -8,7 +8,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr2">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
                                                     <af:panelTabbed position="above" id="pt2"
-                                                                    inlineStyle="width:709px;">
+                                                                    inlineStyle="width:748px;">
                                                         <af:showDetailItem id="tab1" text="Module Setup">
                                                             <af:table value="#{bindings.TblModuleView1.collectionModel}"
                                                                       var="row"
@@ -23,8 +23,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblModuleView1Query.processQuery}"
                                                                       varStatus="vs" id="t1"   partialTriggers="::b13"
-                                                                      scrollPolicy="page" autoHeightRows="0"
-                                                                      width="699">
+                                                                      scrollPolicy="page" autoHeightRows="0" >
                                                                 <af:column sortProperty="#{bindings.TblModuleView1.hints.Course_Name.name}"
                                                                            filterable="true"
                                                                            headerText="Training"
@@ -87,7 +86,7 @@
                                             <af:gridRow marginTop="5px" height="auto" id="gr4">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc5">
                                                     <af:panelTabbed position="above" id="pt3"
-                                                                    inlineStyle="width:711px;">
+                                                                    inlineStyle="width:750px;">
                                                         <af:showDetailItem id="tab2" text="Topic Setup">
                                                             <af:table value="#{bindings.TblTopicsView3.collectionModel}"
                                                                       var="row"
@@ -102,7 +101,7 @@
                                                                       filterVisible="true"
                                                                       queryListener="#{bindings.TblTopicsView3Query.processQuery}"
                                                                       varStatus="vs" id="t2"
-                                                                      partialTriggers="::b4 ::b6 ::b7 ::b14" width="701"
+                                                                      partialTriggers="::b4 ::b6 ::b7 ::b14" width="731"
                                                                       scrollPolicy="page" autoHeightRows="0" >
                                                                <af:column sortProperty="#{bindings.TblTopicsView3.hints.ModuleId.name}"
                                                                            filterable="true" sortable="true"
@@ -203,7 +202,7 @@
                                             </af:gridRow>
                                             <af:gridRow marginTop="5px" height="auto" id="gr5">
                                                 <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc6">
-                                                   <af:spacer width="200" height="20" id="s9"/>
+                                                   <af:spacer width="227" height="20" id="s9"/>
                                                     <h:panelGroup id="pg1">
                                                          <af:button actionListener="#{bindings.CreateInsert.execute}"
                                                                text="Add"
