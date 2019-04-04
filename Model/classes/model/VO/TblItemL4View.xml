@@ -57,6 +57,44 @@
       </AttrArray>
     </DesignTime>
   </EntityUsage>
+  <EntityUsage
+    Name="TblItemL2"
+    Entity="model.EO.TblItemL2"
+    Association="model.EO.FkTblItemL3FkAssoc"
+    AssociationEnd="model.EO.FkTblItemL3FkAssoc.TblItemL2"
+    SourceUsage="model.VO.TblItemL4View.TblItemL3"
+    ReadOnly="true"
+    Reference="true"
+    DeleteParticipant="false"
+    JoinType="LEFT OUTER JOIN">
+    <DesignTime>
+      <AttrArray Name="_srcAttributes">
+        <Item Value="model.EO.TblItemL3.ItemL2Id"/>
+      </AttrArray>
+      <AttrArray Name="_dstAttributes">
+        <Item Value="model.EO.TblItemL2.ItemL2Id"/>
+      </AttrArray>
+    </DesignTime>
+  </EntityUsage>
+  <EntityUsage
+    Name="TblItemL1"
+    Entity="model.EO.TblItemL1"
+    Association="model.EO.FkTblItemL2FkAssoc"
+    AssociationEnd="model.EO.FkTblItemL2FkAssoc.TblItemL1"
+    SourceUsage="model.VO.TblItemL4View.TblItemL2"
+    ReadOnly="true"
+    Reference="true"
+    DeleteParticipant="false"
+    JoinType="LEFT OUTER JOIN">
+    <DesignTime>
+      <AttrArray Name="_srcAttributes">
+        <Item Value="model.EO.TblItemL2.ItemL1Id"/>
+      </AttrArray>
+      <AttrArray Name="_dstAttributes">
+        <Item Value="model.EO.TblItemL1.ItemL1Id"/>
+      </AttrArray>
+    </DesignTime>
+  </EntityUsage>
   <ViewAttribute
     Name="ItemL4Id"
     IsNotNull="true"
@@ -108,6 +146,34 @@
     EntityAttrName="ItemL3Id"
     EntityUsage="TblItemL3"
     AliasName="ITEM_L3ID1"/>
+  <ViewAttribute
+    Name="L2_Name"
+    IsUnique="true"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Name"
+    EntityUsage="TblItemL2"
+    AliasName="NAME1"/>
+  <ViewAttribute
+    Name="ItemL2Id"
+    PrecisionRule="true"
+    EntityAttrName="ItemL2Id"
+    EntityUsage="TblItemL2"
+    AliasName="ITEM_L2_ID"/>
+  <ViewAttribute
+    Name="L1_Name"
+    IsUnique="true"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Name"
+    EntityUsage="TblItemL1"
+    AliasName="NAME1"/>
+  <ViewAttribute
+    Name="ItemL1Id"
+    PrecisionRule="true"
+    EntityAttrName="ItemL1Id"
+    EntityUsage="TblItemL1"
+    AliasName="ITEM_L1_ID"/>
   <AttrArray Name="KeyAttributes">
     <Item Value="ItemL4Id"/>
   </AttrArray>

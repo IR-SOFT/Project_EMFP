@@ -107,7 +107,7 @@
       </list>
    </hash>
    <hash n="oracle.jdeveloper.deploy.SecurityDeploymentSettings">
-      <value n="Security-Deployment-Migrate-Users-And-Groups-Key" v="false"/>
+      <value n="Security-Deployment-Migrate-Users-And-Groups-Key" v="true"/>
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="ApplicationSrcContentSet">
@@ -120,6 +120,6 @@
       </hash>
    </hash>
    <hash n="Weblogic JDBC">
-      <value n="Weblogic-JDBC-Auto-Sync-Key" v="false"/>
+      <value n="Weblogic-JDBC-Auto-Sync-Key" v="true"/>
    </hash>
 </jws:workspace>
