@@ -176,6 +176,8 @@
           <Item Value="AnnualProd"/>
           <Item Value="YearlySales"/>
           <Item Value="MainBuyer"/>
+          <Item Value="MainBuyerAddr"/>
+          <Item Value="MainBuyerCity"/>
         </AttrNames>
       </nodeDefinition>
     </tree>

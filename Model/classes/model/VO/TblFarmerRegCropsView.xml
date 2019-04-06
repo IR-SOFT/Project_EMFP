@@ -89,4 +89,16 @@
     EntityAttrName="MainBuyer"
     EntityUsage="TblFarmerRegCrops"
     AliasName="MAIN_BUYER"/>
+  <ViewAttribute
+    Name="MainBuyerAddr"
+    PrecisionRule="true"
+    EntityAttrName="MainBuyerAddr"
+    EntityUsage="TblFarmerRegCrops"
+    AliasName="MAIN_BUYER_ADDR"/>
+  <ViewAttribute
+    Name="MainBuyerCity"
+    PrecisionRule="true"
+    EntityAttrName="MainBuyerCity"
+    EntityUsage="TblFarmerRegCrops"
+    AliasName="MAIN_BUYER_CITY"/>
 </ViewObject>

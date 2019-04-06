@@ -786,10 +786,10 @@
                                                   filterVisible="true"
                                                   queryListener="#{bindings.TblFarmerRegCropsView4Query.processQuery}"
                                                   varStatus="vs" id="t4" partialTriggers="::b23 ::b24 ::b25 ::b36"
-                                                  width="716" scrollPolicy="page" autoHeightRows="0">
+                                                  width="999" scrollPolicy="page" autoHeightRows="0">
                                             <af:column sortProperty="#{bindings.TblFarmerRegCropsView4.hints.FarmerRegCropsId.name}"
                                                        filterable="true" sortable="true" align="center"
-                                                       headerText="Farmer Reg Crops ID" id="c29" width="100">
+                                                       headerText="Farmer Reg Crops ID" id="c29" width="80">
                                                 <f:facet name="filter">
                                                     <af:inputText value="#{vs.filterCriteria.FarmerRegCropsId}"
                                                                   id="it65" placeholder="Search ID"></af:inputText>
@@ -857,8 +857,8 @@
                                                                       pattern="#{bindings.TblFarmerRegCropsView4.hints.YearlySales.format}"/>
                                                 </af:inputText>
                                             </af:column>
-                                            <af:column filterable="true" sortable="true" headerText="Main Buyer"
-                                                       id="c33" width="153">
+                                            <af:column filterable="true" sortable="true" headerText="Buyer"
+                                                       id="c33" width="150">
                                                 <f:facet name="filter">
                                                     <af:inputText value="#{vs.filterCriteria.MainBuyer}" id="it73"
                                                                   placeholder="Search Buyer"></af:inputText>
@@ -873,13 +873,49 @@
                                                     <f:validator binding="#{row.bindings.MainBuyer.validator}"/>
                                                 </af:inputText>
                                             </af:column>
-                                        </af:table>
+                                    <af:column filterable="true" sortable="true"
+                                               headerText="Buyer Address"
+                                               id="c30" width="230">
+                                                <f:facet name="filter">
+                                                    <af:inputText value="#{vs.filterCriteria.MainBuyerAddr}" id="it77"
+                                                                  placeholder="Search Address">
+                                                    </af:inputText>
+                                                </f:facet>
+                                        <af:inputText value="#{row.bindings.MainBuyerAddr.inputValue}"
+                                                      label="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerAddr.label}"
+                                                      required="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerAddr.mandatory}"
+                                                      columns="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerAddr.displayWidth}"
+                                                      maximumLength="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerAddr.precision}"
+                                                      shortDesc="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerAddr.tooltip}"
+                                                      id="it74">
+                                            <f:validator binding="#{row.bindings.MainBuyerAddr.validator}"/>
+                                        </af:inputText>
+                                    </af:column>
+                                    <af:column filterable="true" sortable="true"
+                                               headerText="Buyer City"
+                                               id="c36" width="100">
+                                                <f:facet name="filter">
+                                                    <af:inputText value="#{vs.filterCriteria.MainBuyerCity}" id="it82"
+                                                                  placeholder="Search City">
+                                                    </af:inputText>
+                                                </f:facet>
+                                        <af:inputText value="#{row.bindings.MainBuyerCity.inputValue}"
+                                                      label="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerCity.label}"
+                                                      required="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerCity.mandatory}"
+                                                      columns="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerCity.displayWidth}"
+                                                      maximumLength="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerCity.precision}"
+                                                      shortDesc="#{bindings.TblFarmerRegCropsView4.hints.MainBuyerCity.tooltip}"
+                                                      id="it75">
+                                            <f:validator binding="#{row.bindings.MainBuyerCity.validator}"/>
+                                        </af:inputText>
+                                    </af:column>
+                                </af:table>
                                         <af:button actionListener="#{bindings.Execute3.execute}" text="Refresh"
                                                    disabled="#{!bindings.Execute3.enabled}" id="b36"
                                                    icon="#{resource['images:refresh.png']}"/>
                                         <af:spacer width="210" height="20" id="s10"/>
                                         <af:panelGroupLayout id="pg4" layout="horizontal">
-                                            <af:spacer width="210" height="20" id="s11"/>
+                                            <af:spacer width="355" height="20" id="s11"/>
                                             <af:button actionListener="#{bindings.CreateInsert3.execute}" text="Add"
                                                        icon="#{resource['images:add.png']}"
                                                        disabled="#{!bindings.CreateInsert3.enabled}" id="b23"/>

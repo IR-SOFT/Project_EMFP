@@ -62,6 +62,30 @@
       <Attr Name="_DisplaySize" Value="150"/>
     </DesignTime>
   </Attribute>
+  <Attribute
+    Name="MainBuyerAddr"
+    Precision="250"
+    ColumnName="MAIN_BUYER_ADDR"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TBL_FARMER_REG_CROPS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="250"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="MainBuyerCity"
+    Precision="50"
+    ColumnName="MAIN_BUYER_CITY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TBL_FARMER_REG_CROPS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
   <AccessorAttribute
     Name="TblCrop"
     Association="model.EO.Fk2TblFarmerRegCropsFkAssoc"

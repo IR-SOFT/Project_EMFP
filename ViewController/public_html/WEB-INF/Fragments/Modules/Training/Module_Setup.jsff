@@ -51,7 +51,17 @@
                                                                                    shortDesc="#{bindings.TblCourseView1.hints.PhaseId.tooltip}"
                                                                                    id="ot2"/>
                                                                 </af:column>
-                                                                <af:column sortProperty="#{bindings.TblCourseView1.hints.Name.name}"
+                                    <af:column headerText="#{bindings.TblCourseView1.hints.PhaseId.label}" id="c9">
+                                        <af:selectOneChoice value="#{row.bindings.PhaseId.inputValue}"
+                                                            label="#{row.bindings.PhaseId.label}"
+                                                            required="#{bindings.TblCourseView1.hints.PhaseId.mandatory}"
+                                                            shortDesc="#{bindings.TblCourseView1.hints.PhaseId.tooltip}"
+                                                            id="soc2" readOnly="true">
+                                            <f:selectItems value="#{row.bindings.PhaseId.items}" id="si2"/>
+                                            <f:validator binding="#{row.bindings.PhaseId.validator}"/>
+                                        </af:selectOneChoice>
+                                    </af:column>
+                                    <af:column sortProperty="#{bindings.TblCourseView1.hints.Name.name}"
                                                                            filterable="true" headerText="Training"
                                                                            id="c3" width="300">
                                                                            
